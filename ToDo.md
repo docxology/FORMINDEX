@@ -1,42 +1,13 @@
-# FORMIS Database Maintenance and Update Plan
+# FORMINDEX TO-DO LIST
 
 ## Overview
-Maintaining and updating FORMIS requires the cooperative efforts of myrmecologists worldwide. This document outlines the tasks and areas for improvement to keep FORMIS a valuable resource for the myrmecology community.
+Maintaining and updating FORMIS requires the cooperative efforts of computational myrmecologists (myrmecological computationalists) worldwide. This document outlines the tasks and areas for improvement to keep FORMIS a valuable resource for the community.
 
-## Immediate Actions for Contributors
-1. Inspect citations of your own work for accuracy and completeness.
-2. Add keywords and/or abstracts to existing entries where possible.
-
-## How to Contribute
-Please refer to the next section for detailed instructions on how to contribute or update citations.
+## View
+From the ground: vigilant antennae, tireless legs, and many effective neural systems are needed to keep FORMIS (as nest and niche) useful. 
 
 ## Database Updates
-- AGRICOLA will be searched regularly to keep FORMIS updated.
-  - Note: This will only find a small portion of the literature.
-
-COMPLETED 
-## Specialty Bibliographies Needed
-### Genera-specific bibliographies:
-- Formica
-- Camponotus
-- Myrmica
-- Pheidole
-- Monomorium
-- Messor
-- Cataglyphis
-
-### Subject-specific bibliographies:
-- Foraging
-- Bioenergetics
-- Myrmecophiles
-- Ant-plant symbioses
-
-### Geographic bibliographies:
-- Hawaii
-- India
-- Mexico
-- Brazil
-- Other regions of interest
+- How/Should we update with adding information and citations? 
 
 ### Requirements for specialty bibliographies:
 - Can range from a few dozen citations to several thousand
@@ -44,14 +15,6 @@ COMPLETED
 
 ## Additional Contribution Methods
 - Add new citations by journal
-- Contact Dr. Porter if interested in adding a bibliography to FORMIS
-
-## User Guidelines
-1. Users are welcome to create customized bibliographies from FORMIS.
-2. Be aware that personal modifications to FORMIS will be lost in future updates if not sent in for official inclusion.
-3. When using EndNote to automatically create bibliographies:
-   - Note that citation numbers in FORMIS will not be consistent from year to year.
-   - A paper started on one database version should be finished on the same version.
 
 ## Future Development Ideas
 1. Implement a system for users to submit updates and new entries directly.
