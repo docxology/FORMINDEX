@@ -4,9 +4,9 @@ from collections import defaultdict
 
 # List of target bibliographies
 TARGET_BIBLIOGRAPHIES = [
-    "Formica", "Camponotus", "Myrmica", "Pheidole", "Monomorium", "Messor", "Cataglyphis",
-    "Foraging", "Bioenergetics", "Myrmecophiles", "Ant-plant symbioses",
-    "Hawaii", "India", "Mexico", "Brazil"
+    "Formica", "Camponotus", "Myrmica", "Pheidole", "Pogonomyrmex", "P. barbatus", "Monomorium", "Messor", "Cataglyphis",
+    "Foraging", "Bioenergetics", "Myrmecophiles", "Ant-plant", "Dopamine", "Serotonin",
+    "Hawaii", "India", "Mexico", "Brazil",
 ]
 
 def load_formis_data(file_path):

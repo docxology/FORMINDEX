@@ -14,6 +14,7 @@ Please refer to the next section for detailed instructions on how to contribute 
 - AGRICOLA will be searched regularly to keep FORMIS updated.
   - Note: This will only find a small portion of the literature.
 
+COMPLETED 
 ## Specialty Bibliographies Needed
 ### Genera-specific bibliographies:
 - Formica
@@ -71,4 +72,4 @@ Please refer to the next section for detailed instructions on how to contribute 
   - Geographic areas: Hawaii, India, Mexico, Brazil
 
 ## Contact Information
-For inquiries about contributing to FORMIS or adding bibliographies, please contact Dr. Porter (contact details to be added).
+For inquiries about contributing to FORMIS or adding bibliographies, please contact @docxology on GitHub.
