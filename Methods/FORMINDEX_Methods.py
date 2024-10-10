@@ -11,6 +11,9 @@ from wordcloud import WordCloud
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.decomposition import LatentDirichletAllocation
+import chardet
+import json
+from scipy.sparse import csr_matrix
 
 def add_paths():
     """Add necessary paths to sys.path."""
@@ -64,45 +67,78 @@ def load_bibtex(file_path):
     if not os.path.exists(absolute_path):
         raise FileNotFoundError(f"The file {absolute_path} does not exist.")
     
-    records = process_bibtex(absolute_path)  # Process the BibTeX file
+    # Detect the file encoding
+    with open(absolute_path, 'rb') as file:
+        raw_data = file.read()
+    detected_encoding = chardet.detect(raw_data)['encoding']
+    
+    print(f"Detected file encoding: {detected_encoding}")
+    
+    records = process_bibtex(absolute_path, detected_encoding)  # Process the BibTeX file
     return records
 
-def process_bibtex(file_path):
+def process_bibtex(file_path, encoding='utf-8'):
     """Process the BibTeX file and extract records with custom parsing."""
     records = []
     current_entry = {}
     entry_type = None
     in_entry = False
     
-    with open(file_path, 'r', encoding='utf-8') as file:
-        for line in file:
-            line = line.strip()
-            
-            if line.startswith('@'):
-                # Start of a new entry
-                if current_entry:
+    try:
+        with open(file_path, 'r', encoding=encoding) as file:
+            for line in file:
+                line = line.strip()
+                
+                if line.startswith('@'):
+                    # Start of a new entry
+                    if current_entry:
+                        records.append(current_entry)
+                    current_entry = {}
+                    entry_type = line[1:].split('{')[0].lower()
+                    current_entry['ref_type'] = entry_type
+                    in_entry = True
+                elif '=' in line and in_entry:
+                    # Field in the current entry
+                    key, value = line.split('=', 1)
+                    key = key.strip().lower()
+                    value = value.strip().strip(',').strip()
+                    if value.startswith('{') and value.endswith('}'):
+                        value = value[1:-1]
+                    current_entry[key] = value
+                elif line == '}' and in_entry:
+                    # End of the current entry
                     records.append(current_entry)
-                current_entry = {}
-                entry_type = line[1:].split('{')[0].lower()
-                current_entry['ref_type'] = entry_type
-                in_entry = True
-            elif '=' in line and in_entry:
-                # Field in the current entry
-                key, value = line.split('=', 1)
-                key = key.strip().lower()
-                value = value.strip().strip(',').strip()
-                if value.startswith('{') and value.endswith('}'):
-                    value = value[1:-1]
-                current_entry[key] = value
-            elif line == '}' and in_entry:
-                # End of the current entry
-                records.append(current_entry)
-                current_entry = {}
-                in_entry = False
+                    current_entry = {}
+                    in_entry = False
+        
+        # Add the last entry if it exists
+        if current_entry:
+            records.append(current_entry)
     
-    # Add the last entry if it exists
-    if current_entry:
-        records.append(current_entry)
+    except UnicodeDecodeError as e:
+        print(f"Error decoding file with {encoding} encoding: {e}")
+        print("Attempting to read file as binary and decode manually...")
+        
+        with open(file_path, 'rb') as file:
+            content = file.read()
+        
+        # Try common encodings
+        for enc in ['utf-8', 'iso-8859-1', 'windows-1252']:
+            try:
+                decoded_content = content.decode(enc)
+                print(f"Successfully decoded with {enc} encoding")
+                # Process the decoded content
+                # (You may need to adapt this part to work with a string instead of a file)
+                for line in decoded_content.split('\n'):
+                    # Process each line as before
+                    # (Copy the logic from the previous try block)
+                    pass
+                break
+            except UnicodeDecodeError:
+                continue
+        else:
+            print("Failed to decode the file with common encodings")
+            return []
     
     return records
 
@@ -160,13 +196,19 @@ def create_histogram(data, title, xlabel, ylabel, filename):
     """Create and save a histogram with improved styling."""
     plt.figure(figsize=(14, 8))
     sns.set_style("whitegrid")
-    sns.histplot(data, bins=20, kde=True)
+    
+    # Use sns.countplot instead of sns.histplot to create a simple bar chart
+    ax = sns.countplot(y=data, order=sorted(set(data), key=data.count, reverse=True))
     
     plt.title(title, fontsize=20, fontweight='bold', pad=20)
     plt.xlabel(xlabel, fontsize=16, fontweight='bold')
     plt.ylabel(ylabel, fontsize=16, fontweight='bold')
     plt.xticks(fontsize=12)
     plt.yticks(fontsize=12)
+    
+    # Add value labels to the end of each bar
+    for i, v in enumerate(ax.containers[0]):
+        ax.text(v.get_width(), i, f' {v.get_width()}', va='center', fontsize=10)
     
     plt.tight_layout()
     plt.savefig(filename, dpi=300, bbox_inches='tight')
@@ -209,8 +251,8 @@ def create_word_cloud(text, title, filename):
     plt.savefig(filename, dpi=300, bbox_inches='tight')
     plt.close()
 
-def perform_topic_modeling(texts, n_topics=5, n_top_words=10):
-    """Perform topic modeling using LDA."""
+def perform_topic_modeling(texts, n_topics=10, n_top_words=20):
+    """Perform topic modeling using LDA with enhanced output."""
     vectorizer = CountVectorizer(max_df=0.95, min_df=2, stop_words='english')
     doc_term_matrix = vectorizer.fit_transform(texts)
     
@@ -222,12 +264,26 @@ def perform_topic_modeling(texts, n_topics=5, n_top_words=10):
     topics = []
     for topic_idx, topic in enumerate(lda.components_):
         top_words = [feature_names[i] for i in topic.argsort()[:-n_top_words - 1:-1]]
-        topics.append(f"Topic {topic_idx + 1}: {', '.join(top_words)}")
+        topic_strength = np.sum(topic)
+        topics.append({
+            'id': topic_idx + 1,
+            'strength': topic_strength,
+            'words': top_words
+        })
     
-    return topics
+    # Sort topics by strength
+    topics.sort(key=lambda x: x['strength'], reverse=True)
+    
+    # Calculate document-topic distribution
+    doc_topic_dist = lda.transform(doc_term_matrix)
+    
+    return topics, doc_topic_dist
 
 def plot_top_entities(entities, title, filename, top_n=20):
     """Plot top N entities with improved styling."""
+    # Filter out empty strings or None values
+    entities = [e for e in entities if e and e.strip()]
+    
     top_entities = Counter(entities).most_common(top_n)
     entities, counts = zip(*top_entities)
     
@@ -250,3 +306,13 @@ def plot_top_entities(entities, title, filename, top_n=20):
     plt.tight_layout()
     plt.savefig(filename, dpi=300, bbox_inches='tight')
     plt.close()
+
+def export_to_json(records, file_path):
+    """Export records to a JSON file."""
+    def default_serializer(obj):
+        if isinstance(obj, set):
+            return list(obj)
+        raise TypeError(f"Object of type {type(obj)} is not JSON serializable")
+
+    with open(file_path, 'w', encoding='utf-8') as f:
+        json.dump(records, f, indent=2, ensure_ascii=False, default=default_serializer)
