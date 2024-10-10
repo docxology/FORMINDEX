@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+"""
+This script should be run from the project's root directory after activating the virtual environment.
+"""
 import sys
 import os
 import re
@@ -10,6 +14,7 @@ from scipy.sparse import csr_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from collections import Counter
+from Location_Analysis import create_world_map_publications
 
 # Add the parent directory to the Python path
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -242,6 +247,7 @@ def main():
     create_ref_type_pie_chart(bibtex_records, output_dir)
     create_location_distribution(bibtex_records, output_dir)  # Updated function name
     create_citations_scatter(bibtex_records, output_dir)
+    create_world_map_publications(bibtex_records, output_dir)
 
     print("Visualizations have been created and saved in the 'Visualizations' directory.")
 
