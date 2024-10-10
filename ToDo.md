@@ -58,6 +58,17 @@ Please refer to the next section for detailed instructions on how to contribute 
 3. Create an API for programmatic access to FORMIS data.
 4. Establish a regular update schedule and announcement system for new versions.
 5. Collaborate with other entomological databases for cross-referencing and data sharing.
+6. Refine and expand the genus-level bibliography generation script:
+   - Improve genus detection accuracy
+   - Add options for different output formats (e.g., BibTeX, CSV)
+   - Implement a user interface for selecting specific genera
+
+## Recent Updates
+- Modified the script (`Scripts/generate_genus_bibliographies.py`) to generate targeted bibliographies for specific genera, subjects, and geographic areas.
+- The script now focuses on the following targets:
+  - Genera: Formica, Camponotus, Myrmica, Pheidole, Monomorium, Messor, Cataglyphis
+  - Subjects: Foraging, Bioenergetics, Myrmecophiles, Ant-plant symbioses
+  - Geographic areas: Hawaii, India, Mexico, Brazil
 
 ## Contact Information
 For inquiries about contributing to FORMIS or adding bibliographies, please contact Dr. Porter (contact details to be added).
