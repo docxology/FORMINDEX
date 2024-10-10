@@ -1,0 +1,107 @@
+Messor_Topic Modeling Results
+======================
+
+Topic 3 (Strength: 36347.64):
+ant, species, ants, diversity, communities, richness, native, abundance, different, areas, effects, community, sites, habitats, functional, study, habitat, high, results, desert
+
+Topic 7 (Strength: 24449.27):
+species, ant, collected, ants, genera, study, total, traps, subfamilies, fauna, messor, forest, pitfall, belonging, diversity, number, sampling, myrmicinae, recorded, region
+
+Topic 1 (Strength: 19482.38):
+species, messor, camponotus, new, tetramorium, lasius, forel, formica, reported, temnothorax, crematogaster, ant, emery, pheidole, monomorium, aphaenogaster, mayr, records, sp, myrmica
+
+Topic 9 (Strength: 19222.42):
+seed, ants, seeds, species, ant, dispersal, plant, messor, foraging, plants, harvester, size, removal, predation, results, different, food, nests, barbarus, nest
+
+Topic 10 (Strength: 18554.19):
+species, ant, ants, size, evolution, insects, body, group, workers, social, thermal, data, evolutionary, genus, prey, groups, based, using, phylogenetic, different
+
+Topic 8 (Strength: 15387.54):
+colonies, colony, nest, workers, queens, foraging, ants, nests, ant, worker, queen, messor, food, social, behavior, brood, pergandei, harvester, species, activity
+
+Topic 6 (Strength: 14569.54):
+ants, ant, species, behavior, social, trail, chemical, gland, food, prey, colony, workers, foraging, individual, insects, recruitment, different, behavioral, messor, nest
+
+Topic 4 (Strength: 8921.12):
+ants, species, sp, ant, host, misspelled, invicta, north, solenopsis, note, america, saevissima, richteri, hosts, acromyrmex, new, data, hymenoptera, formicidae, messor
+
+Topic 5 (Strength: 8368.04):
+species, ant, sp, new, ants, data, genus, time, associated, recorded, taxa, nov, islands, island, messor, group, iran, described, mites, mite
+
+Topic 2 (Strength: 7532.86):
+soil, nests, nest, ants, seeds, messor, ant, seed, surface, soils, water, mounds, harvester, size, significantly, refuse, activity, small, cm, task
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 3:
+  - Alarm pheromones (Strength: 1.00)
+  - Reduction of seed harvester ants, Pogonomyrmex spp.(Hymenoptera: Formicidae), damages by using some insecticides (Strength: 1.00)
+  - Ants as a measure of effectiveness of habitat conservation planning in southern California (Strength: 0.99)
+  - Species composition of ants (Hymenoptera: Formicidae) and thermal tolerance along environmental gradient in the Bale Mountains National Park (BMNP), Ethiopia (Strength: 0.99)
+  - Investment in reward by ant-dispersed plants consistently selects for better partners along a geographic gradient (Strength: 0.99)
+
+Topic 7:
+  - The economics of insect sociality (Strength: 0.99)
+  - Biological rhythms and task allocation in ant colonies (Strength: 0.99)
+  - Contribution to the myrmecofauna (Formicidae, Hymenoptera) of the Banat Province (Serbia) (Strength: 0.99)
+  - Arthropod corpses in a temperate grassland, a limited supply ? (Strength: 0.99)
+  - Learning, memory, and foraging efficiency in two species of desert seed-harvester ants (Strength: 0.99)
+
+Topic 1:
+  - Foraging velocity of seed-harvester ants, Veromessor pergandei (Hymenoptera: Formicidae) (Strength: 1.00)
+  - Materiali per lo studio della fauna Tunisina raccolti da G. e L. Doria. III. Rassegna delle formiche della Tunisia. [concl.] (Strength: 1.00)
+  - Review of the myrmecophilous Ptomaphagus, subgenus Echinocoleus (new status of North American (Coleoptera: Leiodidae: Cholevinae: Ptomaphagini) (Strength: 0.99)
+  - Pygidial gland chemistry and potential alarm-recruitment function in column foraging, but not solitary, Nearctic Messor harvesting ants (Hymenoptera: Formicidae: Myrmicinae) (Strength: 0.99)
+  - Explosive seed dispersal in two perennial Mediterranean Euphorbia species (Euphorbiaceae) (Strength: 0.99)
+
+Topic 9:
+  - Nestabundanzen von Ameisen (Hymenoptera: Formicidae) in st‰dtischen Kleinstrukturen (Strength: 0.99)
+  - Abiotic factors control invasion by Argentine ants at the community scale (Strength: 0.99)
+  - Absence of joint nesting advantage in desert seed harvester ants: evidence from a field experiment (Strength: 0.99)
+  - Are the TTAGG and TTAGGG telomeric repeats phylogenetically conserved in aculeate Hymenoptera? (Strength: 0.99)
+  - Similar seed preferences explain trophic ecology of functionally distinct, but co-occurring and closely related harvester ants (Strength: 0.98)
+
+Topic 10:
+  - Food-size sorting in North African harvester ants, genus Messor (Strength: 0.99)
+  - Formigues (Hymenoptera, Formicidae) dels illots des Vedr‡, es Vedranell i els illots de Ponent (Eivissa) (Strength: 0.99)
+  - Effects of land use on taxonomic and functional diversity: a cross-taxon analysis in a Mediterranean landscape (Strength: 0.99)
+  - Les PsÈlaphides myrmÈcophiles de l'Afrique intertropicale (Strength: 0.99)
+  - Harvesting ants and trap-door spiders: notes and observations on their habits and dwellings (Strength: 0.99)
+
+Topic 8:
+  - Exploitation des sources de nourriture par Messor structor.  IntÈraction avec deux autres espËces de fourmis (Hym. Formicidae) (Strength: 0.99)
+  - Population structure, local mate competition, and sex-allocation pattern in the ant Messor aciculatus (Strength: 0.99)
+  - Foraging territories and crop production of a mediterranean harvester ant in a grassland ecosystem (Strength: 0.99)
+  - Diversity and distribution of introduced and potentially invasive ant species from the three main ecoregions of CÙte dIvoire (West Africa) (Strength: 0.99)
+  - ContribuciÛ al coneixement de la taxonomia i la fenologia de les formigues (Hymenoptera: Formicidae) d'Andorra (Strength: 0.99)
+
+Topic 6:
+  - Les peuplements de fourmis (Hymenoptera, Formicidae) dans quelques milieux forestiers et agricoles de la Kabylie (Strength: 0.99)
+  - The parasitoid Hymenoptera associated with different animal corpses in Algeria (Strength: 0.99)
+  - Formiche della Cirenaica raccolte dal Dott. Enrico Festa e dal Prof. Filippo Silvestri (Strength: 0.99)
+  - Target enrichment of ultraconserved elements from arthropods provides a genomic perspective on relationships among Hymenoptera (Strength: 0.99)
+  - Note sur la Formica barbara (Strength: 0.99)
+
+Topic 4:
+  - Baseline biodiversity survey for Santa Catalina Island: Herpetofauna and ants with remarks on small mammals and others (Strength: 1.00)
+  - The Malpighian tubules as meristic characters in ants (Hym., Formicidae) (Strength: 0.99)
+  - The role of ants in vertebrate carrion decomposition (Strength: 0.99)
+  - 3-ethyl-2,5-dimethylpyrazine, a component of the trail pheromone of the ant Messor bouvieri (Strength: 0.99)
+  - The ant realm (Strength: 0.99)
+
+Topic 5:
+  - Caste and task allocation in ants (Strength: 0.99)
+  - Classification of assemblages of ants in the green areas in Sofia City (Strength: 0.99)
+  - Cooperation and conflict in ant foundress associations: insights from geographical variation (Strength: 0.99)
+  - Wryneck diet analysis Jynx torquilla mauretanica near Algiers (Algeria) further on previous knowledge (Strength: 0.99)
+  - The role of food storage and communication in the evolution of perennial social hymenopteran colonies (Strength: 0.99)
+
+Topic 2:
+  - Pheromone communication in social insects: sources and secretions (Strength: 1.00)
+  - Biology and evolution of social insects.  1st European Congress on Social Insects (1991), University of Leuven (Strength: 1.00)
+  - Wissenschaftliche Ergebnisse der Bearbeitung von O. Leonhard's Sammlungen. 5. S¸deurop‰ische Ameisen (Hym.) (Strength: 1.00)
+  - Ant fauna of fig orchards of the Estahban area with the report of Tapinoma karavaievi (Hymenoptera: Formicidae) as a predator of fig pollinator wasps.  [in Persian, English abstract] (Strength: 0.99)
+  - Study on the species diversity of three ant's subfamilies, Dolichoderinae, Formicinae and Myrmicinae (Hymenoptera: Formicidae) in forest regions of northern Iran.  [in Persian, English abstract] (Strength: 0.99)
+

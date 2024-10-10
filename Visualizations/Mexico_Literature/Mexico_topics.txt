@@ -1,0 +1,107 @@
+Mexico_Topic Modeling Results
+======================
+
+Topic 7 (Strength: 25703.97):
+ant, ants, species, coffee, forest, abundance, foraging, trees, diversity, richness, high, effects, vegetation, nests, community, composition, sites, tree, leaf, shade
+
+Topic 8 (Strength: 22734.30):
+species, sp, new, nov, genus, described, forel, syn, wheeler, mexico, emery, group, camponotus, mayr, known, america, key, smith, based, genera
+
+Topic 4 (Strength: 21560.73):
+ant, species, ants, plant, plants, seed, nectar, extrafloral, acacia, interactions, seeds, nectaries, results, network, interaction, study, networks, scale, effects, food
+
+Topic 2 (Strength: 20345.77):
+ants, colonies, workers, colony, nest, species, ant, queens, host, foragers, foraging, social, behavior, larvae, behavioral, pogonomyrmex, barbatus, nests, queen, caste
+
+Topic 6 (Strength: 18303.22):
+species, diversity, ant, genera, ants, collected, mexico, subfamilies, forest, state, richness, total, study, using, sampling, data, used, different, number, distribution
+
+Topic 3 (Strength: 17828.64):
+species, ants, ant, records, mexico, native, new, populations, america, range, known, colony, north, islands, colonies, areas, introduced, world, workers, collected
+
+Topic 9 (Strength: 15758.97):
+species, ant, ants, soil, areas, nests, soils, pogonomyrmex, syn, sites, seeds, mexico, density, desert, colonies, area, habitat, seed, activity, study
+
+Topic 1 (Strength: 11893.06):
+ants, prey, ant, prepared, article, public, domain, government, written, employee, official, time, invicta, control, bait, acromyrmex, solenopsis, populations, worker, lineage
+
+Topic 10 (Strength: 8119.14):
+ants, ant, solenopsis, species, used, geminata, invicta, mexico, host, la, study, phorid, use, phorids, des, et, les, data, pseudacteon, flies
+
+Topic 5 (Strength: 6888.20):
+ants, insects, escamoles, mexicana, protein, proteins, leaf, acid, atta, edible, food, mexico, fungus, content, ant, activity, sp, consumption, apiculatum, acids
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 7:
+  - Pest identification red imported fire ant (Strength: 1.00)
+  - A catalogue of the Pseudomyrmecinae ants type specimens (Hymenoptera, Formicidae) deposited in the Museu de Zoologia da Universidade de S„o Paulo, Brazil (Strength: 1.00)
+  - Observaciones acera de las costumbres de las hormigas (Strength: 0.99)
+  - Inventario de la Familia Formicidae (Hymenoptera) de la zona sur de Puerto Vallarta, Jalisco (Strength: 0.99)
+  - La fauna (Strength: 0.99)
+
+Topic 8:
+  - Population genomics supports multiple hybrid zone origins of socially hybridogenetic lineages of Pogonomyrmex harvester ants (Strength: 1.00)
+  - Two new Embiidae (Strength: 1.00)
+  - Revision of the mymecophilous genus Ecitoglossa (Coleoptera: Staphylinidae) (Strength: 0.99)
+  - A review of the New World ants of the genus Dolichoderus (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Estructura de las colonias y poliginia en la hormiga neotropical Gnamptogenys sulcata F. Smith (Hymenoptera, Formicidae, Ectatomminae) (Strength: 0.99)
+
+Topic 4:
+  - Effects of a geographic mosaic of ant agressiveness on herbivore communities.  [abstract] (Strength: 0.99)
+  - The role of host switching in the evolution of the fungus-gardening ant symbiosis (Strength: 0.99)
+  - Initial assessment of the impact of the recent invader, Solenopsis invicta Buren, on resident ant assemblages in Matamoros, Mexico (Strength: 0.99)
+  - Protection mutualisms and the community: Geographic variation in an ant-plant symbiosis and the consequences for herbivores (Strength: 0.99)
+  - Water stress strengthens mutualism among ants, trees, and scale insects (Strength: 0.99)
+
+Topic 2:
+  - Thelohania solenopsae (Microsporida: Thelohaniidae) impact on imported fire ant populations at two locations in Texas.  [abstract] (Strength: 1.00)
+  - Ant patchiness: a spatially quantitative test in coffee agroecosystems (Strength: 1.00)
+  - Ameisen aus Guatemala usw., Paraguay und Argentinien (Hym.) (Strength: 1.00)
+  - Natural enemies and mortality factors of the coffee leafminer Leucoptera coffeella (GuÈrin-MÈnËville) (Lepidoptera: Lyonetiidae) in Chiapas, Mexico (Strength: 0.99)
+  - The interaction of the Bull's-horn acacia (Acacia cornigera L.) with one of its ant inhabitants (Pseudomyrmex fulvescens Emery) in eastern Mexico (Strength: 0.99)
+
+Topic 6:
+  - Attavicinus, a new generic name for the myrmecophilous dung beetle Liatongus monstrosus (Scarabaeidae: Scarabaeinae) (Strength: 0.99)
+  - Note on a clubionid spider associated with attine ants (Strength: 0.99)
+  - First record of Forelius damiana Guerrero et Fernandez, 2008 (Hymenoptera, Formicidae, Dolichoderinae) from Mexico (Strength: 0.99)
+  - Diversity snapshot of green-gray space ants in two Mexican cities (Strength: 0.99)
+  - Observations sur les Busileras ou Fourmis ‡ miel du Mexique (Myrmecocystus melligerus) (Strength: 0.99)
+
+Topic 3:
+  - Species-specific characteristics of trees can determine the litter macroinvertebrate community and decomposition process below their canopies (Strength: 1.00)
+  - Neotropical mutualism between Acacia and Pseudomyrmex: phylogeny and divergence times (Strength: 0.99)
+  - Evolution of the latitudinal diversity gradient in the hyperdiverse ant genus Pheidole (Strength: 0.99)
+  - A revision of the ant genus Acanthostichus (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Echinocoleus setiger Horn (Coleoptera: Leiodidae), an inquiline in the nest of Pogonomyrmex spp. (Hymenoptera: Formicidae) (Strength: 0.99)
+
+Topic 9:
+  - Seasonal changes in trails and the influence of temperature in foraging activity in a nest of the ant, Pogonomyrmex barbatus (Strength: 1.00)
+  - Primeros registros de hormigas (Hymeoptera: Formicidae) en suelos de mangle blanco (Laguncularia racemosa) en Xcalak, Quintana Roo, MÈxico (Strength: 0.99)
+  - The role of extrafloral nectar amino acids for the preferences of facultative and obligate ant mutualists (Strength: 0.99)
+  - Effect of agricultural landuse change on the structure of a temperate forest ant-plant interaction network (Strength: 0.99)
+  - Rutas de forrajeo utilizadas por Ectatomma tuberculatum O. (Hymenoptera: Ponerinae) en una plantaciÛn de cacao en el Soconusco, Chiapas MÈxico (Strength: 0.99)
+
+Topic 1:
+  - Effect of interactions between harvester ants on forager decisions (Strength: 1.00)
+  - Back to the natural nesting beach: A transition from egg corrals to in situ in the Kemp's Ridley Sea Turtle.  [abstract] (Strength: 1.00)
+  - The evolution of extreme polyandry in social insects: insights from army ants (Strength: 1.00)
+  - Genetic differentiation at species level in the Neotropical army ant Labidus praedator (Strength: 1.00)
+  - Reproductive strategies of the fire ant (Strength: 1.00)
+
+Topic 10:
+  - Characterization of 12 new microsatellite loci in Aenictus and Neivamyrmex army ants (Strength: 0.99)
+  - Foundress female weight and cooperative foundation in Atta leaf-cutting ants (Strength: 0.99)
+  - Lower intraspecific aggression associated with lower genetic diversity in invasive urban colonies of the rough harvester ant Pogonomyrmex rugosus.  [abstract] (Strength: 0.99)
+  - Apoyo a la actual division generica de hormigas usando etologia comparativa (Hymenoptera, Formicidae) (Strength: 0.99)
+  - An old pest - the ant (Strength: 0.99)
+
+Topic 5:
+  - Fire ant attacks on residents in health care facilities: A report of two cases (Strength: 1.00)
+  - New species of Pheidole from Pacific Coast islands (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Ants as tools in sustainable agriculture (Strength: 0.99)
+  - Maintaining and Updating FORMIS (Strength: 0.99)
+  - Evolution of queen size polymorphism in the neotropical ants Ectatomma Smith 1958 <sic>.  [abstract] (Strength: 0.99)
+

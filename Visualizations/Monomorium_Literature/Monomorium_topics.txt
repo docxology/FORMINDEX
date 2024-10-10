@@ -1,0 +1,107 @@
+Monomorium_Topic Modeling Results
+======================
+
+Topic 3 (Strength: 88244.54):
+ant, species, ants, diversity, richness, forest, abundance, communities, habitat, composition, community, sites, habitats, functional, native, different, soil, vegetation, effects, study
+
+Topic 7 (Strength: 64086.59):
+species, ant, genera, ants, collected, total, fauna, subfamilies, recorded, number, islands, island, new, sites, known, region, records, forest, traps, distribution
+
+Topic 9 (Strength: 52008.05):
+species, sp, ants, misspelled, ant, pheidole, camponotus, study, collected, solenopsis, forest, monomorium, genera, subfamilies, diversity, myrmicinae, paratrechina, recorded, area, total
+
+Topic 5 (Strength: 47363.48):
+ant, ants, species, foraging, food, seed, colony, colonies, nest, interactions, size, behavior, nests, plant, workers, different, seeds, dispersal, competition, activity
+
+Topic 10 (Strength: 36341.48):
+ants, ant, control, bait, species, plants, treatment, pest, baits, field, time, pharaoh, predation, plant, populations, used, insects, mortality, effective, results
+
+Topic 4 (Strength: 33424.44):
+species, ant, new, monomorium, forel, camponotus, ants, formica, mayr, solenopsis, emery, tetramorium, reported, lasius, records, invicta, pheidole, crematogaster, humile, argentine
+
+Topic 1 (Strength: 22843.43):
+species, ants, ant, monomorium, nests, prey, introduced, native, host, nest, flowers, pharaonis, insects, gland, bees, venom, exotic, new, different, hymenoptera
+
+Topic 6 (Strength: 16150.99):
+queens, workers, larvae, worker, queen, colonies, caste, colony, brood, ants, eggs, larval, development, social, monomorium, reproductive, production, pharaonis, acromyrmex, genes
+
+Topic 8 (Strength: 13551.64):
+ants, social, invicta, pharaonis, saevissima, monomorium, workers, ant, richteri, america, note, north, trail, port, hospital, bacteria, colony, species, colonies, pheromones
+
+Topic 2 (Strength: 11134.35):
+species, new, sp, ants, wolbachia, misspelled, dna, gene, data, genome, number, sequences, al, molecular, monomorium, group, genomes, invicta, phylogenetic, morphological
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 3:
+  - Ecological traits of social insects: Colony, queen and worker size relationships reveal a nexus trait with broad  ecological relevance (Strength: 0.99)
+  - Nahrungseintrag Und -Verteilung in Soziet‰ten der Pharaoameise Monomorium pharaonis (L.) (Hymenoptera, Formicidae) in Abh‰ngigkeit vom Brutzyklus (Strength: 0.99)
+  - Keragaman Semut pada Ekosistem Tanaman Kakao di Desa Banjaroya Kecamatan Kalibawang Yogyakarta.  [English abstract] (Strength: 0.99)
+  - Variation in ant populations with elevation, tree cover, and fire in a pinyon-juniper-dominated watershed (Strength: 0.99)
+  - The biology and control of Solenopsis saevissima variety richteri Forel (Strength: 0.99)
+
+Topic 7:
+  - Gebietsfremde Ameisen: Eine ‹bersicht (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Ant diversity in rubber plantations (Hevea brasiliensis) of Cambodia (Strength: 0.99)
+  - The Aphididae of Lahore, Edited with notes and an introduction by P. van der Goot (Strength: 0.98)
+  - Biodiversity and the transformation of a tropical agroecosystem: ants in coffee plantations (Strength: 0.98)
+  - Paleotropical diversification dominates the evolution of the hyperdiverse ant tribe Crematogastrini (Hymenoptera: Formicidae) (Strength: 0.98)
+
+Topic 9:
+  - UtilizaÁ„o de alimentos em diferentes espÈcies de formigas.  [Mesa-Redonda] (Strength: 0.99)
+  - Evidence of the role of predatory ants in natural pest control in banana-sugarcane rotation systems (Strength: 0.99)
+  - 2. Nachtrag zur Ameisenfauna Oberschlesiens (Strength: 0.99)
+  - Ant species diversity in coffee plantation in Chiang Mai Province, Northern Thailand (Strength: 0.99)
+  - Synanthropic ants in the Belorussian-SSR USSR. [in Russian] (Strength: 0.99)
+
+Topic 5:
+  - The role of ants in degraded soils within Dryandra State Forest (Strength: 1.00)
+  - Het een en ander uit 2014 (Strength: 1.00)
+  - Changes in landuse alter ant diversity, assemblage composition and dominant functional groups in African savannas (Strength: 1.00)
+  - Idiosyncrasies in cities: evaluating patterns and drivers of ant biodiversity along urbanization gradients (Strength: 0.99)
+  - On the fauna and ecology of ants (Hymenoptera, Formicidae) in the Repetek Biosphere Reserve (eastern Karakum). [in Russian] (Strength: 0.99)
+
+Topic 10:
+  - Reconocimiento de hormigas en la Reserva La Macarena (Strength: 1.00)
+  - Rangeland insect-plant associations on the Pawnee Site (Strength: 1.00)
+  - A cross-species test of the function of cuticular traits in ants (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Insect Answers: Pharaoh ant (Strength: 0.99)
+  - Formigas em ambientes urbanos no centro-oeste do Brasil (Strength: 0.99)
+
+Topic 4:
+  - Wirkungsweise und Bewertung von Borverbindunger bei der Pharaoameisenbek‰mpfung (Strength: 1.00)
+  - Ameisen aus Java beobachtet und gesammelt von Edward Jacobson. III. Theil (Strength: 0.99)
+  - Liquid boric acid bait for control of structural infestations of pharaoh ants (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Population dynamics of animals in unpredictably-changing tropical environments (Strength: 0.99)
+  - Insect pollination of Atemoya in Florida (Strength: 0.99)
+
+Topic 1:
+  - Identification of the Argentine ant Linepithema humile (Hymenoptera: Formicidae) using an artificially synthesized trail pheromone and its effects on native Japanese ants (Strength: 0.99)
+  - Survey on diversity of structure-infesting pest ants and their pest status in Malaysia.  [abstract] (Strength: 0.99)
+  - Diversity and abundance of Hymenoptera families in vegetable crops in north-eastern District of Tamil Nadu, India (Strength: 0.99)
+  - Effective control of pest ants (Strength: 0.99)
+  - Etude du contenu de la glande anale chez la fourmi Tapinoma simrothi phoenicea. Identification de la pheromone d'alarme (Strength: 0.99)
+
+Topic 6:
+  - Hormigas urbanas de la ciudad de Posadas.  [abstract] (Strength: 0.99)
+  - American insects (Strength: 0.99)
+  - Community composition and resource partitioning of ants (Hymenoptera: Formicidae) in western Oklahoma grassland ecosystems: A critical forage taxon of the Northern Bobwhite (Colinus virginianus) (Strength: 0.99)
+  - Pests in and around the Florida home (Strength: 0.98)
+  - Diversidade de formigas urbanas (Hymenoptera: Formicidae) de dez cidades do sul do Brasil (Strength: 0.98)
+
+Topic 8:
+  - Ants as flower visitors and their effects on pollinator behavior and plant reproduction (Strength: 1.00)
+  - Ants in houses (Strength: 0.99)
+  - Indolizidine and quinolizidine alkaloids (Strength: 0.99)
+  - Is ≤diversity of Amazonian ant and dung beetles communities elevated at rainforest edges? (Strength: 0.99)
+  - Eradication of the little fire ant; Wasmannia auropunctata (Hymenoptera: Formicidae), from Marchena Island, Gal·pagos: on the edge of success? (Strength: 0.99)
+
+Topic 2:
+  - Taxonomic, species and functional group diversity of ants in a tropical anthropogenic landscape (Strength: 0.99)
+  - Les fourmis des parcelles de reboisement de TessÈkÈrÈ, rÈserve sylvo-pastorale des Six-Forages, SÈnÈgal (Hymenoptera, Formicidae) (Strength: 0.99)
+  - Die Pharao-ameise (Monomorium pharaonis) (Strength: 0.99)
+  - The role of ants in vertebrate carrion decomposition (Strength: 0.99)
+  - The fruit fly lure CeraTrap: An effective tool for the study of the arboreal ant fauna (Hymenoptera: Formicidae) (Strength: 0.99)
+

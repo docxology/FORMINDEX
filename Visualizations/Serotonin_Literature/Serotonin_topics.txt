@@ -1,0 +1,107 @@
+Serotonin_Topic Modeling Results
+======================
+
+Topic 2 (Strength: 839.00):
+age, workers, serotonin, worker, significantly, task, minor, performance, brain, related, behavior, levels, activity, dentata, behavioral, octopamine, minors, higher, associated, dopamine
+
+Topic 10 (Strength: 766.31):
+ants, biogenic, social, brain, amines, levels, octopamine, serotonin, ant, queens, behavioural, colony, species, dopamine, behavior, significantly, aggressive, nurses, eusocial, ht
+
+Topic 9 (Strength: 564.63):
+behavior, ant, dopamine, workers, biogenic, olfactory, foragers, serotonin, reproductive, aggressive, tyramine, levels, nurses, brain, differences, insects, ants, effects, amine, activity
+
+Topic 6 (Strength: 551.98):
+levels, foraging, ant, brain, workers, serotonin, colonies, biogenic, octopamine, amines, dopamine, amine, colony, variation, correlated, brains, worker, task, differences, increased
+
+Topic 7 (Strength: 539.55):
+workers, nest, neurons, serotonin, nursing, age, outside, ant, changes, brain, serotonergic, development, neuronal, interactions, dentata, efficiency, brood, optic, ht, lobes
+
+Topic 8 (Strength: 442.25):
+receptor, feeding, results, ht, neuron, pump, brain, expression, gene, immunoreactive, ants, protein, region, body, adult, sucrose, involved, stages, camponotus, colony
+
+Topic 1 (Strength: 292.80):
+antennal, glomeruli, lobe, neurons, serotonin, sensory, specific, males, glomerular, insects, females, axon, olfactory, brains, tryptophan, hydroxylase, virgin, ventral, female, large
+
+Topic 4 (Strength: 218.13):
+behavioural, ketanserin, activity, administration, aggression, experimental, feeding, populations, behaviour, variation, results, traits, insects, sucrose, toxic, solution, promote, plasticity, pathway, selection
+
+Topic 5 (Strength: 211.43):
+serotonergic, ants, structures, lobes, bodies, serotonin, insect, collected, optic, presence, cell, brain, used, patterns, neurons, organs, immunoreactivity, number, acromyrmex, atta
+
+Topic 3 (Strength: 184.90):
+brain, females, dopamine, queen, virgin, 15, role, increased, effect, eggs, neural, significantly, days, sucrose, dopa, reproduction, food, pheromone, fed, fewer
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 2:
+  - The geomagnetic field (GMF) is necessary for Black Garden Ant (Lasius niger L.) foraging and modulates orientation potentially through aminergic regulation and magR expression (Strength: 0.99)
+  - Immunohistochemical evidence for the presence of tryptophan hydroxylase in the brains of insects as revealed by sheep anti-tryptophan hydroxylase polyclonal antibody (Strength: 0.98)
+  - Inter-individual variability and division of labour in the ant Pheidole dentata (Strength: 0.95)
+  - Biogenic amines are associated with worker task but not patriline in the leaf-cutting ant Acromyrmex echinatior (Strength: 0.40)
+  - Age- and subcaste-related patterns of serotonergic immunoreactivity in the optic lobes of the ant Pheidole dentata (Strength: 0.39)
+
+Topic 10:
+  - Serotonin depresses feeding behaviour in ants (Strength: 0.99)
+  - Studies on the effect of certain neurohormones and psychotropic drugs on bioelectrical activity of the central nervous system and behaviour in ants (Formica rufa L.) (Strength: 0.99)
+  - Parasite-induced behavioral change: Mechanisms (Strength: 0.99)
+  - The organization of societal conflicts by pavement ants Tetramorium caespitum: an agent-based model of amine-mediated decision making (Strength: 0.98)
+  - Biogenic amines in the ponerine ant Harpegnathos saltator: serotonin and dopamine immunoreactivity in the brain (Strength: 0.97)
+
+Topic 9:
+  - Oviposition and oogenesis in virgin fire ant females Solenopsis invicta are associated with a high level of dopamine in the brain (Strength: 0.99)
+  - The organization of societal conflicts by pavement ants Tetramorium caespitum: an agent-based model of amine-mediated decision making.  [abstract] (Strength: 0.63)
+  - ModulaciÛn del comportamiento alimentario en hormigas: fisiologÌa de la ingestiÛn de nectar (Strength: 0.28)
+  - Brains, neurotransmitters, nursing, and foraging in the ant Pheidole dentata.  [abstract] (Strength: 0.20)
+  - Polymorphism and division of labour in a socially complex ant: neuromodulation of aggression in the Australian weaver ant, Oecophylla smaragdina (Strength: 0.01)
+
+Topic 6:
+  - Age, worksite location, neuromodulators, and task performance in the ant Pheidole dentata (Strength: 0.98)
+  - Discovery of specific tryptophan hydroxylase in the brain of the beetle Harmonia axyridis (Strength: 0.93)
+  - Morphine addiction in ants: a new model for self-administration and neurochemical analysis (Strength: 0.70)
+  - Polymorphism and division of labour in a socially complex ant: neuromodulation of aggression in the Australian weaver ant, Oecophylla smaragdina (Strength: 0.01)
+  - Serotonin modulates worker responsiveness to trail pheromone in the ant Pheidole dentata (Strength: 0.01)
+
+Topic 7:
+  - Social evolution with decoupling of multiple roles of biogenic amines into different phenotypes in Hymenoptera (Strength: 0.98)
+  - Biogenic amine levels, reproduction and social dominance in the queenless ant Streblognathus peetersi (Strength: 0.45)
+  - Neurohormonal changes associated with ritualized combat and the formation of a reproductive hierarchy in the ant Harpegnathos saltator (Strength: 0.41)
+  - Lifespan behavioural and neural resilience in a social insect (Strength: 0.09)
+  - Polymorphism and division of labour in a socially complex ant: neuromodulation of aggression in the Australian weaver ant, Oecophylla smaragdina (Strength: 0.01)
+
+Topic 8:
+  - Free amino acids and biogenic amines in the brain of the carpenter ant, Camponotus floridanus (Buckley) (Hymenoptera, Formicidae) (Strength: 0.99)
+  - Biogenic amine signaling systems in the red imported fire ant, Solenopsis invicta - Possible contributors to worker division of labor (Strength: 0.99)
+  - Origins of aminergic regulation of behavior in complex insect social systems (Strength: 0.98)
+  - The role of brain monoamines (serotonin (5-HT), octopamine, and dopamine in pavement ant aggression.  [abstract] (Strength: 0.98)
+  - Sucrose acceptance threshold and feeding behaviour in nectivorous ants: starvation and serotonin effects.  [abstract] (Strength: 0.64)
+
+Topic 1:
+  - Pheidole ants: Sociobiology of a highly diverse genus (Strength: 0.98)
+  - Seasonal variations of serotonin in the visual system of an ant revealed by immunofluorescence and a machine learning approach (Strength: 0.98)
+  - Neuroanatomical and neurochemical correlates of senescence and social role in the ant Pheidole dentata (Strength: 0.98)
+  - Polymorphism and division of labour in a socially complex ant: neuromodulation of aggression in the Australian weaver ant, Oecophylla smaragdina (Strength: 0.92)
+  - Lifespan behavioural and neural resilience in a social insect (Strength: 0.62)
+
+Topic 4:
+  - Neuromodulation of nestmate recognition decisions by pavement ants (Strength: 0.99)
+  - Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among different colonies (Strength: 0.99)
+  - Division of labor and structural plasticity in an extrinsic serotonergic mushroom body neuron in the ant Pheidole dentata (Strength: 0.97)
+  - Behavioural variation and plasticity along an invasive ant introduction pathway (Strength: 0.70)
+  - Age- and subcaste-related patterns of serotonergic immunoreactivity in the optic lobes of the ant Pheidole dentata (Strength: 0.60)
+
+Topic 5:
+  - Geographic and life-history variation in ant queen colony founding correlates with brain amine levels (Strength: 0.99)
+  - Organization and evolutionary trends of primary olfactory brain centers in Tetraconata (Crustacea+Hexapoda) (Strength: 0.99)
+  - Inhibition of serotonergic signaling induces higher consumption of both sucrose solution and toxic baits in carpenter ants (Strength: 0.99)
+  - Sex-specific antennal sensory system in the ant camponotus japonicus: Glomerular organizations of antennal lobes (Strength: 0.72)
+  - Changes in the levels of biogenic amines associated with aggressive behavior of queen in the social parasite ant Vollenhovia nipponica (Strength: 0.71)
+
+Topic 3:
+  - Age-related changes in biogenic amines in individual brains of the ant Pheidole dentata (Strength: 0.99)
+  - Brood-care experience, nursing performance, and neural development in the ant Pheidole dentata (Strength: 0.99)
+  - Mapping and ultrastructure of serotonin-immunoreactive neurons in the optic lobes of three insect species (Strength: 0.99)
+  - The role of brain monoamines (serotonin (5-HT), octopamine, and dopamine in pavement ant aggression.  [abstract] (Strength: 0.99)
+  - Serotonergic control in initiating defensive responses to unexpected tactile stimuli in the trap-jaw ant Odontomachus kuroiwae (Strength: 0.99)
+

@@ -1,0 +1,107 @@
+India_Topic Modeling Results
+======================
+
+Topic 10 (Strength: 20816.02):
+ants, species, ant, plants, plant, insect, insects, study, prey, flowers, camponotus, sp, pollination, pollinators, predators, nectar, compressus, observed, time, control
+
+Topic 3 (Strength: 18895.88):
+species, sp, new, described, genus, nov, india, key, based, group, worker, known, ant, provided, genera, workers, indian, forel, caste, myrmica
+
+Topic 6 (Strength: 17057.85):
+species, ant, ants, diversity, abundance, forest, different, richness, study, soil, habitats, habitat, sites, invasive, results, native, higher, insect, observed, using
+
+Topic 7 (Strength: 16757.98):
+ants, ant, nest, colony, workers, smaragdina, insects, food, colonies, nests, oecophylla, species, used, relocation, weaver, brood, use, time, site, red
+
+Topic 2 (Strength: 15395.97):
+species, misspelled, camponotus, genera, study, ants, solenopsis, ant, subfamilies, diversity, myrmicinae, india, total, recorded, formicinae, monomorium, collected, belonging, area, dolichoderinae
+
+Topic 4 (Strength: 14287.40):
+ant, ants, records, islands, number, species, nests, nest, west, food, workers, sites, geminata, india, saltator, red, sugar, world, spread, known
+
+Topic 8 (Strength: 9190.71):
+ants, ant, genetic, host, molecular, populations, island, dna, using, phylogenetic, species, gene, group, indian, colonies, analysis, range, asian, recent, nov
+
+Topic 1 (Strength: 8321.73):
+syn, forel, sp, emery, smith, camponotus, mayr, crematogaster, ponera, species, new, india, fabricius, santschi, wheeler, aenictus, solenopsis, var, ant, monomorium
+
+Topic 5 (Strength: 6192.21):
+ants, ant, colony, sessile, species, colonies, nests, urban, nest, soil, results, sp, argentine, activity, pheidole, natural, light, odorous, showed, competition
+
+Topic 9 (Strength: 3094.26):
+species, anochetus, island, ant, ants, odontomachus, mauritanica, cardiocondyla, des, bolton, nuda, 2000, acromyrmex, collected, insects, perissomyrmex, grenada, india, queens, products
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 10:
+  - Pests of stored grain and their control (Strength: 1.00)
+  - Queen-worker differences in spermatheca reservoir of phylogenetically basal ants (Strength: 1.00)
+  - Two new species of Stenamma (Hymenoptera: Formicidae) from Indian Himalaya with a revised key to the Palaearctic and Oriental species (Strength: 1.00)
+  - Pseudolasius machhediensis, a new ant species from Indian Himalaya (Hymenoptera: Formicidae) (Strength: 1.00)
+  - Three new species of genus Temnothorax (Hymenoptera: Formicidae) from Indian Himalayas with a revised key to the Indian species (Strength: 0.99)
+
+Topic 3:
+  - Comparative morphology of galea and lacinia in Hymenoptera (Strength: 0.99)
+  - Busseola fusca (Fuller), the African maize stalk borer: a handbook of information. (In En. Summaries in En, Fr, Es.) (Strength: 0.99)
+  - Study of mutualistic ants associated with Aphis craccivora (Hemiptera: Aphididae) on various host plants of family Fabaceae in Northeast Bihar (India) (Strength: 0.99)
+  - Nutritional and anti-nutritional composition of Oecophylla smaragdina (Hymenoptera: Formicidae) and Odontotermes sp. (Isoptera: Termitidae): Two preferred edible insects of Arunachal Pradesh, India (Strength: 0.99)
+  - Ants from the Colombo Museum Expedition to Southern India, September-October 1938 (Strength: 0.99)
+
+Topic 6:
+  - Invasion and extinction in the West Indian ant fauna revisited: the example of Pheidole (Amber Collection Stuttgart: Hymenoptera, Formicidae. VIII: Myrmicinae, partim) (Strength: 0.99)
+  - Handbook of economic entomology for South India (Strength: 0.99)
+  - Studies on abundance of Qecophylla smaragdina Fabricius (Hymenoptera: Formicidae) and their nest formation in Mangifera indica and Manilkara sapota (Strength: 0.99)
+  - Variations in the protein fractions of the alitrunk tissues of the Asiatic weaver ant, Oecophylla smaragdina (Fabricius) (Strength: 0.99)
+  - A new species of Ancylotropus Cameron (Hymenoptera: Eucharitidae) from India (Strength: 0.99)
+
+Topic 7:
+  - Nutrition: artificial diets (Strength: 0.99)
+  - Emergence of reproductives of the fire ant, Solenopsis geminata (Fabricius) (Hymenoptera: Formicidae), and its sex ratio (Strength: 0.99)
+  - Ants of Indiana (Strength: 0.99)
+  - Status of insects and fungi intercepted from wood imported into India (Strength: 0.99)
+  - Contribution to the knowledge of Formicidae of the Andaman Islands (Strength: 0.99)
+
+Topic 2:
+  - Cue for ant's trail development (Strength: 0.99)
+  - The fauna of British India, including Ceylon and Burma. Hymenoptera, Vol. II. Ants and Cuckoo-wasps (Strength: 0.99)
+  - A geographical distribution list of insects and mites associated with cocoa, derived from literature published before 2010 (Strength: 0.99)
+  - Distribution and diversity of ant species (Hymenoptera: Formicidae) in Sonpeth Tehsil dist. Parbhani of (M.S.) India (Strength: 0.99)
+  - Colony fission in house ant Monomorium indicum Forel (Hymenoptera: Formicidae) (Strength: 0.99)
+
+Topic 4:
+  - Structure of ant assemblages in Western Ghats, India: role of habitat, disturbance and introduced species (Strength: 1.00)
+  - Fatal anaphylaxis following multiple red fire ant strings <sic> (Strength: 0.99)
+  - A review of the species of Crematogaster, sensu stricto, in North America (Hymenoptera, Formicidae). Part II. Descriptions of new species (Strength: 0.99)
+  - A phylogenetic analysis of North American Lasius ants based on mitochondrial and nuclear DNA (Strength: 0.99)
+  - Young lac insects in a miniature ant's nest (Strength: 0.99)
+
+Topic 8:
+  - Ant community variation in urban and agricultural ecosystems in Vadodara District (Gujarat State), western India (Strength: 1.00)
+  - Rassegna critica delle specie paleartiche del genere Myrmecocystus (Strength: 1.00)
+  - Spatial distribution of colonies of three carpenter ants, Camponotus pennsylvanicus, Camponotus floridanus, Camponotus laevigatus (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Records of aphids and aphidicolous ants (Hymenoptera: Formicidae) from Karnataka (Strength: 0.99)
+  - Study of life cycle and developmental stages of the carpenter ant, Camponotus compressus, Fabricius (Formicidae: Hymenoptera) (Strength: 0.99)
+
+Topic 1:
+  - Rearing success of a polyphagous predator Geocoris ochropterus (Hem, Lygaeidae) on preserved ant pupae of Oecophylla smaragdina (Strength: 1.00)
+  - Biocontrol agent of Chrysocoris stolli Wolf and their biocontrol efficacy (Strength: 0.99)
+  - Role of red-ant, Oecophylla smaragdina Fabricius (Formicidae: Hymenoptera) in managing tea mosquito bug, Helopeltis species (Miridae: Hemiptera) in cashew (Strength: 0.99)
+  - Amino-acid and sugar composition of the silk of the weaver-ants, Oecophylla (Strength: 0.99)
+  - Skeletomuscular differences pertaining to flight in the thorax of Solenopsis geminata (Hymenoptera: Formicidae) (Strength: 0.99)
+
+Topic 5:
+  - Lophomyrmex terraceensis, a new ant species (Hymenoptera: Formicidae) in the bedoti group with a revised key (Strength: 0.99)
+  - Insect diversity of Sri Lankamalleswara Reserve forest in the Eastern Ghats of southern Andhra Pradesh (Strength: 0.99)
+  - Report of the Imperial Entomologist (Strength: 0.99)
+  - The exocrine secretions of the jumping ant Harpegnathos saltator (Strength: 0.98)
+  - Biodiversity and abundance of soil arthropods in Punjab: A comparison of contrasting habitats (Strength: 0.98)
+
+Topic 9:
+  - Pests that damage cacao in Madras (Strength: 1.00)
+  - Mountain landscapes, foraging behaviour and visitation frequencies of insect pollinators on peach (Prunus persia) (Strength: 0.99)
+  - Beitr‰ge zur Monographie der Formiciden des pal‰arktischen Faunengebietes. (Hym.) Teil III (Strength: 0.99)
+  - The ecology of ants on strip-mine spoil banks (Strength: 0.99)
+  - Anaphylaxis due to red fire ant bite (Strength: 0.99)
+

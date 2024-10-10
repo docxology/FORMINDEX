@@ -1,0 +1,107 @@
+Formica_Topic Modeling Results
+======================
+
+Topic 7 (Strength: 103792.45):
+ants, ant, nests, nest, formica, wood, soil, forest, food, species, foraging, rufa, activity, red, seed, mounds, colonies, seeds, polyctena, density
+
+Topic 3 (Strength: 92421.54):
+workers, colonies, colony, social, queens, ants, formica, queen, behavior, worker, host, species, nest, ant, brood, different, males, genetic, chemical, females
+
+Topic 10 (Strength: 86051.13):
+species, ant, ants, diversity, data, size, communities, results, different, native, variation, ecological, patterns, study, environmental, habitat, using, traits, used, based
+
+Topic 1 (Strength: 82972.41):
+species, ant, ants, abundance, richness, aphid, forest, diversity, plant, aphids, communities, community, composition, sites, study, trees, habitats, plants, habitat, larvae
+
+Topic 4 (Strength: 70437.62):
+species, ant, ants, formica, genera, distribution, collected, new, region, area, recorded, fauna, total, number, data, forest, records, subfamilies, list, north
+
+Topic 8 (Strength: 42245.99):
+species, formica, lasius, sp, camponotus, myrmica, ant, tetramorium, new, reported, emery, forel, temnothorax, pheidole, crematogaster, mayr, niger, aphaenogaster, collected, nov
+
+Topic 2 (Strength: 31716.11):
+ants, ant, plant, control, plants, invicta, effects, insects, predators, flowers, interactions, sex, pest, insect, nectar, herbivores, effect, field, production, pollination
+
+Topic 6 (Strength: 23977.35):
+species, ants, misspelled, study, collected, solenopsis, larvae, camponotus, article, ant, sites, invicta, public, time, government, prepared, official, burned, written, employee
+
+Topic 5 (Strength: 16174.57):
+formica, ants, insects, ant, species, host, plants, insect, glands, myrmica, imparipes, larvae, observed, nests, plant, bee, microdon, beetles, scutacarus, food
+
+Topic 9 (Strength: 13924.84):
+mounds, ant, formica, rwa, venom, mound, co2, new, prey, parasitoid, mm, concentrations, gas, transfer, biogenic, chromosome, sensilla, solenopsis, prairie, lasius
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 7:
+  - Biotic communities of the Nevada Test Site (Strength: 1.00)
+  - Observations sur les moeurs du Solenopsis fugax (Strength: 0.99)
+  - Inverted soil mounding as a restoration approach of seismic lines in boreal peatlands: Implications on plant and arthropod abundance and diversity (Strength: 0.99)
+  - Notes sur les fourmis de France. II. Peuplement des montagnes mÈridionales (Strength: 0.99)
+  - On the distribution of Formica gagatoides Ruzs. (Hymenoptera, Formicidae) in the Urals.  [abstract]  [In Russian] (Strength: 0.99)
+
+Topic 3:
+  - Some notes on the genera Platyphora, Verrall, and Aenigmatias, Meinert, and a species new to Britain (Strength: 1.00)
+  - Biology and importance of two eucharitid parasites of Wasmannia and Solenopsis (Strength: 0.99)
+  - Die Ameisenfauna der Balearen (Strength: 0.99)
+  - La nervulation de l'aile antÈrieure des Formicides (Strength: 0.99)
+  - Zur extraintestinalen Verdauung des Ameisenlˆwen (Euroleon nostras Four., Myrmeleonidae) (Strength: 0.98)
+
+Topic 10:
+  - Influences of temperature and humidity on oxygen consumption of five Chihuahuan desert ants (Strength: 1.00)
+  - Potential for use of erythritol as a socially transferrable ingested insecticide for ants (Hymenoptera: Formicidae) (Strength: 1.00)
+  - Pollution impact on insect biodiversity in boreal forests: evaluation of effects and perspectives of recovery (Strength: 1.00)
+  - Specific interactions of Formica cunicularia and F. pratensis at high power of the population of the first type.  [in Russian] (Strength: 0.99)
+  - Repartition de la noradrenaline, libre et conjuguee, dans le corps d'Apis mellifera LinnÈ et de Formica rufa (sensu lato) (Strength: 0.99)
+
+Topic 1:
+  - Types of behavioral reactions and predation of forager ants. [In Russian] (Strength: 0.99)
+  - Zur Frage des Nahrungserwerbs bei Formica rufa L (eibe Erwiderung) (Strength: 0.99)
+  - Red wood ants in North America (Strength: 0.99)
+  - Visual learning of a landmark sequence in wood ants, Formica rufa.  [abstract] (Strength: 0.99)
+  - Distribution and dynamics of ventilation holes in an ant nest mound. [In Russian] (Strength: 0.99)
+
+Topic 4:
+  - Die Ameisenfauna des Ostbaltischen Gebietes (Strength: 0.98)
+  - Mass recruitment by army ants (Strength: 0.98)
+  - Historia naturalis Formicarum (Strength: 0.98)
+  - On the food sharing among four species of ants in a sandy grassland, I: Food and foraging behavior (Strength: 0.97)
+  - Regional pest ant species (Strength: 0.97)
+
+Topic 8:
+  - Maintaining and Updating FORMIS (Strength: 0.99)
+  - Queen recruitment in a highly polygynous supercolony of Formica lugubris (Hymenoptera: Formicidae) (Strength: 0.97)
+  - Kurzfl¸gler in haufenfˆrmigen Nestern der Ameisen der Gattung Formica in Nordwestbˆhmen (Coleoptera: Staphylinidae) (Strength: 0.97)
+  - A new species of Aenigmatias Meinert (Diptera: Phoridae) from Slovakia, whose larvae parasitise a queen ant (Hymenoptera: Formicidae) (Strength: 0.97)
+  - Experimental evidence for associational resistance against European pine sawfly in mixed tree stands (Strength: 0.97)
+
+Topic 2:
+  - Ant communities on the campus of UOEH and in an adjacent natural forest (Strength: 1.00)
+  - Morphological evolution in the ant reproductive caste (Strength: 0.99)
+  - First evidence of fine colour discrimination ability in ants (Hymenoptera, Formicidae) (Strength: 0.99)
+  - Individuality and colonial identity in ants: the emergence of the social representation concept (Strength: 0.99)
+  - Wetland ants: internal mound temperature and humidity preferences; location and shape of mounds as adaptations to a wetland environment (Strength: 0.99)
+
+Topic 6:
+  - Home sweet home (Strength: 1.00)
+  - The movement of ants on the furcation of a road. [In Russian] (Strength: 1.00)
+  - Ants of the Formica rufa group affect nutrient dynamics & forest growth in boreal forests (Strength: 1.00)
+  - Trophic relations of ants in forest biocenosis. [In Russian] (Strength: 1.00)
+  - Species diversity and habitat preference of red wood ants in the experimental forest of Bryansk Technological Institute. [In Russian] (Strength: 0.99)
+
+Topic 5:
+  - Nonspecific activation of scouts in Myrmica rubra. [In Russian] (Strength: 0.99)
+  - Myrmecotopical transformation of grass stand structure on a plot of fragmented forest (Strength: 0.98)
+  - Food of the ants of the genus Formica in the forests of Belovezhskaya Pushcha. [In Russian] (Strength: 0.98)
+  - Die Bedeutung abiotischer Faktoren fur die Erbeutung von Insekten durch Waldameisen (Formica polyctena Foerster).  II. der Einfluss des Erbeutungsortes (Strength: 0.96)
+  - Dynamics of the food relationships of common red ants and their role in regulating the abundance of noxious invertebrates in Oak Forest of the Tula District (Strength: 0.96)
+
+Topic 9:
+  - Multi-locus species delimitation in closely related animals and fungi: one marker is not enough (Strength: 1.00)
+  - Untersuchungen zum Aufbau und zur Erhaltung des Nestw‰rmehaushaltes bei Formica polyctena Foerst. (Hymenoptera: Formicidae) (Strength: 1.00)
+  - Male-male competition in ants (Hymenoptera: Formicidae) (Strength: 1.00)
+  - Injuries to vegetation by mound-building ants (Strength: 0.99)
+  - The Dufour gland substances of the workers of Formica fusca and Formica lemani (Hymenoptera: Formicidae) (Strength: 0.99)
+

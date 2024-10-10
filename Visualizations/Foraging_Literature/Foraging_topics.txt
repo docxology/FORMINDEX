@@ -1,0 +1,107 @@
+Foraging_Topic Modeling Results
+======================
+
+Topic 10 (Strength: 112853.39):
+species, ant, ants, plant, foraging, forest, plants, abundance, interactions, seed, study, community, communities, ground, habitat, dominant, different, diversity, sites, effects
+
+Topic 7 (Strength: 87743.93):
+ants, food, foraging, nest, trail, ant, foragers, individual, information, behavior, trails, recruitment, cues, pheromone, colony, path, use, visual, source, model
+
+Topic 2 (Strength: 72240.56):
+foraging, workers, leaf, size, ants, colonies, colony, cutting, activity, atta, ant, temperature, foragers, species, acromyrmex, different, worker, leaves, results, fungus
+
+Topic 8 (Strength: 65908.36):
+ant, ants, foraging, invicta, seed, bait, seeds, food, baits, species, solenopsis, colonies, control, field, time, imported, activity, argentine, protein, red
+
+Topic 6 (Strength: 47641.46):
+ants, ant, soil, larvae, foraging, plants, plant, trees, honeydew, activity, nests, control, density, leaves, aphids, predation, aphid, eggs, surface, significantly
+
+Topic 5 (Strength: 47199.55):
+workers, colonies, nest, colony, nests, queens, brood, foraging, queen, worker, ants, food, ant, larvae, observed, activity, age, number, males, females
+
+Topic 3 (Strength: 45358.03):
+species, ant, ants, foraging, army, flowers, study, diet, insects, prey, data, ecological, behavior, distribution, different, bees, observed, birds, pollinators, niche
+
+Topic 4 (Strength: 40807.18):
+ants, species, ant, foraging, coffee, abundance, season, forest, prey, trees, activity, habitat, collected, control, ground, study, area, arthropods, dry, pest
+
+Topic 9 (Strength: 29085.59):
+prey, ants, workers, ant, foraging, behavior, termites, termite, large, spiders, species, groups, capture, small, nest, group, predatory, predator, predation, size
+
+Topic 1 (Strength: 25778.94):
+species, workers, ants, gland, behavior, social, ant, evolution, group, foraging, genus, host, chemical, behavioral, sp, glands, colony, worker, pheromone, new
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 10:
+  - Cataglyphis (Strength: 1.00)
+  - The importance of floral and circum-floral nectar to ants inhabiting dry tropical lowlands (Strength: 0.99)
+  - Quantitative description of the trajectories of ant moving. [In Russian] (Strength: 0.99)
+  - Differentiation of the foraging zones and ways of mobilization as coexistence mechanisms of the ants of the genus Myrmica (Hymenoptera, Formicidae).  [in Russian, English abstract] (Strength: 0.99)
+  - Bifurcation angles in ant foraging networks: a trade-off between exploration and exploitation? (Strength: 0.99)
+
+Topic 7:
+  - 'No entry' signal in ant foraging (Hymenoptera: Formicidae): new insights from an agent-based model (Strength: 0.99)
+  - Population growth of Aphis gossypii and Myzus persicae (Hemiptera: Aphididae) in the presence of Linepithema humile and Tapinoma sessile (Hymenoptera: Formicidae) (Strength: 0.99)
+  - A comparison of bait recruitment in monogynous and polygynous forms of the red imported fire ant, Solenopsis invicta Buren (Strength: 0.99)
+  - Recruitment behavior in Camponotus socius (Hym. Formicidae) (Strength: 0.99)
+  - Foraging ecology of the leaf-cutter ant, Acromyrmex subterraneus (Hymenoptera: Formicidae), in a Neotropical cerrado savanna (Strength: 0.99)
+
+Topic 2:
+  - Colony social organization, foraging costs, and ponerine ant foraging strategy.  [abstract] (Strength: 0.99)
+  - Ameisen - Unbekannte Faszination vor der Haust¸r (Strength: 0.99)
+  - Potential beneficial impact of red imported fire ant to Texas cotton production (Strength: 0.99)
+  - Do herbivores exert top-down effects in Neotropical savannas? Estimates of biomass consumption by leaf-cutter ants (Strength: 0.99)
+  - Variacion estacional en la dieta de Pogonomyrmex barbatus (Hymenoptera: Formicidae) en nopaleras del centro de Mexico (Strength: 0.99)
+
+Topic 8:
+  - Extreme worker polymorphism in the big-headed Pheidole ants (Strength: 1.00)
+  - The influence of spraying on Argentine (Iridomyrmex humilis) and native ants (Hymenoptera Formicidae) (Strength: 1.00)
+  - Ontogeny of learning walks and the acquisition of landmark information in desert ants, Cataglyphis fortis (Strength: 1.00)
+  - Abund‚ncia e diversidade de herbÌvoros em Peixotoa tomentosa (Malpighiaceae) influenciada pelo comportamento de formigas visitantes de nect·rios extraflorais.  [abstract] (Strength: 1.00)
+  - Influencia de la temperatura sobre el comportamiento de forrajeo de la hormiga cortadora de hojas Atta cephalotes (Hymenoptera: Formicidae) (Strength: 0.99)
+
+Topic 6:
+  - Implication of predation incidences by ant species on green turtle nests in Chagar Hutang, Redang Island (Strength: 0.99)
+  - Foraging activity rhythms of Ectomomyrmex javanus (Mayr).  [in Chinese, English abstract] (Strength: 0.99)
+  - The evolution of personally disadvantageous punishment among cofoundresses of the ant Acromyrmex versicolor (Strength: 0.99)
+  - Activity patterns of Harvester Ants Pogonomyrmex pronotalis and Pogonomyrmex rastratus in the Central Monte Desert, Argentina (Strength: 0.99)
+  - Temperature: Diet interactions affect survival through foraging behavior in a bromeliad-dwelling predator (Strength: 0.99)
+
+Topic 5:
+  - Hunting tactics in a cobweb spider (Araneae-Theridiidae) and the evolution of behavioral plasticity (Strength: 1.00)
+  - Interaction between ants, extrafloral nectaries and insect herbivores in neotropical coastal sand dunes: herbivore deterrence by visiting ants increases fruit set in Opuntia stricta (Cactaceae) (Strength: 0.99)
+  - Oviposition site selection by the Gulf Fritillary Agraulis vanillae nigrior (Michener) (Strength: 0.99)
+  - Evolution of plasticity in the city: urban acorn ants can better tolerate more rapid increases in environmental temperature (Strength: 0.99)
+  - Behavioral ecology (Strength: 0.99)
+
+Topic 3:
+  - Of crazy-ants and Curetinae: are Curetis butterflies tended by ants? (Strength: 1.00)
+  - Systematic revision of the Neotropical ant genus Megalomyrmex Forel (Hymenoptera: Formicidae: Myrmicinae), with the description of thirteen new species (Strength: 0.99)
+  - Amphotis marginata (Coleoptera: Nitidulidae) a highwayman of the ant Lasius fuliginosus (Strength: 0.99)
+  - Introducing phorid fly parasitoids of red imported fire ant workers from South America to Texas: Outcomes vary by region and by Pseudacteon species released (Strength: 0.99)
+  - Sur l'existence d'une piste chimique chez Formica polyctena dans des conditions de vie semi-naturelle (Strength: 0.99)
+
+Topic 4:
+  - Foraging performance by Atta colombica, a leaf-cutting ant (Strength: 0.99)
+  - Bionomics of Formica (Coptoformica) pressilabris Nyl. (Hymenoptera, Formicidae) (Strength: 0.99)
+  - Ability of resident ants to destruct small colonies of Solenopsis invicta (Hymenoptera: Formicidae) (Strength: 0.99)
+  - The specialization in ant working groups involved in trophobiosis with aphids.  [in Russian with English summary] (Strength: 0.99)
+  - Formigas cortadeiras: Biologia e tÈcnicas de manutenÁ„o em cativeiro (Strength: 0.99)
+
+Topic 9:
+  - Effect of two ant species (Hymenoptera: Formicidae) on the foraging and survival of the Formosan subterranean termite (Isoptera: Rhinotermitidae) (Strength: 1.00)
+  - The foraging behavior of the fungus-growing ant Trachymrymex Septentrionalis (Strength: 1.00)
+  - Estimation of ant colony size by the Lincoln index method (Strength: 0.99)
+  - Access methods, observations, pollination biology, bee foraging behavior, and bee community structure within a Neotropical wet forest canopy (Strength: 0.99)
+  - Consuming large prey on the spot: the case of the arboreal foraging ponerine ant Platythyrea modesta (Hymenoptera: Formicidae) (Strength: 0.99)
+
+Topic 1:
+  - Ritmo de actividad y aprovisionamiento de los nidos en las hormigas Ectatomma ruidum Roger en el soconusco (Strength: 1.00)
+  - Leafcutting ant nests support less dense and impoverished seed assemblages in a humanmodified Caatinga dry forest (Strength: 1.00)
+  - Record and foraging behavior of ants (Hymenoptera, Formicidae) in vertebrate carcasses (Strength: 1.00)
+  - The relationship between age structure and productivity in the queenless ponerine Diacamma sp.  [abstract] (Strength: 1.00)
+  - Graded recruitment in a ponerine ant (Strength: 1.00)
+

@@ -1,0 +1,107 @@
+Bioenergetics_Topic Modeling Results
+======================
+
+Topic 8 (Strength: 456.51):
+workers, colonies, flight, large, brood, small, rate, ant, worker, size, temperature, produced, production, energy, tissue, ants, increased, approximately, invicta, costs
+
+Topic 6 (Strength: 281.49):
+colonies, food, temperatures, colony, limited, brood, growth, fed, workers, ant, week, biomass, days, metabolic, weight, laboratory, costs, males, sustain, range
+
+Topic 5 (Strength: 249.81):
+energy, ants, leaf, annual, ant, estimated, flow, production, colonies, m2, colony, kcal, area, ranged, year, dry, field, nest, atta, hr
+
+Topic 4 (Strength: 228.39):
+mass, running, load, body, cost, carriage, costs, ant, respirometer, unit, standard, 28, foragers, kg, tube, ml, o2, carrying, speed, unladen
+
+Topic 7 (Strength: 155.00):
+food, mg, cost, items, energetic, ants, laboratory, km, costs, loads, running, workers, ant, carrying, speed, mean, energy, compared, nest, field
+
+Topic 1 (Strength: 153.73):
+ants, species, cost, laden, unladen, load, running, degrees, foraging, range, ratio, mean, measured, individuals, greater, 10, rate, kg, individual, transport
+
+Topic 9 (Strength: 135.53):
+ants, leaves, plant, temperatures, cutting, bivouac, p32, foraging, fungus, degrees, taken, large, different, reduced, colony, intake, material, heat, leaf, ratio
+
+Topic 10 (Strength: 133.54):
+o2, rates, workers, metabolic, mass, males, castes, different, pupae, respiratory, life, stages, alates, species, females, ant, temperature, specific, female, invicta
+
+Topic 3 (Strength: 80.00):
+ant, data, desert, ventilation, cost, year, significantly, respiratory, bioenergetics, requires, range, higher, equivalent, probably, indicating, water, maintaining, observed, locomotion, lost
+
+Topic 2 (Strength: 35.00):
+results, insects, carried, presented, 81, available, ant, population, sex, ratio, range, investment, pogonomyrmex, 30, ants, temperatures, respiratory, times, 36, bivouac
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 8:
+  - Energetic cost of foraging in the ant Rhytidoponera aurata in tropical Australia (Strength: 0.99)
+  - Worker longevity in the fire ant Solenopsis invicta: ergonomic considerations of correlations between temperature, size and metabolic rates (Strength: 0.93)
+  - Avaliacao da absorcao de seiva e agua pelas operarias de Atta sexdens rubropilosa Forel, 1908 (Hymenoptera: Formicidae).  [abstract] (Strength: 0.33)
+  - Studies in the energetics and gas exchange patterns of selected arthropods (Strength: 0.03)
+  - The energetics of locomotion and load carriage in the desert harvester ant Pogonomyrmex rugosus (Strength: 0.02)
+
+Topic 6:
+  - The energetics of locomotion and load carriage in the desert harvester ant Pogonomyrmex rugosus (Strength: 0.82)
+  - Studies in the energetics and gas exchange patterns of selected arthropods (Strength: 0.03)
+  - Direct ingestion of plant sap from cut leaves by the leaf-cutting ants Atta cephalotes (L.) and Acromyrmex octospinosus (Reich) (Formicidae, Attini) (Strength: 0.01)
+  - Some aspects of the biology of the mound-building ant, Formica exsectoides (Strength: 0.01)
+  - Avaliacao da absorcao de seiva e agua pelas operarias de Atta sexdens rubropilosa Forel, 1908 (Hymenoptera: Formicidae).  [abstract] (Strength: 0.01)
+
+Topic 5:
+  - Structure and dynamics of the caste systems of army and leaf-cutting ants: a comparative population biology study of natural colonies.  [Abstract] (Strength: 0.97)
+  - Maintaining and Updating FORMIS (Strength: 0.95)
+  - Studies in the energetics and gas exchange patterns of selected arthropods (Strength: 0.03)
+  - The energetics of locomotion and load carriage in the desert harvester ant Pogonomyrmex rugosus (Strength: 0.02)
+  - Direct ingestion of plant sap from cut leaves by the leaf-cutting ants Atta cephalotes (L.) and Acromyrmex octospinosus (Reich) (Formicidae, Attini) (Strength: 0.01)
+
+Topic 4:
+  - Bioenergetics of the southern harvester ant, Pogonomyrmex badius (Strength: 0.99)
+  - Production ecology, energetics and genetic structure of populations of Lasius niger: an integrated study. [Abstract] (Strength: 0.98)
+  - Element and energy flows through colonies of the leaf-cutting ant, Atta colombica, in Panama (Strength: 0.97)
+  - Avaliacao da absorcao de seiva e agua pelas operarias de Atta sexdens rubropilosa Forel, 1908 (Hymenoptera: Formicidae).  [abstract] (Strength: 0.27)
+  - Studies in the energetics and gas exchange patterns of selected arthropods (Strength: 0.03)
+
+Topic 7:
+  - A comparison of the energetics of foraging of three species of Leptogenys (Hymenoptera, Formicidae) (Strength: 0.99)
+  - Energetics of locomotion and load carriage and a model of the energy cost of foraging in the leaf-cutting ant Atta colombica Guer (Strength: 0.98)
+  - Colony social organization, foraging costs, and ponerine ant foraging strategy.  [abstract] (Strength: 0.54)
+  - The ponerine ant Pachycondyla (=Ophthalmopone) berthoudi Forel carries loads economically (Strength: 0.43)
+  - Thermoregulation in army ant bivouacs (Strength: 0.28)
+
+Topic 1:
+  - Flight and substrate utilisation in laboratory-reared males of Atta sexdens (Strength: 0.99)
+  - The respiratory metabolism of the castes of two leaf-cutting ants, Atta laevigata (F. Smith, 1858) and Atta sexdens rubropilosa Forel 1908 (Strength: 0.99)
+  - Discontinuous ventilation and energetics of locomotion in the desert-dwelling female mutillid wasp, Dasymutilla gloriosa (Strength: 0.97)
+  - Worker longevity in the fire ant Solenopsis invicta: ergonomic considerations of correlations between temperature, size and metabolic rates (Strength: 0.06)
+  - Studies in the energetics and gas exchange patterns of selected arthropods (Strength: 0.03)
+
+Topic 9:
+  - Resource quality and cost in the foraging of leaf-cutter ants (Strength: 0.99)
+  - Some aspects of the biology of the mound-building ant, Formica exsectoides (Strength: 0.90)
+  - Studies in the energetics and gas exchange patterns of selected arthropods (Strength: 0.03)
+  - The energetics of locomotion and load carriage in the desert harvester ant Pogonomyrmex rugosus (Strength: 0.02)
+  - Direct ingestion of plant sap from cut leaves by the leaf-cutting ants Atta cephalotes (L.) and Acromyrmex octospinosus (Reich) (Formicidae, Attini) (Strength: 0.01)
+
+Topic 10:
+  - Reserves in sexual forms of Acromyrmex octospinosus (Reich) (Formicidae, Attini) (Strength: 0.99)
+  - Cost-benefit analysis of a mutualism between lycaenid butterflies and ants (Strength: 0.99)
+  - Energetics of trail-running, load carriage, and emigration in the column-raiding army ant Eciton hamatum (Strength: 0.99)
+  - Some aspects of the ecological energetics of Formica pratensis Retz. (Hymenoptera: Formicidae) with special reference to the construction of a population energy budget (Strength: 0.98)
+  - Thermoregulation in army ant bivouacs (Strength: 0.71)
+
+Topic 3:
+  - Toxicidade e efeitos respiratÛrios de inseticidas ciclodienos para oper·rias de Atta laevigata (F. Smith, 1858) (Hymenoptera - Formicidae) (Strength: 0.99)
+  - The influence of energetics of locomotion of individual ants on the foraging behaviour of different species.  [abstract] (Strength: 0.97)
+  - Direct ingestion of plant sap from cut leaves by the leaf-cutting ants Atta cephalotes (L.) and Acromyrmex octospinosus (Reich) (Formicidae, Attini) (Strength: 0.87)
+  - Avaliacao da absorcao de seiva e agua pelas operarias de Atta sexdens rubropilosa Forel, 1908 (Hymenoptera: Formicidae).  [abstract] (Strength: 0.13)
+  - Studies in the energetics and gas exchange patterns of selected arthropods (Strength: 0.03)
+
+Topic 2:
+  - Food and energy requirements of laboratory fire ant colonies (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Colony social organization, foraging costs, and ponerine ant foraging strategy.  [abstract] (Strength: 0.44)
+  - Avaliacao da absorcao de seiva e agua pelas operarias de Atta sexdens rubropilosa Forel, 1908 (Hymenoptera: Formicidae).  [abstract] (Strength: 0.23)
+  - Studies in the energetics and gas exchange patterns of selected arthropods (Strength: 0.03)
+  - The energetics of locomotion and load carriage in the desert harvester ant Pogonomyrmex rugosus (Strength: 0.02)
+

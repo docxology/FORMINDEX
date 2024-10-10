@@ -1,0 +1,107 @@
+Camponotus_Topic Modeling Results
+======================
+
+Topic 9 (Strength: 181276.21):
+species, ant, forest, ants, diversity, richness, composition, communities, habitat, abundance, sites, community, habitats, vegetation, different, forests, areas, trees, study, soil
+
+Topic 8 (Strength: 130365.93):
+species, ants, ant, genera, collected, sp, total, study, subfamilies, camponotus, misspelled, pheidole, recorded, traps, myrmicinae, diversity, area, forest, number, pitfall
+
+Topic 4 (Strength: 103051.51):
+ants, ant, species, plant, plants, interactions, host, food, extrafloral, effects, nectaries, aphid, associated, nectar, results, abundance, different, resources, presence, study
+
+Topic 5 (Strength: 74299.06):
+ants, nest, nests, species, workers, colonies, camponotus, ant, food, prey, colony, insects, foraging, behavior, trees, control, large, insect, wood, nesting
+
+Topic 3 (Strength: 67953.32):
+species, camponotus, formica, sp, lasius, new, ant, forel, myrmica, described, reported, tetramorium, recorded, nov, emery, records, mayr, known, list, temnothorax
+
+Topic 2 (Strength: 67251.05):
+ants, ant, species, seed, seeds, larvae, camponotus, observed, control, dispersal, argentine, study, predation, flowers, native, field, nectar, plant, predators, time
+
+Topic 7 (Strength: 59754.74):
+workers, social, colony, colonies, camponotus, queens, worker, ant, ants, queen, genes, different, host, cuticular, gene, evolution, recognition, insects, nestmate, development
+
+Topic 6 (Strength: 55054.53):
+species, size, temperature, ant, ants, data, results, traits, based, patterns, body, used, using, thermal, phylogenetic, soil, temperatures, morphological, variation, analysis
+
+Topic 1 (Strength: 27158.97):
+ants, camponotus, gland, ant, species, activity, ophiocordyceps, fungal, pennsylvanicus, acid, light, glands, carpenter, time, genus, fungi, rufipes, different, workers, cells
+
+Topic 10 (Strength: 26480.67):
+invicta, solenopsis, species, islands, acromyrmex, island, native, north, misspelled, exotic, article, america, new, pheidole, florida, ants, mayr, geminata, saevissima, imported
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 9:
+  - Oecophylla interaction with other ants (Strength: 0.99)
+  - Fourmis de Costa-Rica rÈcoltÈes par M. Paul Biolley (Strength: 0.99)
+  - Capparis buwaldae Jacobs (Capparaceae), a new myrmecophyte from Borneo (Strength: 0.99)
+  - Composition and phenology of insect pests of Capsicum (Solanaceae) cultivated in the Makana District, Eastern Cape Province, South Africa (Strength: 0.99)
+  - Gipfelpunkte der N‰hrsymbiose zwischen Ameisen und Pflanzenl‰usen. Bernstein-Fossilien und neue Funde in asiatischen Regenw‰ldern (Strength: 0.99)
+
+Topic 8:
+  - Foraging in the ant Camponotus mus: nectar-intake rate and crop filling depend on colony starvation (Strength: 0.99)
+  - Where are Hong Kong's forest ants? (Strength: 0.99)
+  - Heat tolerances of some ants and beetles from the pre-Saharan steppe of Tunisia (Strength: 0.99)
+  - How plants and honeydew-producing hemipterans affect ant species richness and structure in a tropical forest zone (Strength: 0.99)
+  - Las ar„nas del gÈnero Latrodectus en la Argentina (Strength: 0.99)
+
+Topic 4:
+  - Maur pÂ Nordvestlandet (Strength: 1.00)
+  - Investigating urban ant community (Hymenoptera: Formicidae) in port cities and in major towns along the border in CÙte dIvoire: a rapid assessment to detect potential introduced invasive ant species (Strength: 1.00)
+  - Nuove formiche delle isole Filippine e di Singapore (Strength: 1.00)
+  - Effect of Argentine ant invasions on Japanese ant fauna in Hiroshima Prefecture, western Japan: a preliminary report (Hymenoptera: Formicidae) (Strength: 1.00)
+  - Pro-social behaviour of ants depends on their ecological niche-rescue actions in species from tropical and temperate regions (Strength: 1.00)
+
+Topic 5:
+  - Formigas de dunas e restingas da praia da Joaquina, Ilha de Santa Catarina, SC (Insecta: Hymenoptera) (Strength: 1.00)
+  - Biology of carpenter ants in Washington State (Hymenoptera, Formicidae, Camponotus) (Strength: 1.00)
+  - Dummies versus air puffs: Efficient stimulus delivery for low-volatile odors (Strength: 1.00)
+  - A revision of the ant-like sac spider genus Apochinomma Pavesi 1881 (Araneae: Corinnidae) in the Afrotropical Region (Strength: 1.00)
+  - Estudo de ades„o, colonizaÁ„o e resistÍncia bacteriana nas formigas coletadas de um hospital p˙blico de IlhÈus (Strength: 1.00)
+
+Topic 3:
+  - Ant assemblages of two cities with different ecological conditions in Southern Cisbaikalia (Strength: 0.99)
+  - Negentropy and the evolution of chemical recruitment in ants (Strength: 0.99)
+  - Discrimination behavior in the supercolonial pharaoh ant (Strength: 0.99)
+  - Spatiotemporal resource distribution and foraging strategies of ants (Hymenoptera: Formicidae) (Strength: 0.99)
+  - The name game can wreck havoc on ant control methods (Strength: 0.99)
+
+Topic 2:
+  - Soil macrofauna community structure along a gradient of land use intensification in the humid forest zone of southern Cameroon (Strength: 1.00)
+  - Beitr‰ge zur Kenntnis der Lebenweise und entwicklungsgeschichte einiger haulfligen (Strength: 1.00)
+  - Ecology of ground foraging ants in a tropical evergreen forest in Western Ghats, India (Strength: 1.00)
+  - Nuevos huÈspedes de hormigas procedentes de CÛrdoba.  Observaciones biolÛgicas sobre una mosca de la familia ´ Syrphidae (Strength: 0.99)
+  - Eusocial insects as superorganisms: insights from Metabolic Theory (Strength: 0.99)
+
+Topic 7:
+  - Jardins de formigas na AmazÙnia Central: um experimento de campo utilizando cupins vivos como iscas (Strength: 1.00)
+  - Carpenter ants (Strength: 0.99)
+  - On the one new species, Camponotus jejuensis (n.sp.) from Korea (Hym., Formicidae) (Strength: 0.99)
+  - Just how far do carpenter ants forage? (Strength: 0.99)
+  - Fauna de hormigas asociadas con forrajes tropicales y su implicacion como depredadoras de huevos y ninfas del salivazo de los pastos, Aeneolamia spp (Strength: 0.99)
+
+Topic 6:
+  - The roles of positive and negative selection in the molecular evolution of insect endosymbionts (Strength: 1.00)
+  - Influence of elaiosome on postdispersal dynamics of an ant-dispersed plant (Strength: 0.99)
+  - An experimental study of microbial nest associates of Borneo's exploding ants (Camponotus [Colobopsis] species) (Strength: 0.99)
+  - Winged Ants -The Queen. Dichotomous key to genera of winged female ants in the World; The Wings of Ants: morphological and systematic relationships (Strength: 0.99)
+  - Soil invertebrate biodiversity in stringybark forest in the New England tablelands before clearing (Strength: 0.99)
+
+Topic 1:
+  - The mechanisms of social immunity against fungal infections in eusocial insects (Strength: 1.00)
+  - Phylogeny, evolution, and classification of the ant genus Lasius, the tribe Lasiini and the subfamily Formicinae (Hymenoptera: Formicidae) (Strength: 1.00)
+  - Die Bodenzoocˆnologischen Verh‰ltnisse de Flaumeichen-Buschwalder S¸dostmitteleuropas (Strength: 1.00)
+  - Two ways to be a myrmecophilous butterfly: natural history and comparative immature-stage morphology of two species of Theope (Lepidoptera: Riodinidae) (Strength: 1.00)
+  - Gamma, alpha, and beta diversity of ant assemblages response to a gradient of forest cover in human-modified landscape in Brazilian Amazon (Strength: 1.00)
+
+Topic 10:
+  - SEM structure of mandibular sensilla in the carpenter ant Camponotus compressus (Fabricius) (Formicidae: Hymenoptera) (Strength: 1.00)
+  - Surface ultra-sculptural studies on the antenna, mouth parts and external genitalia of the Carpenter ant, Camponotus compressus (Hymenoptera: Formicidae).  [abstract] (Strength: 1.00)
+  - OcorrÍncia, comportamento e vetoraÁ„o de fungos por formigas no Hospital da Universidade de Juiz de Fora, Minas Gerais.  [abstract] (Strength: 1.00)
+  - Hymenoptera of Bermuda (Strength: 0.99)
+  - Mirmecofauna (Hymenoptera: Formicidae) com˙n del estero "El Salado" y Puerto Vallarta, Jalisco, MÈxico (Strength: 0.99)
+

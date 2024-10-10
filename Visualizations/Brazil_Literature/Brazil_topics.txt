@@ -1,0 +1,107 @@
+Brazil_Topic Modeling Results
+======================
+
+Topic 5 (Strength: 80485.22):
+species, ant, forest, richness, ants, areas, collected, soil, study, area, total, composition, litter, diversity, traps, brazil, abundance, vegetation, genera, fauna
+
+Topic 6 (Strength: 62672.42):
+species, ant, ants, forest, diversity, nests, seed, effects, seeds, habitat, different, nest, sites, plant, ecological, structure, use, forests, interactions, communities
+
+Topic 4 (Strength: 58491.15):
+ants, ant, plant, plants, species, extrafloral, prey, nectaries, interactions, insects, leaves, nectar, abundance, diet, herbivory, study, herbivores, larvae, host, food
+
+Topic 8 (Strength: 49179.82):
+queens, workers, ant, colonies, species, larvae, ants, colony, queen, gland, cells, different, study, host, worker, observed, glands, fungus, eggs, nests
+
+Topic 1 (Strength: 40420.48):
+workers, ants, colonies, foraging, ant, nest, colony, behavior, food, males, species, size, pseudacteon, behavioral, activity, field, observed, different, invicta, time
+
+Topic 10 (Strength: 36892.83):
+leaf, ants, cutting, control, atta, baits, ant, sexdens, colonies, workers, bait, mortality, rubropilosa, leaves, fungus, 10, days, treatments, foraging, species
+
+Topic 9 (Strength: 35391.14):
+species, new, genus, syn, populations, nov, forel, group, sp, south, known, ant, data, based, phylogenetic, described, america, brazil, venom, morphological
+
+Topic 7 (Strength: 30047.83):
+species, sp, genera, brazil, described, ants, new, collected, solenopsis, pheidole, genus, ant, camponotus, subfamilies, nov, records, known, myrmicinae, specimens, crematogaster
+
+Topic 2 (Strength: 27159.83):
+acromyrmex, atta, nests, leaf, fungus, cutting, sexdens, nest, ants, species, study, chambers, subterraneus, number, lundii, extracts, compounds, activity, misspelled, observed
+
+Topic 3 (Strength: 22164.28):
+ants, ant, fungus, fungi, species, bacteria, hospital, soil, attine, fungal, isolated, strains, collected, associated, study, gardens, microorganisms, bacterial, identified, leaf
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 5:
+  - Two interesting dacetine ants from Brazil (Hym., Formicidae) (Strength: 1.00)
+  - InfluÍncia de genÛtipos, ambientes de cultivo e variaÁ„o sazonal no teor e composiÁ„o quÌmica do Ûleo essencial de Hyptis marrubioides Epling e seu efeito sobre formigas sa˙va-lim„o (Strength: 1.00)
+  - Exploitation of fallen diaspores by ants: Are there ant-plant partner choices? (Strength: 0.99)
+  - Comunidade de formigas (Hymenoptera: Formicidae) na ·rea urbana do municÌpio de Pinhalzinho, Santa Catarina, Brasil (Strength: 0.99)
+  - Biodiversidade vegetal e do solo em ecossistemas agrÌcolas e naturais de Mata Atl‚ntica na regi„o Serrana do Estado do Rio de Janeiro (Strength: 0.99)
+
+Topic 6:
+  - Biodiversidade: levantamento e monitoramento de longo prazo.  Biodiversity: long-term monitoring (Strength: 0.99)
+  - FlutuaÁ„o populacional de Hymenoptera em duas matas semidesciduas.  [abstract] (Strength: 0.99)
+  - Fuzzy parameters in a partial differential equation model for population dispersal of leaf-cutting ants (Strength: 0.99)
+  - Supercolonial structure of invasive populations of the tawny crazy ant Nylanderia fulva in the US (Strength: 0.99)
+  - A diversidade de leveduras È maior em ninhos de formigas que utilizam honeydew produzido por homÛpteros?  [abstract] (Strength: 0.99)
+
+Topic 4:
+  - Sistemas agroflorestais: primeiras avaliaÁıes no estado do tocantins (Strength: 0.99)
+  - Histochemical and ultrastructural cytochemistry of glycogen in ovarioles of Neoponera villosa ants (Hymenoptera: Ponerinae) (Strength: 0.99)
+  - Efeitos de fatores do solo e topografia sobre os invertebrados da serapilheira da Reserva Ducke, Manaus, Amazonas.  [abstract] (Strength: 0.99)
+  - Efeito do diflubenzuron sobre formigas cortadeiras (Strength: 0.99)
+  - InteraÁıes entre formigas e dÌpteros no cerrado. Um caso de mimetismo Wasmanniano? (Strength: 0.99)
+
+Topic 8:
+  - Efeito de diferentes doses do formicida "citromax" no controle de Acromyrmex lundi (Hymenoptera: Formicidae) (Strength: 1.00)
+  - Toxicological and histopathological effects of hydramethylnon on Atta sexdens rubropilosa (Hymenoptera: Formicidae) workers (Strength: 1.00)
+  - Combate ‡ sa˙va (Strength: 1.00)
+  - Formiga cabeca (Strength: 0.99)
+  - Contributions of leaf-cutting ants to soil fertility: causes and consequences (Strength: 0.99)
+
+Topic 1:
+  - Revis„o sistem·tica e biologia de Blepharidatta Wheeler, 1915, com uma discuss„o sobre a utilizaÁ„o do aparelho de ferr„o na classificaÁ„o de Formicidae (Hymenoptera) (Strength: 1.00)
+  - DistribuiÁ„o longitudinal e estrutura trÛfica da ictiofauna de igarapÈs de terra firme da AmazÙnia Central (Strength: 1.00)
+  - H·bitos alimentares de Basileuterus culicivorus (Aves: Parulidae) em uma ·rea de Mata Atl‚ntica secund·ria, sudeste do Brasil (Strength: 1.00)
+  - Putting the waste out: a proposed mechanism for transmission of the mycoparasite Escovopsis between leafcutter ant colonies (Strength: 0.99)
+  - Insetos do Brasil: 11.∫ Tomo HymenÛpteros 1.™ Parte (Strength: 0.99)
+
+Topic 10:
+  - Interaction between trophobiont insects and ants: the effect of mutualism on the associated arthropod community (Strength: 1.00)
+  - Manuseio do lixo de colÙnias de Atta sexdens rubropilosa e suas implicaÁıes no comportamento e na mortalidade das oper·rias (Strength: 1.00)
+  - Phylogenomic species delimitation and host-symbiont coevolution in the fungus-farming ant genus Sericomyrmex Mayr (Hymenoptera: Formicidae): ultraconserved elements (UCEs) resolve a recent radiation (Strength: 1.00)
+  - Limonoids from andiroba oil and Cedrela fissilis and their insecticidal activity (Strength: 1.00)
+  - Camponotus renggeri (Formicidae) predated Agelaia vicina (Vespidae) nest and occupied Parachartergus pseudapicalis (Vespidae) nest (Strength: 1.00)
+
+Topic 9:
+  - ConservaÁ„o de poneromorfas no Brasil (Strength: 0.99)
+  - As formigas como bioindicadores da diversidade, da conservaÁ„o e da gÍnese dos ecossistemas do Sul e Sudeste da Bahia (Insecta: Hymenoptera: Formicidae).  [abstract] (Strength: 0.99)
+  - Estrutura de comunidades de formigas em savanas arbÛreas tropicais: um teste da generalidade de padrıes ecolÛgicos contrastando Brasil e Austr·lia (Strength: 0.99)
+  - Abelhas; proteÁ„o das colmÈias contra cupins, formigas e outros predadores (Strength: 0.99)
+  - OrganizaÁ„o do mozaÌco e interaÁ„o entre as formigas arborÌcolas e do solo num Cacaual da Bahia (Hymenoptera: Formicidae).  [abstract] (Strength: 0.99)
+
+Topic 7:
+  - Die Blattschneider-Ameisen S¸damerikas (Strength: 0.99)
+  - Note sur les Attini (Strength: 0.99)
+  - Tropical montane ants: Taxonomic and ecological approaches.  [abstract] (Strength: 0.99)
+  - Fatores determinantes da co-ocorrÍncia de espÈcies de formiga em savanas tropicais: um teste de generalidade de padrıes ecolÛgicos contrastando Brasil e Austr·lia.  [Mesa-Redonda] (Strength: 0.99)
+  - Do litter biomass loss and environmental conditions alter ant species richness and composition?  [abstract] (Strength: 0.99)
+
+Topic 2:
+  - Estudos preliminares das comunidades de formigas em ·reas infestadas e n„o infestadas pelo Eurhizococcus brasiliensis (Homoptera: Margarodidae) no municÌpio de Louveira, Estado de S„o Paulo.  [abstract] (Strength: 1.00)
+  - A percepÁ„o de animais como "insetos" e sua utilizaÁ„o como recursos medicinais na cidade de Feira de Santana, Estado da Bahia, Brasil (Strength: 0.99)
+  - IdentificaÁ„o e avaliaÁ„o das comunidades de formigas em floresta secund·ria na Amazonia oriental (Strength: 0.99)
+  - As comunidades de formigas epigeias dos agrossistemas cacaueiros: comparaÁ„o entre o ambiente amazÙnico e o ambiente atl‚ntico (Strength: 0.99)
+  - ExploraÁıes no mundo psicolÛgico das formigas. 1 - Uma investigaÁ„o de algumas modificaÁıes de comportamento de formigas relativamente ao verificado numa situaÁ„o inalterada anterior, com especial referÍncia a Paratrechina (Nylanderia) fulva Mayr (Hymenoptera-Formicidae) (Strength: 0.99)
+
+Topic 3:
+  - O fungo simbionte de femeas de Atta spp. (Formicidae, Attini) e sua relacao com o sucesso no establecimiento de colonias (Strength: 0.99)
+  - Sa˙va (Strength: 0.99)
+  - Insectos ˙tiles y daninos de Rio Grande do Sul y de La Plata (Strength: 0.99)
+  - Comparative study of thermal reaction norms for development in ants (Strength: 0.99)
+  - The influence of ant foraging patterns on the behavior of herbivores (Strength: 0.99)
+

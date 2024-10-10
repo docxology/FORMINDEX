@@ -1,0 +1,107 @@
+California_Topic Modeling Results
+======================
+
+Topic 9 (Strength: 18237.39):
+species, ant, native, ants, abundance, argentine, sites, effects, communities, california, diversity, richness, habitat, invasion, community, non, increased, areas, temperature, urban
+
+Topic 6 (Strength: 17278.95):
+ants, ant, argentine, native, humile, species, aggression, colonies, colony, invasive, introduced, workers, food, linepithema, populations, interactions, invicta, foraging, results, california
+
+Topic 2 (Strength: 14289.01):
+species, new, sp, syn, genus, california, nov, described, ants, north, wheeler, forel, group, ant, pheidole, mexico, america, camponotus, genera, data
+
+Topic 4 (Strength: 12239.31):
+ants, nest, colonies, ant, foraging, species, workers, nests, colony, food, size, humile, seed, activity, soil, argentine, seeds, small, density, rates
+
+Topic 5 (Strength: 11336.14):
+ant, ants, control, argentine, bait, pest, baits, california, humile, treatments, citrus, scale, water, sucrose, treatment, mealybug, mayr, trees, activity, effective
+
+Topic 10 (Strength: 8337.26):
+ants, ant, larvae, seed, seeds, california, species, predators, plant, natural, predation, citri, plants, control, southern, insects, states, economic, study, densities
+
+Topic 3 (Strength: 7735.62):
+queens, colonies, social, queen, colony, populations, genetic, population, founding, groups, ant, species, variation, workers, formica, structure, group, size, single, host
+
+Topic 8 (Strength: 6903.47):
+public, prepared, government, article, employee, official, domain, written, ants, time, treatment, ant, predators, control, species, protocol, areas, invicta, sinv, solenopsis
+
+Topic 1 (Strength: 5997.37):
+species, records, ant, ants, caterpillars, tropical, spread, islands, prey, humile, california, areas, world, including, published, prenolepis, populations, investment, new, distribution
+
+Topic 7 (Strength: 4382.48):
+ants, hydrocarbons, cuticular, species, cuba, ant, wheeler, chemical, ifa, hydrocarbon, prey, trail, mann, macromischa, water, secretions, recognition, nestmates, chc, co2
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 9:
+  - Monitoring the effects of granular insecticides for Argentine ant control in nursery settings (Strength: 1.00)
+  - The rediscovery of the putative ant social parasite Manica parasitica syn. nov. (Hymenoptera: Formicidae) reveals an unexpected endoparasite syndrome (Strength: 0.99)
+  - Mechanisms of interference and foraging among colonies of the harvester ant Pogonomyrmex californicus in the Mojave Desert (Strength: 0.99)
+  - Use and effect of an anal defensive secretion in larval Chrysopidae (Neuroptera) (Strength: 0.99)
+  - Coexistence and competitive displacement involving two native ant species (Hymenoptera: Formicidae) (Strength: 0.99)
+
+Topic 6:
+  - Paradoxical acclimation and seasonal comparisons of oxygen consumption rates in three species of Pogonomyrmex harvester ants (Hymenoptera: Formicidae) (Strength: 1.00)
+  - Effects of colony-level variation on competitive ability in the invasive argentine ant (Strength: 1.00)
+  - Biological control by the parasitoid Aphytis melinus, and population stability of the California red scale (Strength: 1.00)
+  - Variation in Argentine ant (Linepithema humile) trophic position as a function of time (Strength: 0.99)
+  - Phorid fly parasitoid influence competition and foraging by argentine ants (Linepithema humile, sensu lato) in Brazil (Strength: 0.99)
+
+Topic 2:
+  - Canadian species of Zyras group of genera and review of the types from America North of Mexico (Coleoptera, Staphylinidae, Aleocharinae) (Strength: 0.99)
+  - The rediscovery of Camponotus (Myrmaphaenus) yogi Wheeler (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Analysis of internest movement in Formica haemorrhoidalis Emery (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Ants and pest control (Strength: 0.99)
+  - Will multiple-queen fire ants mean more problems for Florida growers? (Strength: 0.99)
+
+Topic 4:
+  - The influence of ants on host plant selection by Jalmenus evagoras, a myrmecophilous lycaenid butterfly (Strength: 0.99)
+  - Effects of abiotic factors on the distribution and activity of the invasive Argentine ant (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Mucilagebound sand reduces seed predation by ants but not by reducing apparency: a field test of 53 plant species (Strength: 0.99)
+  - Biomass relationships during colony development in the desert leafcutter ant Acromyrmex versicolor.  [abstract] (Strength: 0.99)
+  - Niche differentiation, and fine-scale regional projections for Argentine ants based on remotely-sensed data (Strength: 0.99)
+
+Topic 5:
+  - Impact of three ant species on pest populations in Mediterranean citrus orchards (Strength: 0.99)
+  - Ants (Strength: 0.99)
+  - With broadax and firebrand: the destruction of the Brazilian Atlantic forest (Strength: 0.99)
+  - Survey of brown soft scale Coccus hesperidum L. parasitoids in southern California citrus (Strength: 0.99)
+  - The introduced Argentine ant (Linepithema humile) on the California Channel Islands: distribution and patterns of spread (Strength: 0.99)
+
+Topic 10:
+  - The Argentine ant in relation to citrus groves (Strength: 1.00)
+  - Urban entomology (Strength: 0.99)
+  - Spatial and temporal variation in the Argentine ant edge effect: Implications for the mechanism of edge limitation (Strength: 0.99)
+  - The role of thermal factors in determining nest entrance placement in Pogonomyrmex subnititus (Hymenoptera: Formicidae) (Strength: 0.99)
+  - An ant proof hive stand (Strength: 0.99)
+
+Topic 3:
+  - The structure and assembly of ant communities: Patterns and processes (Strength: 0.99)
+  - Field evaulations of augmentative releases of Delphastus catalinae (Horn) (Coleoptera: Coccinellidae) for suppression of Bemisia argentifolii Bellows & Perring (Homoptera: Aleyrodidae) infesting cotton (Strength: 0.99)
+  - Nest site and weather affect the personality of harvester ant colonies (Strength: 0.99)
+  - The Argentine ant as a household pest (Strength: 0.99)
+  - Insects attracted to carrion in southern California (Strength: 0.98)
+
+Topic 8:
+  - Controlling argentine ants in residential settings (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Catalogue of the myrmecophilous Coleoptera with bibliography and notes (Strength: 0.99)
+  - Overview of the APHIS Imported Fire Ant Program - 2012 (Strength: 0.99)
+  - Another exotic ant on the prowl (Strength: 0.99)
+  - Nestmate discrimination in ants: effect of bioassay on aggressive behavior (Strength: 0.98)
+
+Topic 1:
+  - Reproductive biology of the seed-harvester ants Messor julianus (Pergande) and Messor pergandei (Mayr) (Hymenoptera: Formicidae) in Baja California, Mexico (Strength: 1.00)
+  - Passive avoidance in the California harvester ant Pogonmyrmex californicus (Strength: 1.00)
+  - Population dynamics of a threatened sand dune lizard (Strength: 1.00)
+  - The scent of supercolonies: the discovery, synthesis and behavioural verification of ant colony recognition cues (Strength: 1.00)
+  - Control of the Argentine ant in orange groves (Strength: 1.00)
+
+Topic 7:
+  - A key to the most common and/or economically important ants of California with color photographs (Strength: 0.99)
+  - Evaluation of two hydramethylnon granular baits for control of Argentine ant (Hymenoptera: Formicidae) (Strength: 0.99)
+  - A ten-year study of the Argentine ant invasion at Jasper Ridge Biological Preserve.  [abstract] (Strength: 0.99)
+  - [Untitled. Pogonomyrmex mohavensis Johnson, n sp.] (Strength: 0.99)
+  - As temperature increases, predator attack rate is more important to survival than a smaller window of prey vulnerability (Strength: 0.99)
+

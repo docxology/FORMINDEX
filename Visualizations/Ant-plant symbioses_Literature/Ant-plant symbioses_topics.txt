@@ -1,0 +1,107 @@
+Ant-plant symbioses_Topic Modeling Results
+======================
+
+Topic 1 (Strength: 508.60):
+ant, plant, plants, symbioses, ants, fungus, species, domatia, host, model, interactions, role, genera, results, number, associations, partners, mutualisms, evolution, range
+
+Topic 5 (Strength: 325.10):
+ants, plant, ant, species, symbioses, partners, host, role, chemical, provide, plants, mutualistic, food, volatile, volatiles, myrmecophytic, data, important, obligate, interactions
+
+Topic 9 (Strength: 218.60):
+ant, plant, ants, species, domatia, symbioses, plants, protection, evolution, mutualisms, younger, housing, development, herbivore, levels, studies, reported, use, differences, interactions
+
+Topic 8 (Strength: 210.60):
+ants, plant, tropical, species, groups, ant, evolutionary, diversity, specific, myrmecophytes, symbioses, presented, plants, specialization, competition, association, systems, cases, associations, evidence
+
+Topic 4 (Strength: 189.10):
+plant, ant, fungal, volatiles, symbioses, africana, evolved, primary, taxon, patches, composition, parts, different, specificity, leonardoxa, secondary, specific, repeatedly, similarities, study
+
+Topic 7 (Strength: 142.60):
+species, ant, plant, allomerus, tetraponera, study, ants, using, ecology, africa, america, south, sites, known, producing, leaves, major, cells, molecular, symbioses
+
+Topic 10 (Strength: 141.60):
+fungi, host, domatia, colonies, ant, parasites, aethiops, ants, plant, small, partial, 15n, reproduction, chaetothyriales, field, fungal, hypothesis, competition, general, shows
+
+Topic 2 (Strength: 131.60):
+scale, insects, macaranga, crematogaster, ants, plant, symbiosis, associated, evolutionary, lineages, plants, years, estimated, origin, phylogenetic, dna, africana, ant, suggest, myrmecophytic
+
+Topic 3 (Strength: 97.60):
+inhibited, including, plants, species, pathogens, nutrient, likely, ant, plant, new, data, association, genus, material, used, genera, 26, based, novel, nest
+
+Topic 6 (Strength: 82.60):
+ant, plant, ants, fungus, symbiosis, fungal, nitrogen, symbiotic, significant, small, nature, association, petalomyrmex, phylax, africana, leonardoxa, food, trophic, protective, present
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 1:
+  - Chemical composition of leaf volatiles in Macaranga species (Euphorbiaceae) and their potential role as olfactory cues in host-localization of foundress queens of specific ant partners (Strength: 0.99)
+  - Multitrophic interactions among tropical plants, ants and plants herbivores.  [abstract] (Strength: 0.99)
+  - Phylogenetics and molecular clocks reveal the repeated evolution of ant-plants after the late Miocene in Africa and the early Miocene in Australasia and the Neotropics (Strength: 0.99)
+  - Interactions between lycaenid butterflies and ants in Peninsular Malaysia (Strength: 0.98)
+  - Ant-plant mutualisms should be viewed as symbiotic communities (Strength: 0.98)
+
+Topic 5:
+  - Water stress strengthens mutualism among ants, trees, and scale insects (Strength: 0.99)
+  - Differentiation in a geographical mosaic of plants coevolving with ants: phylogeny of the Leonardoxa africana complex (Fabaceae: Caesalpinioideae) using amplified fragment length polymorphism markers (Strength: 0.94)
+  - Variable composition of some tropical ant-plant symbioses (Strength: 0.00)
+  - Communication in ant-plant symbioses (Strength: 0.00)
+  - Maintaining and Updating FORMIS (Strength: 0.00)
+
+Topic 9:
+  - Isolation, characterization and screening of actinomycetes associated with fijian ant-plant symbioses (Strength: 0.99)
+  - Differentiation in a geographical mosaic of plants coevolving with ants: phylogeny of the Leonardoxa africana complex (Fabaceae: Caesalpinioideae) using amplified fragment length polymorphism markers (Strength: 0.01)
+  - Variable composition of some tropical ant-plant symbioses (Strength: 0.00)
+  - Communication in ant-plant symbioses (Strength: 0.00)
+  - Maintaining and Updating FORMIS (Strength: 0.00)
+
+Topic 8:
+  - Repeated evolution of fungal cultivar specificity in independently evolved ant-plant-fungus symbioses (Strength: 0.99)
+  - Ant-plant symbioses: stalking the Chuyachaqui (Strength: 0.98)
+  - Analysis of the bacterial communities associated with two ant-plant symbioses (Strength: 0.60)
+  - Differentiation in a geographical mosaic of plants coevolving with ants: phylogeny of the Leonardoxa africana complex (Fabaceae: Caesalpinioideae) using amplified fragment length polymorphism markers (Strength: 0.01)
+  - Variable composition of some tropical ant-plant symbioses (Strength: 0.00)
+
+Topic 4:
+  - Cospeciation of ants and plants (Strength: 0.99)
+  - Trophic mediation by a fungus in an ant-plant mutualism (Strength: 0.99)
+  - Living together in novel habitats: A review of land-use change impacts on mutualistic ant-plant symbioses in tropical forests (Strength: 0.98)
+  - Ant-plant symbioses in Africa and the Neotropics: history, biogeography and diversity (Strength: 0.97)
+  - Communication in ant-plant symbioses (Strength: 0.97)
+
+Topic 7:
+  - Plant-ants feed their host plant, but above all a fungal symbiont to recycle nitrogen (Strength: 0.98)
+  - Differentiation in a geographical mosaic of plants coevolving with ants: phylogeny of the Leonardoxa africana complex (Fabaceae: Caesalpinioideae) using amplified fragment length polymorphism markers (Strength: 0.01)
+  - Variable composition of some tropical ant-plant symbioses (Strength: 0.00)
+  - Communication in ant-plant symbioses (Strength: 0.00)
+  - Maintaining and Updating FORMIS (Strength: 0.00)
+
+Topic 10:
+  - The symbiosis between Philidris ants and the ant-plant Dischidia major includes fungal and algal associates (Strength: 0.99)
+  - Evolutionary ecology of ant-plant symbioses: including ants in the analysis.  [abstract] (Strength: 0.98)
+  - Differentiation in a geographical mosaic of plants coevolving with ants: phylogeny of the Leonardoxa africana complex (Fabaceae: Caesalpinioideae) using amplified fragment length polymorphism markers (Strength: 0.01)
+  - Variable composition of some tropical ant-plant symbioses (Strength: 0.00)
+  - Communication in ant-plant symbioses (Strength: 0.00)
+
+Topic 2:
+  - The evolutionary ecology of symbiotic ant-plant relationships (Strength: 0.99)
+  - Protective ant-plant interactions as model systems in ecological and evolutionary research (Strength: 0.98)
+  - Ants suppressing plant pathogens: a review (Strength: 0.98)
+  - Differentiation in a geographical mosaic of plants coevolving with ants: phylogeny of the Leonardoxa africana complex (Fabaceae: Caesalpinioideae) using amplified fragment length polymorphism markers (Strength: 0.01)
+  - Variable composition of some tropical ant-plant symbioses (Strength: 0.00)
+
+Topic 3:
+  - Current issues in the evolutionary ecology of ant-plant symbioses (Strength: 0.99)
+  - Macroevolutionary assembly of ant/plant symbioses: Pseudomyrmex ants and their ant-housing plants in the Neotropics (Strength: 0.99)
+  - Origin of caulinary ant domatia and timing of their onset in plant ontogeny: evolution of a key trait in horizontally transmitted ant-plant symbioses (Strength: 0.97)
+  - Differentiation in a geographical mosaic of plants coevolving with ants: phylogeny of the Leonardoxa africana complex (Fabaceae: Caesalpinioideae) using amplified fragment length polymorphism markers (Strength: 0.01)
+  - Variable composition of some tropical ant-plant symbioses (Strength: 0.00)
+
+Topic 6:
+  - Plant-ants use symbiotic fungi as a food source: new insight into the nutritional ecology of ant-plant interactions (Strength: 0.98)
+  - Dynamics of the association between a long-lived understory myrmecophyte and its specific associated ants (Strength: 0.98)
+  - Differentiation in a geographical mosaic of plants coevolving with ants: phylogeny of the Leonardoxa africana complex (Fabaceae: Caesalpinioideae) using amplified fragment length polymorphism markers (Strength: 0.01)
+  - Variable composition of some tropical ant-plant symbioses (Strength: 0.00)
+  - Communication in ant-plant symbioses (Strength: 0.00)
+

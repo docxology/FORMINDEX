@@ -14,7 +14,16 @@ from scipy.sparse import csr_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from collections import Counter
-from Location_Analysis import create_world_map_publications
+import glob
+import logging
+
+# At the top of the file, replace the current import with:
+try:
+    from Location_Analysis import create_world_map_publications
+    geopandas_available = True
+except ImportError:
+    print("Warning: geopandas not found. World map visualization will be skipped.")
+    geopandas_available = False
 
 # Add the parent directory to the Python path
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -26,6 +35,9 @@ from Methods.FORMINDEX_Methods import (
     create_word_cloud, perform_topic_modeling, plot_top_entities
 )
 
+# Set up logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
 def extract_year(year_string):
     match = re.search(r'\d{4}', year_string)
     return int(match.group()) if match else None
@@ -34,7 +46,7 @@ def load_json_data(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
-def create_stacked_area_chart(bibtex_records, output_dir):
+def create_stacked_area_chart(bibtex_records, output_dir, prefix=''):
     year_venue = defaultdict(lambda: defaultdict(int))
     for record in bibtex_records:
         year = extract_year(record.get('year', ''))
@@ -50,15 +62,15 @@ def create_stacked_area_chart(bibtex_records, output_dir):
     
     plt.figure(figsize=(16, 10))
     plt.stackplot(years, data.T, labels=top_venues)
-    plt.title('Evolution of Top Venues Over Time', fontsize=20, fontweight='bold')
+    plt.title(f'{prefix}Evolution of Top Venues Over Time', fontsize=20, fontweight='bold')
     plt.xlabel('Year', fontsize=16)
     plt.ylabel('Number of Publications', fontsize=16)
     plt.legend(loc='upper left', bbox_to_anchor=(1, 1))
     plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, 'venue_evolution.png'), dpi=300, bbox_inches='tight')
+    plt.savefig(os.path.join(output_dir, f'{prefix}venue_evolution.png'), dpi=300, bbox_inches='tight')
     plt.close()
 
-def create_coauthorship_heatmap(bibtex_records, output_dir):
+def create_coauthorship_heatmap(bibtex_records, output_dir, prefix=''):
     """Create a larger, half-matrix heatmap of coauthorship."""
     author_pairs = []
     for record in bibtex_records:
@@ -100,7 +112,7 @@ def create_coauthorship_heatmap(bibtex_records, output_dir):
                      square=True,
                      cbar_kws={'label': 'Number of Co-authored Papers'})
     
-    plt.title('Coauthorship Heatmap', fontsize=24, pad=20)
+    plt.title(f'{prefix}Coauthorship Heatmap', fontsize=24, pad=20)
     plt.xlabel('Authors', fontsize=18, labelpad=10)
     plt.ylabel('Authors', fontsize=18, labelpad=10)
     
@@ -110,12 +122,12 @@ def create_coauthorship_heatmap(bibtex_records, output_dir):
     
     # Adjust layout and save
     plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, 'coauthorship_heatmap.png'), dpi=300, bbox_inches='tight')
+    plt.savefig(os.path.join(output_dir, f'{prefix}coauthorship_heatmap.png'), dpi=300, bbox_inches='tight')
     plt.close()
 
     print(f"Coauthorship heatmap created with {len(top_authors)} top authors.")
 
-def create_ref_type_pie_chart(bibtex_records, output_dir):
+def create_ref_type_pie_chart(bibtex_records, output_dir, prefix=''):
     ref_types = [record.get('ref_type', '') for record in bibtex_records]
     ref_type_counts = defaultdict(int)
     for rt in ref_types:
@@ -124,13 +136,13 @@ def create_ref_type_pie_chart(bibtex_records, output_dir):
     
     plt.figure(figsize=(12, 8))
     plt.pie(ref_type_counts.values(), labels=ref_type_counts.keys(), autopct='%1.1f%%', startangle=90)
-    plt.title('Distribution of Reference Types', fontsize=20, fontweight='bold')
+    plt.title(f'{prefix}Distribution of Reference Types', fontsize=20, fontweight='bold')
     plt.axis('equal')
     plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, 'ref_type_distribution_pie.png'), dpi=300, bbox_inches='tight')
+    plt.savefig(os.path.join(output_dir, f'{prefix}ref_type_distribution_pie.png'), dpi=300, bbox_inches='tight')
     plt.close()
 
-def create_location_distribution(bibtex_records, output_dir):
+def create_location_distribution(bibtex_records, output_dir, prefix=''):
     locations = [record.get('address', '').split(',')[-1].strip() for record in bibtex_records]
     location_counts = defaultdict(int)
     for location in locations:
@@ -141,16 +153,16 @@ def create_location_distribution(bibtex_records, output_dir):
     
     plt.figure(figsize=(14, 10))
     sns.barplot(x=[count for _, count in top_locations], y=[location for location, _ in top_locations])
-    plt.title('Top 20 Locations by Number of Publications', fontsize=20, fontweight='bold')
+    plt.title(f'{prefix}Top 20 Locations by Number of Publications', fontsize=20, fontweight='bold')
     plt.xlabel('Number of Publications', fontsize=16)
     plt.ylabel('Location', fontsize=16)
     plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, 'location_distribution.png'), dpi=300, bbox_inches='tight')
+    plt.savefig(os.path.join(output_dir, f'{prefix}location_distribution.png'), dpi=300, bbox_inches='tight')
     plt.close()
 
     print(f"Location distribution plot created with {len(top_locations)} top locations.")
 
-def create_citations_scatter(bibtex_records, output_dir):
+def create_citations_scatter(bibtex_records, output_dir, prefix=''):
     years = []
     citations = []
     for record in bibtex_records:
@@ -170,48 +182,51 @@ def create_citations_scatter(bibtex_records, output_dir):
 
     plt.figure(figsize=(14, 10))
     plt.scatter(years, citations, alpha=0.5)
-    plt.title('Publications per Year vs. Citations', fontsize=20, fontweight='bold')
+    plt.title(f'{prefix}Publications per Year vs. Citations', fontsize=20, fontweight='bold')
     plt.xlabel('Year', fontsize=16)
     plt.ylabel('Number of Citations', fontsize=16)
     plt.yscale('log')  # Use log scale for citations
     plt.xscale('log')  # Use log scale for years to spread out older publications
     plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, 'citations_scatter.png'), dpi=300, bbox_inches='tight')
+    plt.savefig(os.path.join(output_dir, f'{prefix}citations_scatter.png'), dpi=300, bbox_inches='tight')
     plt.close()
 
     print(f"Citations scatter plot created with {len(years)} data points.")
     print(f"Year range: {min(years)} to {max(years)}")
     print(f"Citation range: {min(citations)} to {max(citations)}")
 
-def main():
-    json_file_path = os.path.join(parent_dir, 'Initial_Files', 'FORMIS_2024_July_Bibtex.json')
-    bibtex_records = load_json_data(json_file_path)
-
-    output_dir = os.path.join(parent_dir, 'Visualizations')
+def generate_visualizations(bibtex_records, output_dir, prefix=''):
+    """
+    Generate all visualizations for a given set of bibtex records.
+    
+    Args:
+    bibtex_records (list): List of bibtex record dictionaries
+    output_dir (str): Directory to save the visualizations
+    prefix (str): Prefix for the output files (e.g., 'Dopamine_')
+    """
     os.makedirs(output_dir, exist_ok=True)
 
     years = [extract_year(record.get('year', '')) for record in bibtex_records if extract_year(record.get('year', ''))]
 
     if years:
-        create_time_series(years, 'Publications per Year', 'Number of Publications', os.path.join(output_dir, 'publications_per_year.png'))
+        create_time_series(years, f'{prefix}Publications per Year', 'Number of Publications', 
+                           os.path.join(output_dir, f'{prefix}publications_per_year.png'))
     else:
-        print("No valid years found in the dataset.")
-
-    print(f"Total records: {len(bibtex_records)}")
-    print(f"Records with valid years: {len(years)}")
-    print(f"Sample of years: {years[:10]}")
+        print(f"No valid years found in the {prefix}dataset.")
 
     titles = ' '.join([record.get('title', '') for record in bibtex_records])
-    create_word_cloud(titles, 'Title Word Cloud', os.path.join(output_dir, 'title_word_cloud.png'))
+    create_word_cloud(titles, f'{prefix}Title Word Cloud', 
+                      os.path.join(output_dir, f'{prefix}title_word_cloud.png'))
 
     abstracts = ' '.join([record.get('abstract', '') for record in bibtex_records])
-    create_word_cloud(abstracts, 'Abstract Word Cloud', os.path.join(output_dir, 'abstract_word_cloud.png'))
+    create_word_cloud(abstracts, f'{prefix}Abstract Word Cloud', 
+                      os.path.join(output_dir, f'{prefix}abstract_word_cloud.png'))
 
     abstract_texts = [record.get('abstract', '') for record in bibtex_records if record.get('abstract')]
     topics, doc_topic_dist = perform_topic_modeling(abstract_texts)
     
-    with open(os.path.join(output_dir, 'topics.txt'), 'w') as f:
-        f.write("Topic Modeling Results\n")
+    with open(os.path.join(output_dir, f'{prefix}topics.txt'), 'w') as f:
+        f.write(f"{prefix}Topic Modeling Results\n")
         f.write("======================\n\n")
         for topic in topics:
             f.write(f"Topic {topic['id']} (Strength: {topic['strength']:.2f}):\n")
@@ -228,28 +243,75 @@ def main():
                 f.write(f"  - {doc_title} (Strength: {doc_strength:.2f})\n")
             f.write("\n")
 
-    print(f"Enhanced topic modeling results saved to {os.path.join(output_dir, 'topics.txt')}")
-
     authors = [author.strip() for record in bibtex_records for author in record.get('author', '').split(' and ')]
-    plot_top_entities(authors, 'Top 20 Authors', os.path.join(output_dir, 'top_authors.png'))
+    plot_top_entities(authors, f'{prefix}Top 20 Authors', 
+                      os.path.join(output_dir, f'{prefix}top_authors.png'))
 
     venues = [record.get('journal', '') or record.get('booktitle', '') for record in bibtex_records]
     venues = [venue.strip() for venue in venues if venue and venue.strip()]
-    plot_top_entities(venues, 'Top 20 Venues', os.path.join(output_dir, 'top_venues.png'))
+    plot_top_entities(venues, f'{prefix}Top 20 Venues', 
+                      os.path.join(output_dir, f'{prefix}top_venues.png'))
 
     ref_types = [record.get('ref_type', '') for record in bibtex_records]
     ref_types = [rt for rt in ref_types if rt]
-    create_histogram(ref_types, 'Distribution of Reference Types', 'Count', 'Reference Type', os.path.join(output_dir, 'ref_type_distribution.png'))
+    create_histogram(ref_types, f'{prefix}Distribution of Reference Types', 'Count', 'Reference Type', 
+                     os.path.join(output_dir, f'{prefix}ref_type_distribution.png'))
 
-    # New visualizations
-    create_stacked_area_chart(bibtex_records, output_dir)
-    create_coauthorship_heatmap(bibtex_records, output_dir)
-    create_ref_type_pie_chart(bibtex_records, output_dir)
-    create_location_distribution(bibtex_records, output_dir)  # Updated function name
-    create_citations_scatter(bibtex_records, output_dir)
-    create_world_map_publications(bibtex_records, output_dir)
+    create_stacked_area_chart(bibtex_records, output_dir, prefix)
+    create_coauthorship_heatmap(bibtex_records, output_dir, prefix)
+    create_ref_type_pie_chart(bibtex_records, output_dir, prefix)
+    create_location_distribution(bibtex_records, output_dir, prefix)
+    create_citations_scatter(bibtex_records, output_dir, prefix)
+    if geopandas_available:
+        create_world_map_publications(bibtex_records, output_dir, prefix)
+    else:
+        print(f"Skipping world map visualization for {prefix} due to missing geopandas library.")
 
-    print("Visualizations have been created and saved in the 'Visualizations' directory.")
+    print(f"Visualizations for {prefix[:-1] if prefix else 'all literature'} have been created and saved in the '{output_dir}' directory.")
+
+def generate_all_visualizations():
+    # Generate visualizations for all literature
+    json_file_path = os.path.join(parent_dir, 'Initial_Files', 'FORMIS_2024_July_Bibtex.json')
+    all_bibtex_records = load_json_data(json_file_path)
+    all_output_dir = os.path.join(parent_dir, 'Visualizations', 'All_Literature')
+    generate_visualizations(all_bibtex_records, all_output_dir)
+    logging.info(f"Generated visualizations for all literature from {json_file_path}")
+
+    # Generate visualizations for each targeted bibliography
+    targeted_bib_dir = os.path.join(parent_dir, 'Targeted_Bibliographies')
+    logging.info(f"Scanning for targeted bibliographies in: {targeted_bib_dir}")
+    
+    target_folders = [f for f in os.listdir(targeted_bib_dir) if os.path.isdir(os.path.join(targeted_bib_dir, f))]
+    
+    if not target_folders:
+        logging.warning(f"No targeted bibliography folders found in {targeted_bib_dir}")
+    else:
+        logging.info(f"Found {len(target_folders)} targeted bibliography folders")
+        
+        for folder in target_folders:
+            folder_path = os.path.join(targeted_bib_dir, folder)
+            json_files = glob.glob(os.path.join(folder_path, '*_bibliography.json'))
+            
+            if not json_files:
+                logging.warning(f"No bibliography JSON files found in {folder_path}")
+                continue
+            
+            for json_file in json_files:
+                target_name = os.path.splitext(os.path.basename(json_file))[0].replace('_bibliography', '')
+                logging.info(f"Processing targeted bibliography: {target_name}")
+                
+                try:
+                    target_bibtex_records = load_json_data(json_file)
+                    target_output_dir = os.path.join(parent_dir, 'Visualizations', f'{target_name}_Literature')
+                    generate_visualizations(target_bibtex_records, target_output_dir, f'{target_name}_')
+                    logging.info(f"Generated visualizations for {target_name}")
+                except Exception as e:
+                    logging.error(f"Error processing {target_name}: {str(e)}")
+
+def main():
+    logging.info("Starting visualization generation process")
+    generate_all_visualizations()
+    logging.info("Visualization generation process completed")
 
 if __name__ == "__main__":
     main()

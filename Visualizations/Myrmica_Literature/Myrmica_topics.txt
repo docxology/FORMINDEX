@@ -1,0 +1,107 @@
+Myrmica_Topic Modeling Results
+======================
+
+Topic 6 (Strength: 99385.97):
+species, ant, ants, forest, diversity, richness, sites, communities, habitat, abundance, habitats, study, community, composition, seed, total, forests, collected, traps, areas
+
+Topic 3 (Strength: 45512.78):
+colony, colonies, social, workers, ants, queens, ant, size, queen, species, worker, nest, evolution, behavior, nests, genetic, different, individuals, variation, mating
+
+Topic 2 (Strength: 44230.94):
+species, sp, camponotus, new, formica, lasius, myrmica, genera, ant, recorded, pheidole, tetramorium, collected, records, misspelled, reported, forel, ants, emery, temnothorax
+
+Topic 4 (Strength: 36705.80):
+ants, ant, species, prey, insects, plants, predators, insect, study, plant, associated, interactions, trophic, control, myrmicinae, genera, different, misspelled, subfamilies, feeding
+
+Topic 8 (Strength: 32276.62):
+species, ant, ants, plant, aphid, rubra, myrmica, plants, aphids, colonies, lasius, interactions, effects, foraging, niger, native, density, dominant, formica, different
+
+Topic 5 (Strength: 31608.47):
+species, myrmica, ant, formica, ants, nest, nests, lasius, workers, trail, wood, rubra, gland, niger, ruginodis, group, distribution, behavior, area, studied
+
+Topic 1 (Strength: 27968.43):
+host, species, myrmica, ant, maculinea, populations, scabrinodis, butterfly, alcon, nests, rubra, larvae, caterpillars, butterflies, ants, population, different, hosts, teleius, sites
+
+Topic 7 (Strength: 20009.91):
+soil, ants, nests, nest, workers, number, activity, myrmica, species, mounds, ant, different, gland, mound, glands, surface, higher, termite, secretion, numbers
+
+Topic 10 (Strength: 16106.79):
+larvae, workers, brood, development, queens, myrmica, eggs, ants, rubra, growth, syn, worker, number, spring, diapause, formica, larval, food, queen, egg
+
+Topic 9 (Strength: 15006.30):
+ants, effects, food, cues, visual, using, ability, time, did, consumption, effect, learning, conditioning, hours, perception, dependence, memory, workers, olfactory, decreased
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 6:
+  - How many and which ant species are being accidentally moved around the world? (Strength: 0.99)
+  - British ants, their life history and classification (Strength: 0.99)
+  - Effects of the 1988 fires in Yellowstone National Park, USA, on the ant populations (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Do dominant ants affect secondary productivity, behavior and diversity in a guild of woodland ants? (Strength: 0.99)
+  - …tudes sur les fourmis.  (TroisiËme note.) Fondation d'une colonie par une femelle isolÈe (Strength: 0.99)
+
+Topic 3:
+  - Estudio faunÌstico de las hormigas (Hymenoptera: Formicidae) de la cuenca del rÌo Guadiamar: Primeras aportaciones (Strength: 1.00)
+  - Assessment of ant diversity in Kizhakkumpuram Village, Palakkad Kerala, India (Strength: 1.00)
+  - Rating palatability of butterflies by measuring ant feeding behavior (Strength: 1.00)
+  - Nest-site limitation and nesting resources of ants (Hymenoptera: Formicidae) in urban green spaces (Strength: 0.99)
+  - Soil macrofauna community structure along a gradient of land use intensification in the humid forest zone of southern Cameroon (Strength: 0.99)
+
+Topic 2:
+  - Anomalies of wing venation in sexual ant individuals (Hymenoptera, Formicidae) with various strategy of mating behavior (Strength: 1.00)
+  - Bedeutung und Ursachen von Verbreitungsmustern der Ameisenzˆnose auf das Vorkommen von Glaucopsyche (Maculinea) nausithous und G. teleius (Strength: 0.99)
+  - A geographical distribution list of insects and mites associated with cocoa, derived from literature published before 2010 (Strength: 0.99)
+  - Physiological and ethological effects of sativex, a cannabis-based medicine, examined on ants as models (Strength: 0.99)
+  - Ant-plant interactions in Australia (Strength: 0.99)
+
+Topic 4:
+  - High trait diversity among soil arthropods allows their survival in a heterogeneous eco-agricultural mosaic (Strength: 0.99)
+  - Review of some mites (Acari: Laelapidae) associated with ants and bumblebees in Western Siberia, Russia (Strength: 0.99)
+  - Colonization of temperate grassland by ants (Strength: 0.99)
+  - Ameisen aus Java beobachtet und gesammelt von Edward Jacobson. III. Theil (Strength: 0.99)
+  - Revision of the myrmecophilous genus Lomechusa (Coleoptera: Staphylinidae: Aleocharinae) (Strength: 0.99)
+
+Topic 8:
+  - Plasticity in the trophic niche of an invasive ant explains establishment success and longterm coexistence (Strength: 0.99)
+  - The effect of the introduced red wood ant Formica paralugubris on the frequency of ant nests and first plesiobiotic association between Myrmica ruginodis (Nylander, 1846) and Lasius flavus (Fabricius, 1782) (Strength: 0.99)
+  - Comparison of twelve ant species and their susceptibility to fungal infection (Strength: 0.99)
+  - Spatiotemporal resource distribution and foraging strategies of ants (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Prediction of abundance of ants due to climate warming in South Korea (Strength: 0.99)
+
+Topic 5:
+  - Caste determination in arthropods (Strength: 1.00)
+  - De Regel van Bergmann en cryptische mierensoorten (Strength: 1.00)
+  - Myrmecophilous notes for 1911. [concl.] (Strength: 1.00)
+  - A study of the photoperiodic reaction in the ant Myrmica rubra L. (Hymenoptera, Formicidae). I. basic parameters of the reaction (Strength: 1.00)
+  - Dziwne mrowiska (Strength: 1.00)
+
+Topic 1:
+  - Ant-hills at the Upper Kolyma River as substrate for micromycetes.  [in Russian] (Strength: 0.99)
+  - Mortality risk versus food quality trade-offs in ants: patch use over time (Strength: 0.99)
+  - Auswirkungen von Landschaftspflegemaﬂnahmen auf die Bestandsentwicklung seltener Moorameisen - Analyse mittels GPS und GIS (Strength: 0.99)
+  - Inefficiency in brood-rearing in the ant Myrmica rubra L (Strength: 0.99)
+  - Communication between queens and larvae in the ant Myrmica (Strength: 0.99)
+
+Topic 7:
+  - Formicidae (Strength: 1.00)
+  - Weather impacts on interactions between nesting birds, nest-dwelling ectoparasites and ants (Strength: 1.00)
+  - The real "fire ants": colony size and body size of workers influence the fate of boreal sand hill ants (Hymenoptera: Formicidae) after wildfires in Alberta, Canada (Strength: 0.99)
+  - A survey of grassland and montane arthropods collected in the southern Okanagan region of British Columbia (Strength: 0.99)
+  - Side effects of the antiemetic drug Motilium (domperidone) studied on ants as models (Strength: 0.99)
+
+Topic 10:
+  - Food distribution and larval size in cultures of the ant Myrmica rubra L (Strength: 0.99)
+  - Notes on ants (Hymenoptera: Formicidae) from Gambia (Western Africa) (Strength: 0.99)
+  - Studies of caste differentiation in Myrmica rubra L. 4. Controlled larval nutrition (Strength: 0.99)
+  - Dispersal: the case of the missing ant and the introduced mouse (Strength: 0.99)
+  - Caste determination in a myrmicine ant (Strength: 0.99)
+
+Topic 9:
+  - Myrmecochores in warm-temperate zone of Japan.  [In Japanese, English summary] (Strength: 0.99)
+  - Evolution of the competitive behaviour in social insects (Strength: 0.99)
+  - Urbanization pressure and animal communities.  [in Polish with English abstract] (Strength: 0.99)
+  - Alkaloidal venom mace: offensive use by a thief ant (Strength: 0.99)
+  - Marking of nest entrances and their vicinity in the ant Myrmica rubra (Strength: 0.99)
+

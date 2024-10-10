@@ -1,0 +1,107 @@
+Ant-plant_Topic Modeling Results
+======================
+
+Topic 10 (Strength: 39898.27):
+ant, plant, ants, species, plants, host, interactions, domatia, mutualisms, macaranga, food, mutualistic, mutualism, different, associated, association, obligate, evolution, efn, specific
+
+Topic 9 (Strength: 20541.74):
+ants, plants, ant, plant, effects, herbivory, interactions, herbivores, effect, abundance, aphid, presence, increased, herbivore, species, reproductive, flowers, growth, aphids, production
+
+Topic 2 (Strength: 18241.64):
+ant, seed, ants, species, seeds, dispersal, plant, native, plants, forest, invasive, removal, effects, germination, sites, richness, higher, forests, study, results
+
+Topic 8 (Strength: 17653.13):
+ants, leaves, plants, plant, leaf, ant, nectar, extrafloral, efns, damage, herbivores, floral, young, species, nectaries, herbivory, flowers, food, defense, defence
+
+Topic 3 (Strength: 16048.95):
+ant, species, extrafloral, ants, nectaries, plant, plants, interactions, nectar, study, camponotus, number, bearing, interaction, observed, trees, forest, efns, higher, recorded
+
+Topic 4 (Strength: 13448.45):
+ants, species, ant, nests, colonies, seeds, nest, diaspores, seed, colony, dispersal, diaspore, queens, plant, soil, food, removal, elaiosomes, study, small
+
+Topic 1 (Strength: 7716.17):
+species, trees, ant, ants, tree, growth, saplings, galls, occupied, crematogaster, herbivores, colonies, large, plant, forest, effects, plants, high, non, competition
+
+Topic 7 (Strength: 7505.21):
+species, ant, networks, network, plant, structure, interactions, forest, communities, ecological, diversity, ants, different, community, trees, insects, spatial, observed, nestedness, insect
+
+Topic 6 (Strength: 7504.83):
+species, ant, azteca, cecropia, ants, trees, fig, tree, forel, forest, plants, plant, genus, new, mutualism, wasps, diversity, habitat, interactions, crematogaster
+
+Topic 5 (Strength: 5460.62):
+species, sp, ants, forest, collected, ant, genera, pseudomyrmex, syn, total, crematogaster, associated, nov, subfamilies, area, group, litter, community, pollination, plant
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 10:
+  - Limited gene dispersal and spatial genetic structure as stabilizing factors in an ant-plant mutualism (Strength: 1.00)
+  - InteraÁıes entre formigas, herbÌvoros e nect·rios extraflorais em Tocoyena formosa (Rubiaceae) na vegetaÁ„o do cerrado (Strength: 0.99)
+  - Does edge effect and patch size affect the interaction between ants and Croton lachnostachyus in fragmented landscapes of Chaco forest? (Strength: 0.99)
+  - Which traits optimize plant benefits? Metaanalysis on the effect of partner traits on the outcome of an ant-plant protective mutualism (Strength: 0.99)
+  - The tuberous epiphytes of the Rubiaceae 1: A new subtribe -- The Hydnophytinae (Strength: 0.99)
+
+Topic 9:
+  - Complex foraging ecology of the red harvester ant and its effect on the soil seed bank (Strength: 1.00)
+  - Mutualismo facultativo: Padr„o de forrageamento de formigas e seu papel na defesa de plantas.  [abstract] (Strength: 1.00)
+  - Interactions among Inga, herbivores, ants, and insect visitors to foliar nectaries (Strength: 1.00)
+  - Are invasive ants better plant-defense mutualists? A comparison of foliage patrolling and herbivory in sites with invasive yellow crazy ants and native weaver ants (Strength: 0.99)
+  - Comparison of species diversity of ants in plant communities at Khao Yai National Park.  [in Thai, English abstract] (Strength: 0.99)
+
+Topic 2:
+  - Diversity and distribution of extra-floral nectaries in the cerrado savanna vegetation of Brazil (Strength: 1.00)
+  - Impact of Wasmannia auropunctata (Roger) on plant ant Tetraponera aethiops (Smith) on its host plant Barteria fistulosa.  [abstract] (Strength: 0.99)
+  - Nitrogen fixation by diverse diazotrophic communities can support population growth of arboreal ants (Strength: 0.99)
+  - Integrating phenological, chemical and biotic defences in ant-plant protection mutualisms: a case study of two myrmecophyte lineages (Strength: 0.99)
+  - Ant-mediated seed dispersal in an invaded landscape (Strength: 0.99)
+
+Topic 8:
+  - Ant mimicry by Passiflora flowers? (Strength: 1.00)
+  - Food bodies and their significance for obligate ant-association in the tree genus Macaranga (Euphorbiaceae) (Strength: 0.99)
+  - DistribuiÁ„o espacial e co-ocorrÍncia de formigas mutualÌsticas em arbustos de Hibiscus pernambucensis (Malvaceae) (Strength: 0.99)
+  - Flowering, pollen characteristics and insect foraging on Campanula bononiensis (Campanulaceae), a protected species in Poland (Strength: 0.99)
+  - How do ant-plant interactions change along gradients of altitude and habitat modification?  [abstract] (Strength: 0.99)
+
+Topic 3:
+  - Ultrastructure and post-floral secretion of the pericarpial nectaries of Erythrina speciosa (Fabaceae) (Strength: 0.99)
+  - Diversity of anti-herbivore defenses in Macaranga myrmecophytes.  [abstract] (Strength: 0.99)
+  - Host plants as mediators of caterpillar-natural enemy interactions (Strength: 0.99)
+  - Macronutrient exchange between the Asian weaver ant Oecophylla smaragdina and their host plant (Strength: 0.99)
+  - Food bodies in Cissus verticillata (Vitaceae): ontogenesis, structure and functional aspects (Strength: 0.99)
+
+Topic 4:
+  - Tropical planting and gardening with special reference to Ceylon (Strength: 0.99)
+  - Temporal and trophic niche overlap in a guild of flower-visiting ants in a seasonal semi-arid tropical environment (Strength: 0.99)
+  - Obligate plant farming by a specialized ant (Strength: 0.99)
+  - Seasonality influences ant-mediated nutrient acquisition (myrmecotrophy) by a Neotropical myrmecophyte (Strength: 0.99)
+  - An ant symbiont directly and indirectly limits its host plant's reproductive success (Strength: 0.99)
+
+Topic 1:
+  - Ant-plant interactions (Strength: 1.00)
+  - Predation and aggressiveness in host plant protection: a generalization using ants from the genus Azteca (Strength: 0.99)
+  - Ants & scolytine beetles (Strength: 0.99)
+  - The diversity and ecology of ant gardens (Hymenoptera: Formicidae; Spermatophyta: Angiospermae) (Strength: 0.99)
+  - Ants impact the composition of the aquatic macroinvertebrate communities of a myrmecophytic tank bromeliad (Strength: 0.99)
+
+Topic 7:
+  - Causes of uprooting and breakage of specimen giant sequoia trees (Strength: 1.00)
+  - Gall-colonizing ants and their role as plant defenders: From 'bad job' to 'useful service' (Strength: 1.00)
+  - Larvae promote a decline in the harvesting of myrmecochorous seeds Myrmica rubra by ants (Strength: 1.00)
+  - Increasing trophic complexity influences aphid attendance by ants (Hymenoptera: Formicidae) and predation (Strength: 1.00)
+  - Variation among four populations of Erysimum capitatum in phenotype, pollination and herbivory over an elevational gradient (Strength: 0.99)
+
+Topic 6:
+  - Anthecology of Euphorbia -- preliminary studies (Strength: 1.00)
+  - Origine et Èvolution des mutualismes plantes-fourmis. Le cas de Leonardoxa, myrmÈcophyte ‡ domaties caulinaires (Strength: 1.00)
+  - New mealybug species (Hemiptera: Coccoidea: Pseudococcidae) from the ant-plant Hydnophytum sp. (Rubiaceae) in Fiji (Strength: 1.00)
+  - Effect of an exotic Acacia (Fabaceae) on ant assemblages in South African fynbos (Strength: 0.99)
+  - Effects of earlyseason insect herbivory on subsequent pathogen infection and ant abundance on wild cotton (Gossypium hirsutum) (Strength: 0.99)
+
+Topic 5:
+  - Exudate-gathering ants (Hymenoptera: Formicidae) at three different liquid food rewards (Strength: 1.00)
+  - The ant, the butterfly and the ant-plant: Notes on Myrmecodia beccarii (Rubiaceae), a vulnerable Queensland endemic (Strength: 0.99)
+  - Chemical differences between seeds and elaiosomes indicate an adaptation to nutritional needs of ants (Strength: 0.99)
+  - Effects of symbiotic coccid on the plant-ant colony growth in the myrmecophyte Macaranga bancana (Strength: 0.99)
+  - Some associations between ants and euphorbs in tropical Australia (Strength: 0.99)
+

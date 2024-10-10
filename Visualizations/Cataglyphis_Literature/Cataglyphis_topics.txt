@@ -1,0 +1,107 @@
+Cataglyphis_Topic Modeling Results
+======================
+
+Topic 9 (Strength: 21561.99):
+ants, nest, foraging, path, food, desert, integration, information, ant, cataglyphis, search, cues, visual, use, navigation, seed, learning, distance, compass, vector
+
+Topic 3 (Strength: 19971.09):
+species, ants, ant, study, messor, collected, genera, traps, total, prey, sites, subfamilies, belonging, fauna, pitfall, different, sampling, abundance, cataglyphis, soil
+
+Topic 1 (Strength: 16375.30):
+workers, colony, species, colonies, ants, cataglyphis, ant, queens, queen, different, nests, cursor, males, size, nest, number, gland, worker, hydrocarbons, cuticular
+
+Topic 5 (Strength: 14630.53):
+social, colony, size, ants, ant, evolution, insects, worker, species, review, behavior, behavioral, workers, studies, group, evolutionary, individual, variation, insect, data
+
+Topic 7 (Strength: 13139.66):
+ant, species, diversity, communities, functional, different, ants, composition, plant, richness, assemblages, community, traits, dominant, environmental, temperature, higher, activity, habitat, abundance
+
+Topic 2 (Strength: 12585.00):
+species, cataglyphis, camponotus, new, genera, ant, monomorium, ants, misspelled, records, forel, mayr, genus, recorded, known, distribution, pheidole, time, fauna, emery
+
+Topic 4 (Strength: 11422.45):
+species, formica, cataglyphis, lasius, temnothorax, sp, reported, tetramorium, new, ant, forel, camponotus, myrmica, emery, aphaenogaster, group, messor, described, nylander, time
+
+Topic 10 (Strength: 7353.36):
+cataglyphis, walking, body, visual, thermal, light, degrees, ants, temperature, brain, pattern, eye, legs, stride, length, ant, speed, leg, neurons, behavior
+
+Topic 8 (Strength: 6605.69):
+queens, workers, reproductive, genetic, species, queen, ant, cataglyphis, parthenogenesis, reproduction, worker, colonies, new, ants, social, lineages, produced, sexual, populations, produce
+
+Topic 6 (Strength: 5094.94):
+ant, species, native, desert, recruitment, ants, invaded, region, regions, sp, study, argentine, et, humile, components, mountains, different, hypothesis, results, non
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 9:
+  - Humans and scavenging raptors facilitate Argentine ant invasion in DoÒana National Park: no counter-effect of biotic resistance (Strength: 0.99)
+  - Caste in social insects: Genetic influences over caste determination (Strength: 0.99)
+  - Himmelsorientierung bei der W¸stenameise Cataglyphis bicolor: Bedeutung von Komplexaugen und Ocellen (Strength: 0.99)
+  - The hidden spiral: systematic search and path integration in desert ants, Cataglyphis fortis (Strength: 0.99)
+  - A new ant species, Temnothorax ansei sp.n. (Hymenoptera: Formicidae) from the arid environments of south-eastern Spain (Strength: 0.99)
+
+Topic 3:
+  - Ant fauna in the northwestern regions of China.  [in Chinese, English abstract] (Strength: 1.00)
+  - Do insects use templates or parameters for landmark navigation? (Strength: 0.99)
+  - Materials on the early spring wasps and ants fauna of Uzbekistan (Hymenoptera: Vespomorpha: Chrysidoidea, Scolioidea, Pompiloidea, Vespoidea, Apoidea [Spheciformes], Formicoidea).  [in Russian, English summary] (Strength: 0.99)
+  - Using a space-for-time approach to select the best biodiversity-based indicators to assess the effects of aridity on Mediterranean drylands (Strength: 0.99)
+  - Ant community structure under Retama sphaerocarpa shrubs in a semi-arid environment (Strength: 0.99)
+
+Topic 1:
+  - Social dimensions of physiological responses to global climate change: what we can learn from ants (Hymenoptera: Formicidae) (Strength: 1.00)
+  - Materiali per lo studio della fauna Tunisina raccolti da G. e L. Doria. III. Rassegna delle formiche della Tunisia. [part] (Strength: 0.99)
+  - Polymorphism and polyethism in the Formicinae ant Cataglyphis niger (Hymenoptera) (Strength: 0.99)
+  - Preimaginal learning as a basis of colony-brood recognition in the ant Cataglyphis cursor (Strength: 0.99)
+  - La reconnaissance coloniale chez les HymÈnoptËres sociaux (Strength: 0.99)
+
+Topic 5:
+  - 3D subcellular localization with superresolution array tomography on ultrathin sections of various species (Strength: 1.00)
+  - Recherches sur les vitesses des fourmis (Strength: 0.99)
+  - Materials on the ant fauna (Formicinae) of the basin of the middle and lower reaches of the Ili River. [in Russian] (Strength: 0.99)
+  - About so called 'slave-holding' instinct of ants.  [in Russian] (Strength: 0.99)
+  - Response thresholds and division of labor in insect colonies (Strength: 0.99)
+
+Topic 7:
+  - Thermal disruption of transitive hierarchies in Mediterranean ant communities (Strength: 0.99)
+  - Morphology of the cloacal gland in the ant Cataglyphis savignyi (Strength: 0.99)
+  - The role of ants in the dissemination of the trematode Dicrocoelium lanceatum.  [In Russian] (Strength: 0.99)
+  - Fourmis de Ceylan et d'…gypte rÈcoltÈes par le Prof. E. Bugnion. Lasius carniolicus. Fourmis de Kerguelen. Pseudandrie? Strongylognathus testaceus (Strength: 0.99)
+  - Distanzdressuren von getragenen Ameisen (Cataglyphis bicolor Fabr., Hymenoptera, Formicidae) (Strength: 0.99)
+
+Topic 2:
+  - Desert ants use olfactory scenes for navigation (Strength: 1.00)
+  - Die zonalen ˆkologischen und zoogeographischen Besonderheiten der Myrmekofauna der Russischen Ebene (Strength: 1.00)
+  - Animal homing: Ants build their own landmarks when they need them (Strength: 1.00)
+  - Geographic variation in the adaptive landscape for seed size at dispersal in the myrmecochorous Helleborus foetidus (Strength: 0.99)
+  - The phylogeny and faunogenesis of the genus Cataglyphis Foerster (Hymenoptera, Formicidae). [In Russian.] (Strength: 0.99)
+
+Topic 4:
+  - Scavenging in Mediterranean ecosystems: effect of the invasive Argentine ant (Strength: 1.00)
+  - Aphid-ant-parasitoid and host plant associations in drylands of Khuzestan, Iran (Hemiptera: Aphidae; Hymenoptera: Formicidae; Hymenoptera: Braconidae, Aphidiinae) (Strength: 0.99)
+  - Behavioral ecology of odometric memories in desert ants: acquisition, retention, and integration (Strength: 0.99)
+  - Path integration, views, search, and matched filters: the contributions of R¸diger Wehner to the study of orientation and navigation (Strength: 0.99)
+  - Direct measurement of mass loss during discontinuous ventilation in two species of ants (Strength: 0.99)
+
+Topic 10:
+  - New records of ants (Hymenoptera: Formicidae) from Sterea Ellas, Greece (Strength: 0.99)
+  - Dreidimensionale Orientierung anhand vereinfachter Repr‰sentationen von Routen und R‰umen: Verhaltensversuche an der W¸stenameise Cataglyphis fortis (Strength: 0.99)
+  - Sobre la fundaciÛn de la sociedad en la hormiga Cataglyphis iberica (Emery, 1906) (Hymenoptera, Formicidae) (Strength: 0.99)
+  - Environmental impacts of industrial activities on floral coverage with special emphasis on detoxification enzyme activities in Cataglyphis savignyi as pollution biomarker (Strength: 0.99)
+  - Estrategias de recolecciÛn de cad·veres de insectos en una comunidad de hormigas. (Hymenoptera: Formicidae) (Strength: 0.99)
+
+Topic 8:
+  - Kumbhalgarh wildlife sanctuary: an overview (Strength: 0.99)
+  - Nest structure and activities of Workers of Cataglyphis cursor Fonscolombe (Hymenoptera, Formicidae) (Strength: 0.99)
+  - Seasonal and daily activity of ants in the pre-Saharan steppe of Tunisia (Strength: 0.99)
+  - Agonistic relationships among sympatric Mediterranean ant species (Hymenoptera: Formicidae) (Strength: 0.99)
+  - A key to ants of the genus Cataglyphis Foerster (Hymenoptera, Formicidae) from Asia (Strength: 0.99)
+
+Topic 6:
+  - Sustainable management of the vine mealybug in organic vineyards (Strength: 0.99)
+  - Notes on Cataglyphis Foerster, 1850 of the bicolor species-group in Israel, with description of a new species (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Egocentric path integration models and their application to desert arthropods (Strength: 0.99)
+  - Chemical sorcery for sociality: Exocrine secretions of ants (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Navigation: Many senses make efficient foraging paths (Strength: 0.99)
+

@@ -1,0 +1,107 @@
+Intelligence_Topic Modeling Results
+======================
+
+Topic 4 (Strength: 1199.69):
+ants, size, brain, information, social, worker, model, pattern, results, maze, strategy, performance, evolution, foraging, colony, ant, models, morphology, species, food
+
+Topic 8 (Strength: 1195.16):
+swarm, intelligence, optimization, ant, algorithm, model, ants, information, behavior, particle, colony, aco, problem, collective, inspired, 10, chapter, optimal, systems, design
+
+Topic 1 (Strength: 933.79):
+ants, foraging, decision, ant, food, recruitment, pheromone, collective, making, colony, group, mass, trail, different, environment, intelligence, trails, nest, behavior, individual
+
+Topic 10 (Strength: 638.62):
+brood, species, ant, colony, self, foraging, ants, organization, collective, nest, experimental, distance, bridges, experiments, pattern, complex, behavior, model, based, biological
+
+Topic 9 (Strength: 527.80):
+ants, social, behavior, ant, information, species, insects, bees, wasps, use, new, language, intelligence, communication, human, organisms, systems, animals, symbioses, emerging
+
+Topic 2 (Strength: 457.76):
+behavior, model, ants, rules, path, foraging, animal, simulation, paper, insects, social, ant, physical, proposed, using, studies, complex, robot, control, modeling
+
+Topic 6 (Strength: 439.37):
+colony, quorum, defense, brood, decision, ants, process, consensus, time, social, size, cluster, prey, evolution, threshold, single, responses, insects, ant, collective
+
+Topic 3 (Strength: 353.05):
+ants, groups, ant, task, collective, better, intelligence, individuals, social, inspired, strategies, path, positive, feedback, differences, information, foraging, adaptive, results, strategy
+
+Topic 5 (Strength: 279.46):
+size, colonies, conditions, food, environmental, colony, decision, group, decisions, making, groups, thresholds, influence, advantage, environments, make, quorum, small, items, collective
+
+Topic 7 (Strength: 117.30):
+algorithms, network, simulation, able, basic, simple, paper, used, using, distributed, development, provides, framework, tool, example, evaluated, solenopsis, environment, supporting, language
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 4:
+  - The biological principles of swarm intelligence (Strength: 0.99)
+  - Ants (Hymenoptera: Formicidae) and humans: from inspiration and metaphor to 21st-century symbiont (Strength: 0.99)
+  - Synergy goes to war: A bioeconomic theory of collective violence (Strength: 0.99)
+  - Modeling ant colony foraging in dynamic and confined environment (Strength: 0.99)
+  - Animal intelligence again (Ants) (Strength: 0.99)
+
+Topic 8:
+  - Un nouvel example d'intelligence chez les fourmis (Strength: 0.99)
+  - Assessment of species diversity myrmecophilous beetles in nests of the ant Formica rufa in the Belarusian Poozerye.  [in Russian] (Strength: 0.99)
+  - Does ant intelligence important for long term ecological research? (Strength: 0.98)
+  - Distributed intelligence: a mechanism for social organization in an unpredictable environment (Strength: 0.98)
+  - A first mathematical model of brood sorting by ants: Functional self-organization without swarm-intelligence (Strength: 0.97)
+
+Topic 1:
+  - Simulating the evolution of ant behaviour in evaluating nest sites (Strength: 0.99)
+  - Nest choice in arboreal ants is an emergent consequence of network creation under spatial constraints (Strength: 0.98)
+  - Swarm intelligence : from natural to artificial systems (Strength: 0.98)
+  - Effects of group composition and level of selection in the evolution of cooperation in artificial ants (Strength: 0.97)
+  - Leaf cutter communication strategy, skills and attributes - a novel bio-inspired intelligent communication for computing research (Strength: 0.97)
+
+Topic 10:
+  - An agent-based model of nestsite selection in a mass-recruiting ant (Strength: 0.99)
+  - Collective intelligence (Strength: 0.99)
+  - From real to artificial ants (Strength: 0.99)
+  - Meta-heuristic ant colony optimization technique to forecast the amount of summer monsoon rainfall: skill comparison with Markov chain model (Strength: 0.99)
+  - Instinct and intelligence (Strength: 0.99)
+
+Topic 9:
+  - Arthropod navigation: Ants, bees, crabs, spiders finding their way (Strength: 0.99)
+  - Decentralised communication and connectivity in ant trail networks (Strength: 0.98)
+  - "Species genius" and plasticity of communication systems in ants.  [in Russian, English abstract] (Strength: 0.70)
+  - The Pachycondyla apicalis ants search strategy for data clustering problems (Strength: 0.55)
+  - Swarm smarts (Strength: 0.15)
+
+Topic 2:
+  - Machine learning and its applications in studying the geographical distribution of ants (Strength: 0.99)
+  - Ants are smart enough to keep appointments (Strength: 0.99)
+  - Group-size advantages to decision making are environmentally contingent in house-hunting Myrmecina ants (Strength: 0.98)
+  - Ethological and entomological laboratories on a chip - tracing labyrinth myrmecodromes for monitoring the dynamics of colonies in formicaria.  [in Russian] (Strength: 0.97)
+  - Observational study of animal behaviour: from instinct to intelligence (Strength: 0.94)
+
+Topic 6:
+  - Comment on "Phase Transitions in Instigated Collective Decision Making" (Strength: 0.97)
+  - The Pachycondyla apicalis ants search strategy for data clustering problems (Strength: 0.05)
+  - "Species genius" and plasticity of communication systems in ants.  [in Russian, English abstract] (Strength: 0.03)
+  - Genetic algorithms for deciphering the complex chemosensory code of social insects (Strength: 0.03)
+  - How to design experiments in animal behaviour.  3. How Do Ants Find the Shortest Path? (Strength: 0.02)
+
+Topic 3:
+  - Communication in social insects: sophisticated problem solving by small brains (Strength: 1.00)
+  - Chemical recruitment for foraging in ants (Formicidae) and termites (Isoptera): a revealing comparison (Strength: 0.99)
+  - Learning from house-hunting ants: Collective decision-making in organic computing systems (Strength: 0.99)
+  - Formation of an ant cemetery: swarm intelligence or statistical accident? (Strength: 0.98)
+  - Swarm intelligence: An approach from natural to artificial (Strength: 0.98)
+
+Topic 5:
+  - Embracing the swarm: what business and industry can learn from insect societies.  [abstract] (Strength: 0.99)
+  - Intellect in brutes. (on ants.) (Strength: 0.99)
+  - Collecting, discarding, and re-collecting of protein-rich food in a natural colony of Camponotus japonicus (Strength: 0.99)
+  - Chaos-order transition in foraging behavior of ants (Strength: 0.98)
+  - All about ants (Strength: 0.98)
+
+Topic 7:
+  - Springtail hunters of different levels of intelligence: behavioural versus cognitive specialization.  [abstract] (Strength: 0.99)
+  - Spatial evaluation of machine learning-based species distribution models for prediction of invasive ant species distribution (Strength: 0.99)
+  - Social complexity influences brain investment and neural operation costs in ants (Strength: 0.99)
+  - Book Review: Reznikova, Z. 2007: Animal intelligence. From individual to social cognition. Cambridge University Press, 472 p. (Strength: 0.99)
+  - Social complexity, diet, and brain evolution: modeling the effects of colony size, worker size, brain size, and foraging behavior on colony fitness in ants (Strength: 0.98)
+

@@ -11,6 +11,7 @@ import numpy as np
 from matplotlib.colors import LinearSegmentedColormap
 from matplotlib.patches import Polygon
 from fuzzywuzzy import process
+import geopandas as gpd
 
 def load_json_data(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
@@ -224,6 +225,34 @@ def create_world_map_heatmap(bibtex_records, output_dir):
 
     print("World map of publications heatmap created and saved.")
 
+def create_world_map_publications(bibtex_records, output_dir, prefix=''):
+    # Load world map data
+    world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+    
+    # Count publications by country
+    country_counts = {}
+    for record in bibtex_records:
+        country = record.get('address', '').split(',')[-1].strip()
+        if country:
+            country_counts[country] = country_counts.get(country, 0) + 1
+    
+    # Merge publication counts with world map data
+    world['publications'] = world['name'].map(country_counts)
+    
+    # Create the map
+    fig, ax = plt.subplots(figsize=(20, 10))
+    world.plot(column='publications', ax=ax, legend=True,
+               legend_kwds={'label': 'Number of Publications', 'orientation': 'horizontal'},
+               missing_kwds={'color': 'lightgrey'})
+    
+    plt.title(f'{prefix}World Map of Publications', fontsize=20)
+    plt.axis('off')
+    plt.tight_layout()
+    plt.savefig(f'{output_dir}/{prefix}world_map_publications.png', dpi=300, bbox_inches='tight')
+    plt.close()
+
+    print(f"World map of publications created and saved as {prefix}world_map_publications.png")
+
 def main():
     # Adjust the path to work from the Scripts/ folder
     json_file_path = os.path.join('..', 'Initial_Files', 'FORMIS_2024_July_Bibtex.json')
@@ -233,6 +262,7 @@ def main():
     os.makedirs(output_dir, exist_ok=True)
 
     create_world_map_heatmap(bibtex_records, output_dir)
+    create_world_map_publications(bibtex_records, output_dir)
 
 if __name__ == "__main__":
     main()

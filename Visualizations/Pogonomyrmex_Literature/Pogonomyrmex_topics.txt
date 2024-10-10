@@ -1,0 +1,107 @@
+Pogonomyrmex_Topic Modeling Results
+======================
+
+Topic 1 (Strength: 35623.26):
+social, ants, insects, ant, evolution, species, behavior, colony, insect, gene, different, worker, size, evolutionary, task, review, workers, genes, data, behavioral
+
+Topic 10 (Strength: 35133.12):
+species, ant, ants, diversity, richness, abundance, native, sites, vegetation, community, composition, communities, areas, habitats, habitat, study, plant, ground, traps, functional
+
+Topic 8 (Strength: 28534.03):
+species, ant, genera, ants, pheidole, collected, solenopsis, subfamilies, camponotus, new, misspelled, sp, state, records, myrmicinae, genus, recorded, study, formica, total
+
+Topic 9 (Strength: 23923.91):
+foraging, colonies, colony, size, ants, ant, workers, pogonomyrmex, harvester, species, foragers, rate, rates, food, prey, body, activity, barbatus, horned, lizards
+
+Topic 3 (Strength: 20364.36):
+ant, species, ants, habitat, time, forest, diversity, scale, article, prepared, government, public, official, employee, written, domain, use, spatial, effects, results
+
+Topic 2 (Strength: 17637.85):
+seed, seeds, ants, soil, ant, harvester, nests, plant, removal, species, foraging, activity, desert, pogonomyrmex, plants, nest, soils, dispersal, higher, rodents
+
+Topic 4 (Strength: 12898.99):
+nest, nests, occidentalis, colonies, pogonomyrmex, ants, ant, invicta, mound, richteri, north, harvester, america, saevissima, mounds, note, workers, soil, area, foraging
+
+Topic 6 (Strength: 12780.91):
+species, pogonomyrmex, mating, ants, males, females, male, new, female, colonies, queens, workers, wheeler, multiple, high, single, worker, sex, production, investment
+
+Topic 7 (Strength: 10489.46):
+queens, colonies, queen, colony, ant, seed, number, populations, harvester, founding, population, density, pogonomyrmex, established, survival, competition, workers, removed, cooperative, spatial
+
+Topic 5 (Strength: 9244.11):
+lineage, queens, caste, workers, genetic, lineages, pogonomyrmex, acromyrmex, determination, colonies, ants, gland, rugosus, eggs, worker, produced, misspelled, harvester, populations, males
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 1:
+  - Ant olfactory receptors underwent dramatic expansion and positive selection.  [abstract] (Strength: 1.00)
+  - Distribution and evolution of genetic caste determination in Pogonomyrmex seed-harvester ants (Strength: 0.99)
+  - Una nueva especie de Pogonomyrmex Mayr de selva h˙meda tropical (Hymenoptera: Formicidae) (Strength: 0.99)
+  - The ecology of ants in the Mojave Desert: Their interspecific relationships, resource utilization, and diversity (Strength: 0.99)
+  - A taxonomic revision of the seed-harvester ant genus Pogonomyrmex (Hymenoptera: Formicidae) on Hispaniola (Strength: 0.99)
+
+Topic 10:
+  - Ants (Hymenoptera: Formicidae) in a temperate ecosystem from La Malinche National Park, Mexico (Strength: 1.00)
+  - Desert rodents reduce seedling recruitment of Salsola paulsenii (Strength: 0.99)
+  - Preferencias de los formicidos del suelo a dos tipos de nutrientes (sacarosa y caseina) en la zona urbana de cd. Victoria, Tamaulipas, MÈxico (Strength: 0.99)
+  - Does the harvester ant, Pogonomyrmex occidentalis, shape its mound to catch the morning sun? (Strength: 0.99)
+  - The ants of Los Alamos County, New Mexico (Hymenoptera: Formicidae) (Strength: 0.99)
+
+Topic 8:
+  - Western harvester ant, Pogonomyrmex occidentalis (Cresson) (Hymenoptera: Formicidae) (Strength: 1.00)
+  - Las hormigas (Hymenoptera: Formicidae) de Guatemala (Strength: 0.99)
+  - North America myrmecophilous beetles of the genus Cremastocheilus: Discussion of their classification and review of the subgenera Trinodia and Anatrinodia (Coleoptera: Cetoniidae) (Strength: 0.99)
+  - Loose rock as biobarriers in shallow land burial (Strength: 0.99)
+  - Multiple mating, sperm utilization, and social evolution (Strength: 0.99)
+
+Topic 9:
+  - Influence of temporal fluctuations in seed abundance on the diet of harvester ants (Pogonomyrmex spp.) in the central Monte desert, Argentina (Strength: 1.00)
+  - Diversidade de formigas epÌgeas em cerrado antropizado do Morro do Serrinha no municÌpio de Goi‚nia-GO (Strength: 0.99)
+  - Foraging behavior in the ant genus Messor (Hymenoptera: Formicidae: Myrmicinae) (Strength: 0.99)
+  - Peptide toxins that target vertebrate voltage-gated sodium channels underly the painful stings of harvester ants (Strength: 0.99)
+  - Truman's scientific guide to pest control operations (Strength: 0.99)
+
+Topic 3:
+  - Numbers and densities in a population of the ant Pogonomyrmex rugosus (Hymenoptera: Formicidae) in Trans-Pecos Texas (Strength: 1.00)
+  - Competition in desert rodents: An experiment with semipermeable exclosures (Strength: 0.99)
+  - A collection technique for mound-building ants (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Microhabitat selection by Texas horned lizards in southern Texas (Strength: 0.99)
+  - Environmental drivers of ant species richness and composition across the Argentine Pampas grassland (Strength: 0.99)
+
+Topic 2:
+  - Response thresholds and division of labor in insect colonies (Strength: 0.99)
+  - Preliminary study of the ants of southern California (Strength: 0.99)
+  - Diversity of species and behavior of hymenopteran parasitoids of ants: A review (Strength: 0.99)
+  - Myrmecofauna of the Southern Catarinense Restinga sandy coastal plain: New records of species occurrence for the State of Santa Catarina and Brazil (Strength: 0.99)
+  - Transporte de alimentos lÌquidos mediante objetos sÛlidos en Messor barbarus (Linnaeus, 1767), y reconsideraciÛn del denominado "comportamiento de uso de instrumentos" en las hormigas (Strength: 0.99)
+
+Topic 4:
+  - Habitat disturbance and the diversity and abundance of ants (Formicidae) in the southeastern Fall-Line Sandhills (Strength: 0.99)
+  - The molecular basis of social behavior: models, methods and advances (Strength: 0.99)
+  - Studies on the density and vegetation ecology of Pogonomyrmex occidentalis (Cresson) (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Temporal patterns of abundance of arthropods on sand dunes (Strength: 0.99)
+  - Influence of the vegetation mosaic on ant (Formicidae: Hymenoptera) distributions in the Northern Brazilian Pantanal (Strength: 0.99)
+
+Topic 6:
+  - ContribuciÛn al conocimiento de las hormigas de Hidalgo (Hymenoptera: Formicidae) (Strength: 0.99)
+  - The entomology of the mid-alpine zone of Custer County, Colorado (Strength: 0.99)
+  - Lista preliminar anotada de los formÌcidos de la Provincia de La Pampa (Strength: 0.99)
+  - Lower thermal tolerance in nocturnal than in diurnal ants: a challenge for nocturnal ectotherms facing global warming (Strength: 0.99)
+  - The natural history of the agricultural ant of Texas. A monograph of the habits, architecture, and structure of Pogonomyrmex barbatus (Strength: 0.99)
+
+Topic 7:
+  - Evaluation of three techniques for the study of harvester (Pogonomyrmex spp.) diet (Strength: 1.00)
+  - Influence of seed size on feeding preferences and diet composition of three sympatric harvester ants in the central Monte Desert, Argentina (Strength: 1.00)
+  - Feeding, clutch sizes, and the population dynamics of the Texas Horned Lizard, Phrynosoma comutum (Strength: 0.99)
+  - Habitat generalists drive nestedness in a tropical mountaintop insect metacommunity (Strength: 0.99)
+  - Ants in horned toads (Strength: 0.99)
+
+Topic 5:
+  - Fast, accurate method of measuring ant head widths (Strength: 0.99)
+  - Oxygen consumption and the evolution of order: negentropy criteria applied to the evolution of ants (Strength: 0.99)
+  - Occurrence of the Jerusalem cricket, Stenopelmatus fuscus (Orthoptera: Gryllacrididae), in a nest of the Owyhee harvester ant, Pogonomyrmex owyheei (Hymenoptera: Formicidae), with taxonomic notes on Stenopelmatus (Strength: 0.99)
+  - Living on the edge: ants on the dunes of Georgia's barrier islands (Strength: 0.99)
+  - The ants (Hymenoptera: Formicidae) of the San Gabriel Mountains of southern California, USA with an annotated list (Strength: 0.99)
+

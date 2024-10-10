@@ -1,0 +1,107 @@
+Hawaii_Topic Modeling Results
+======================
+
+Topic 2 (Strength: 8864.35):
+species, ant, ants, invasive, native, hawaii, pheidole, solenopsis, megacephala, hawaiian, control, island, auropunctata, invasion, islands, time, distribution, introduced, group, potential
+
+Topic 3 (Strength: 4211.49):
+ants, ant, pineapple, species, mealybug, plants, invasive, natural, mealybugs, native, plant, enemies, megacephala, effects, insects, field, prey, collected, auropunctata, leaf
+
+Topic 5 (Strength: 4030.05):
+ant, ants, species, native, islands, argentine, endemic, park, introduced, populations, patterns, haleakala, flower, crazy, high, invasive, island, pacific, arthropod, spread
+
+Topic 4 (Strength: 3988.00):
+species, ant, ants, megacephala, queens, males, colonies, nests, longicornis, populations, hawaii, population, workers, queen, new, nest, cardiocondyla, pheidole, number, variation
+
+Topic 9 (Strength: 3575.07):
+ant, bait, ants, baits, treatment, plots, auropunctata, field, control, megacephala, species, pheromone, reduced, queens, colonies, laboratory, treatments, observed, hydramethylnon, mortality
+
+Topic 6 (Strength: 3242.99):
+sp, forel, species, emery, mayr, ants, smith, cardiocondyla, solenopsis, ant, sinv, invicta, geminata, new, monomorium, collected, wheeler, syn, genus, florida
+
+Topic 10 (Strength: 3218.79):
+populations, species, native, wolbachia, introduced, ant, range, supercolonies, carcass, ants, data, using, associated, dna, humile, arthropod, decomposition, insect, trail, genetic
+
+Topic 8 (Strength: 2350.38):
+ant, hawaii, economic, rifa, banana, prevention, ants, costs, red, treated, imported, million, buren, states, 1968, agriculture, billion, aphids, gy, pest
+
+Topic 1 (Strength: 2041.62):
+islands, records, areas, megacephala, species, world, spread, new, native, auropunctata, hawaii, west, published, including, st, africa, south, pheidole, populations, exotic
+
+Topic 7 (Strength: 1822.26):
+males, hawaii, species, winged, ergatoid, ifa, male, ant, syn, wingless, spread, million, quarantine, cardiocondyla, sugarcane, island, human, rev, greenhouse, sites
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 2:
+  - [Untitled.  'Iridomyrmex humilis Mayr'.] (Strength: 0.99)
+  - Arthropod succession patterns in exposed carrion on the island of O'ahu, Hawaiian Islands, USA (Strength: 0.99)
+  - Toxic barrier to prevent ant tube (Strength: 0.99)
+  - Notes on some Hawaiian insects (Strength: 0.99)
+  - The biology and distribution of ants in Hawaiian pineapple fields (Strength: 0.98)
+
+Topic 3:
+  - Bigheaded ants (Strength: 1.00)
+  - OrganizaÁ„o social e status de praga da formiga argentina Linepithema humile (Mayr 1868) no Rio Grande do Sul.  [Mesa-Redonda] (Strength: 0.99)
+  - Detrimental effects of two widespread invasive ant species on weight and survival of colonial nesting seabirds in the Hawaiian Islands (Strength: 0.99)
+  - Reassessment of the role of predators and Trissolcus basalis in biological control of southern green stink bug (Hemiptera: Pentatomidae) in Hawaii (Strength: 0.99)
+  - Another exotic ant on the prowl (Strength: 0.99)
+
+Topic 5:
+  - Diet, density, and distribution of the introduced greenhouse frog, Eleutherodactylus planirostris, on the island of Hawaii (Strength: 0.99)
+  - Impacts of alien land arthropods and mollusks on native plants and animals in Hawaii (Strength: 0.99)
+  - Raves & rants about invasive crazy ants.  [abstract] (Strength: 0.99)
+  - Notes and exhibitions: Quarantine interceptions (Strength: 0.99)
+  - Increased neighbor interaction and fear of social sanctions: Associations with resident action to control the invasive little fire ant (Strength: 0.99)
+
+Topic 4:
+  - Semiochemicals extracted from a dolichoderine ant affects the feeding and tunneling behavior of the Formosan subterranean termite (Isoptera: Rhinotermitidae) (Strength: 1.00)
+  - Hawaiian ant-flower networks: nectar-thieving ants prefer undefended native over introduced plants with floral defenses (Strength: 0.99)
+  - Biological control of tephritid fruit flies in the Americas and Hawaii: A review of the use of parasitoids and predators (Strength: 0.99)
+  - Notes on Maui insects (Strength: 0.99)
+  - Monomorium pharaonis Linnaeus (Strength: 0.99)
+
+Topic 9:
+  - Fire ant damage to polyethylene tubing used in drip irrigation systems (Strength: 1.00)
+  - Three new strategies for improving biosecurity and invasive species management to build resilience in Pacific Islands (Strength: 0.99)
+  - Argentine ant control on Protea, Hawaii, 1984 (Strength: 0.99)
+  - A geographical distribution list of insects and mites associated with cocoa, derived from literature published before 2008 (Strength: 0.99)
+  - Effects of argentine ants on invertebrate biodiversity in northern California (Strength: 0.99)
+
+Topic 6:
+  - Ants may affect control of mealybugs (Strength: 1.00)
+  - Observations on sugar cane mealybugs in Hawaii (Strength: 1.00)
+  - Symbiotic bacterial communities in ants are modified by invasion pathway bottlenecks and alter host behavior (Strength: 1.00)
+  - A review of the insects and related arthropods of Midway Atoll (Strength: 0.99)
+  - Characterization of microsatellite loci for the Argentine ant, Linepithema humile, and their potential for analysis of colony structure in invading Hawaiian populations (Strength: 0.99)
+
+Topic 10:
+  - A revision of the ant genus Leptogenys Roger (Hymenoptera: Formicidae) in the Ethiopian Region, with a review of the Malagasy species (Strength: 1.00)
+  - Improving ant eradications: details of more successes, a global synthesis and recommendations (Strength: 0.99)
+  - Insects and other invertebrates from Laysan Island (Strength: 0.99)
+  - The green scale, Coccus viridis (Green) (Homoptera: Coccidae), and ants (Strength: 0.99)
+  - Effect of two ant species (Hymenoptera: Formicidae) on the foraging and survival of the Formosan subterranean termite (Isoptera: Rhinotermitidae) (Strength: 0.99)
+
+Topic 8:
+  - Ergebnisse einer Reise nach dem Pacific (Schauinsland 1896-1897). Formiciden (Strength: 0.99)
+  - New stinging little fire ant found on the big island and Kauai (Strength: 0.99)
+  - King of the hill (Strength: 0.99)
+  - Biological control (Strength: 0.99)
+  - A study of mealybug populations (Dysmicoccus brevipes (Ckl.)) in an ant-free field (Strength: 0.98)
+
+Topic 1:
+  - Influence of brood on the nutritional preferences of the tropical ant species, Pheidole megacephala (F.) and Ochetellus glaber (Mayr) (Strength: 0.99)
+  - Ecological and socioeconomic impacts of invasive alien species in island ecosystems (Strength: 0.99)
+  - Evaluation of the repellent activity of eucalyptus oil to bigheaded ant, 1988 (Strength: 0.99)
+  - The medical and veterinary importance of the Formicidae (Strength: 0.99)
+  - Notes and exhibitions: Biological control of Pseudococcus brevipes (Ckll.) (Strength: 0.99)
+
+Topic 7:
+  - A survey of stored product insects in Hawaii (Strength: 0.99)
+  - On the Hymenoptera of the Hawaiian Islands (Strength: 0.99)
+  - Guava industry analysis number 4 (Strength: 0.99)
+  - Correlates of vulnerability among arthropod species threatened by invasive ants (Strength: 0.99)
+  - The Sugar Cane Leafhopper and its parasites in Hawaii (Strength: 0.99)
+

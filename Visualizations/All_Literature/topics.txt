@@ -1,0 +1,107 @@
+Topic Modeling Results
+======================
+
+Topic 1 (Strength: 629503.88):
+species, ant, forest, ants, diversity, richness, sites, soil, habitat, abundance, areas, composition, study, area, vegetation, habitats, communities, community, different, forests
+
+Topic 6 (Strength: 514908.92):
+species, ant, ants, plant, host, plants, interactions, size, populations, variation, social, results, different, effects, genetic, data, traits, study, evolution, associated
+
+Topic 10 (Strength: 459561.07):
+ants, ant, seed, control, seeds, plants, predation, predators, plant, trees, significantly, bait, field, nests, foraging, species, study, baits, natural, treatment
+
+Topic 5 (Strength: 429960.00):
+workers, colonies, colony, queens, queen, worker, ant, ants, fungus, social, nest, nests, leaf, size, atta, brood, cutting, results, number, reproductive
+
+Topic 7 (Strength: 361752.52):
+ants, nest, foraging, ant, food, nests, soil, activity, behavior, trail, foragers, time, colony, model, individual, using, information, different, used, workers
+
+Topic 3 (Strength: 321264.48):
+species, sp, new, described, genus, camponotus, nov, genera, forel, ant, pheidole, known, collected, group, ants, emery, crematogaster, mayr, recorded, based
+
+Topic 9 (Strength: 272626.70):
+ants, larvae, ant, workers, species, prey, host, gland, behavior, eggs, nest, larval, nests, glands, females, adult, pupae, observed, chemical, formica
+
+Topic 4 (Strength: 213445.28):
+invicta, ant, solenopsis, ants, imported, article, public, prepared, domain, time, red, government, written, official, employee, species, control, invasive, native, north
+
+Topic 8 (Strength: 191146.30):
+species, collected, insects, study, total, formicidae, hymenoptera, arthropods, insect, traps, prey, families, individuals, number, 10, diversity, diet, males, coleoptera, orders
+
+Topic 2 (Strength: 153236.84):
+ants, ant, venom, nectar, flowers, species, bees, floral, pollination, flower, different, formica, protein, body, pollinators, proteins, insect, bee, study, amino
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 1:
+  - Population structure of the male-polymorphic ant Cardiocondyla obscurior (Strength: 1.00)
+  - Catalogue de lentomofaune du ChÍne vert du Moyen Atlas (Maroc) (Strength: 1.00)
+  - Ant mimicry by Passiflora flowers? (Strength: 1.00)
+  - Recurrent bridgehead effects accelerate global alien ant spread (Strength: 1.00)
+  - Ants of the Far Eastern USSR. [in Russian] (Strength: 1.00)
+
+Topic 6:
+  - Formation of mesoherpetobionts communities on a reclamated <sic> coal open pit dump (Strength: 0.99)
+  - Description et reprÈsentation des trois castes de Chalepoxenus kutteri (nov. sp.) (HymÈnoptËres Formicidae - Myrmicidae) (Strength: 0.99)
+  - Habitat segregation in ants of the subgenus Serviformica of Mt. Fuji (Strength: 0.99)
+  - Interaccion entre Delphacide e Hymenoptera en cultivos de maize en la Argentina (Strength: 0.99)
+  - Metharhizium anisopliae (Metch.) Sorokin no controle de Atta sexdens rubropilosa Forel, 1908 (Hymenoptera: Formicidae) (Strength: 0.99)
+
+Topic 10:
+  - Enumerazione dei formicidi che rinvengonsi nei contorni di Napoli con descrizioni di specie nuove o meno conosciute (Strength: 1.00)
+  - Effects of birds on the intensity of ant rain: a terrestrial form of invertebrate drift (Strength: 1.00)
+  - Studies of Laboulbeniales (Fungi, Ascomycota) on Myrmica ants (II): variation of infection by Rickia wasmannii over habitats and time (Strength: 1.00)
+  - Golden anthills (Strength: 1.00)
+  - Sch¸tzt unsere Waldameisen (Strength: 1.00)
+
+Topic 5:
+  - Response of ground arthropods to effect of urbanization in southern Osaka, Japan (Strength: 0.99)
+  - Efeito da disponibilidade de alimento sobre a reproduÁ„o da formiga Allomerus octoarticulatus mayr (Myrmicinae) associada a mirmecÛfita Hirtella myrmecophila Pilg. (Chrysobalanaceae).  [expanded abstract] (Strength: 0.99)
+  - Response of extrafloral nectar production to elevated atmospheric carbon dioxide (Strength: 0.99)
+  - Keanekaragaman arthropoda pada perkebunan kelapa sawit rakyat di Kabupaten Dharmasraya, Sumatera Barat.  [English abstract] (Strength: 0.99)
+  - Formation of preforage aggregations in ponerine ants (Hymenoptera: Formicidae), a possible step toward group raiding (Strength: 0.99)
+
+Topic 7:
+  - MyrmekologickÈ pozn·mky 4 (Strength: 1.00)
+  - The insect pests of forest plantation trees in the Solomon Islands (Strength: 0.99)
+  - A taxonomic revision and phylogenetic analysis of the ant genus Gnamptogenys Roger in Southeast Asia and Australasia (Hymenoptera: Formicidae: Ponerinae) (Strength: 0.99)
+  - Grant No. 1167 - Johnson Fund (1974), $500.  Guide to Idaho ants (Strength: 0.99)
+  - Scale dependence of diversity measures in a leaf-litter ant assemblage (Strength: 0.99)
+
+Topic 3:
+  - Act locally, think globally: Ant studies in Argentina in the context of ecological theory (Strength: 1.00)
+  - The use of the anaesthetic, enflurane, for determination of metabolic rates and respiratory parameters in insects, using the ant, Camponotus maculatus (Fabricius) as the model (Strength: 1.00)
+  - Successful biological control of Asian citrus psyllid, Diaphorina citri, in California (Strength: 1.00)
+  - Archiving parasites and Protozoa for research, diagnoses, and more (Strength: 0.99)
+  - Urban community gardener knowledge of arthropods in vegetable gardens in Washington, D.C (Strength: 0.99)
+
+Topic 9:
+  - Yuca. Insectos y enfermedades (Strength: 0.99)
+  - The leaf cutting ants: Serious pests of forests in Brazil (Strength: 0.99)
+  - Ecological and faunal characteristics of rove beetles (Coleoptera, Staphylinidae) - inhabitants of ant nests in the Samara region.  [in Russian, English abstract] (Strength: 0.99)
+  - Maize planting time and arthropod abundance in southern Mindanao, Philippines. II. Population dynamics of natural enemies (Strength: 0.99)
+  - Monitoramento e controle de formigas em hospitais (Strength: 0.99)
+
+Topic 4:
+  - RojenÌ mravenco (Strength: 0.99)
+  - Olfactory behavior and response of household ants (Hymenoptera) to different types of coffee odor: A coffee-based bait development prospect (Strength: 0.99)
+  - Decreased indirect defense in the invasive tree, Triadica sebifera (Strength: 0.99)
+  - A morphological study on the male genitalia of Paracryptocerus (P.) pusillus (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Invaders and intruders (Strength: 0.99)
+
+Topic 8:
+  - Behavioural responses of workers towards worker-produced male larvae and queen-produced worker larvae in Acromyrmex subterraneus brunneus Forel, 1911 (Hym., Formicidae) (Strength: 0.99)
+  - Waldameisen-Vermehrung durch Bildung von Ablegern (Strength: 0.99)
+  - AvaliaÁ„o da eficiÍncia do controle de Atta sexdens rubropilosa atravÈs do sistema de termonebulizaÁ„o, na regi„o de Aracruz, E.S. (Strength: 0.99)
+  - Die Blattschneiderameisen (Atta und Acromyrmex) als Laboratoriumstiere (Strength: 0.99)
+  - Life history of Clubiona robusta L. Koch and related species (Araneae, Clubionidae) in South Australia (Strength: 0.99)
+
+Topic 2:
+  - The evolution of sociality - testing the reproductive ground plan hypothesis in ants.  [abstract] (Strength: 0.99)
+  - Fire ants (Strength: 0.99)
+  - El protozoo Thelohania solenopsae (Microsporida: Thelohaniidae) como agente potencial de control biolÛgico de hormigas coloradas en los Estados Unidos (Strength: 0.99)
+  - Millipede defence: use of detachable bristles to entangle ants (Strength: 0.99)
+  - Nieuwe vindplaatsen van Claviger longicornis M¸ll (Strength: 0.99)
+

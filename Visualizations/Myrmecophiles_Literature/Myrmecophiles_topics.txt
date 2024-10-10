@@ -1,0 +1,107 @@
+Myrmecophiles_Topic Modeling Results
+======================
+
+Topic 7 (Strength: 4814.66):
+species, ant, ants, myrmecophiles, host, colonies, associated, nests, nest, beetles, new, aphid, genus, formica, presence, myrmecophilous, described, army, eciton, study
+
+Topic 10 (Strength: 3035.81):
+ant, species, nests, ants, myrmecophiles, host, workers, nest, wood, red, mite, richness, different, community, collected, mounds, beetles, myrmecophile, brood, chapter
+
+Topic 9 (Strength: 2295.60):
+host, ant, ants, chemical, myrmecophiles, species, paussus, social, cuticular, mimicry, range, hydrocarbon, strategies, nest, spider, myrmecophile, adaptations, beetles, life, behavioral
+
+Topic 3 (Strength: 1414.79):
+ants, ant, species, myrmecophily, myrmecophiles, plant, new, families, acoustic, brood, costs, nest, butterfly, lycaenid, myrmecophilous, host, chambers, literature, level, paussus
+
+Topic 4 (Strength: 1260.05):
+ants, larvae, species, ant, plants, myrmecophiles, host, plant, nests, aphids, adults, nest, sp, chemical, obligate, angulata, brood, queen, zylda, butterflies
+
+Topic 5 (Strength: 994.44):
+ants, ant, species, myrmecophiles, nests, flies, fauna, rwas, diptera, aphids, highly, insects, recorded, genera, sp, park, examined, organisms, 12, national
+
+Topic 8 (Strength: 811.90):
+quality, species, obligate, myrmecophiles, host, ants, ant, plant, aloeides, myrmecophile, aphid, different, plants, genera, trail, organs, thestor, patches, association, glands
+
+Topic 2 (Strength: 761.38):
+camponotus, obligate, iolaus, myrmecophiles, myrmecophile, lepidochrysops, deudorix, crematogaster, spp, anthene, larvae, sp, syn, euchrysops, morphological, aphnaeus, capys, orachrysops, leptotes, azanus
+
+Topic 6 (Strength: 507.30):
+species, beetles, ants, colonies, hosts, studies, behavioral, cataglyphis, observed, myrmecophilous, interactions, provide, adopted, profiles, host, hydrocarbon, ant, myrmecophiles, butterflies, data
+
+Topic 1 (Strength: 499.06):
+spiders, exsectoides, ant, arhopala, myrmecophiles, smaragdina, oecophylla, populations, predators, chcs, obligatory, larvae, nests, spider, myrmecophilous, diversity, oribatid, microdon, nest, densities
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 7:
+  - Un mot sur les Animaux articules myrmecophiles (Strength: 0.99)
+  - Myrmecophilous beetles in Ireland, Scotland and Wales (Strength: 0.97)
+  - Myrmecophilous organisms associated with colonies of the ponerine ant Neoponera villosa (Hymenoptera: Formicidae) nesting in Aechmea bracteata bromeliads: a biodiversity hotspot (Strength: 0.97)
+  - The pied piper: A parasitic beetle's melodies modulate ant behaviours (Strength: 0.92)
+  - Les communications tactiles interspecifiques chez les Diapriidae myrmÈcophiles: Lepidopria pedestris Kiefer et Solenopsia imitatrix Wasmann et leur hote Diplorhoptrum fugax Latr. (Solenopsis fugax Latr.) (Strength: 0.87)
+
+Topic 10:
+  - Literature for 1912 on the behavior of ants and myrmecophiles (Strength: 0.99)
+  - Myrmecophily: The interaction networks and colony behavior with ants (Strength: 0.99)
+  - Catalogue of known immature stages of Camptosomate Leaf Beetles (Coleoptera, Chrysomelidae, Cryptocephalinae and Lamprosomatinae) (Strength: 0.98)
+  - Progress in our knowledge of British Coleoptera, ants, and myrmecophiles (Strength: 0.98)
+  - Biodiversity of desert ants (Hymenoptera: Formicidae) at Big Bend National Park, Brewster County, Texas, a preliminary assessment (Strength: 0.98)
+
+Topic 9:
+  - Literature for 1911 on the behavior of ants and myrmecophiles (Strength: 0.99)
+  - Les plantes myrmecophiles du Sud Est Asiatique (Strength: 0.99)
+  - Describtion <sic> of Lycaenidae butterflies (Strength: 0.99)
+  - New neotropical myrmecophiles (Strength: 0.99)
+  - Description de ColÈoptËres termitophiles et myrmecophiles de Madagascar (Strength: 0.99)
+
+Topic 3:
+  - Do mutualistic associations have broader host ranges than neutral or antagonistic associations? A test using myrmecophiles as model organisms (Strength: 0.99)
+  - Introduction: history and overview of insect hydrocarbons (Strength: 0.99)
+  - Fine individual specialization and elitism among workers of the ant Ectatomma tuberculatum for a highly specific task: Intruder removal (Strength: 0.99)
+  - Guests of social insects (Strength: 0.99)
+  - A revision of the Vatesini, a tribe of neotropical myrmecophiles (Coleoptera, Staphylinidae) (Strength: 0.99)
+
+Topic 4:
+  - Remarques sur l'evolution du comportement des myrmecophiles (Strength: 0.99)
+  - When ground beetles fly: A taxonomic review of the arboreal, myrmecophilous neotropical genus, Homopterus (Coleoptera: Carabidae: Paussinae) with a new species description, species diagnoses, and insights into species distributions (Strength: 0.99)
+  - On three species of isopod Crustacea found in the nests of ants in South Australia (Strength: 0.99)
+  - Recherches sur la biologie des animaux myrmecophiles, IV.  Le comportement de Dichillus minutus Sol. (Col. Tenebrionidae), hÙte de la Fourmi Pheidole pallidula Nyl.: un cas de myrmÈcophilie facultative (Strength: 0.98)
+  - Vztah druhovÈ rozmanitosti rozn˝ch taxonomick˝ch skupin v nelesnÌch biotopech (Strength: 0.98)
+
+Topic 5:
+  - *SixiËme lettre sur le Margarodes: Cyphoderus affinis A. Giard, et Lipura pusilla A. Giard, deux espËces nouvelles de Thysanoures myrmecophiles du Chili (Strength: 0.99)
+  - The butterflies of Papua New Guinea. Their systematics and biology (Strength: 0.99)
+  - Some myrmecophiles and some Euaesthetinae from Ghana (Coleoptera: Staphylinidae) (Strength: 0.99)
+  - Springtails (Collembola) associated with nests of fungus-growing ants (Formicidae: Myrmicinae: Attini) in southern Bahia, Brazil (Strength: 0.98)
+  - Diagnoses de Staphylinides myrmecophiles nouveaux (Strength: 0.70)
+
+Topic 8:
+  - A revision of the African species of the aleocharine tribe Dorylomimini (Coleoptera: Staphylinidae).  II. The genera Dorylomimus, Dorylonannus, Dorylogaster, Dorylobactrus, and Mimanomma, with notes on their behavior (Strength: 0.99)
+  - Aphid-ant relationships: The role of cuticular hydrocarbons and different chemical stimuli in triggering mutualistic behavior (Strength: 0.99)
+  - Arboreal ant colonies as 'hot-points' of cryptic diversity for myrmecophiles: the weaver ant Camponotus sp. aff. textor and its interaction network with its associates (Strength: 0.99)
+  - Chemical ecology of ant-plant dwellers and interactions with the ants (Strength: 0.99)
+  - Chemical camouflage induced by diet in a pest treehopper on host plants (Strength: 0.99)
+
+Topic 2:
+  - The ants (Formicidae), and some myrmecophiles, of Sicily. [concl.] (Strength: 0.99)
+  - Osservazioni diverse intorno al nomadismo dell'Aphaenogaster picena Baroni con particolare riguardo all'orientamento (Hymenoptera, Formicidae) (Strength: 0.98)
+  - The topology and drivers of ant-symbiont networks across Europe (Strength: 0.98)
+  - Notes on some California myrmecophiles (Strength: 0.98)
+  - Chemical integration of Thorictus myrmecophilous beetles into Cataglyphis ant nests (Strength: 0.98)
+
+Topic 6:
+  - Ants and myrmecophiles at Bordighera. [concl.] (Strength: 0.99)
+  - Should aphids attract or repel ants? Effect of rival aphids and extrafloral nectarines on ant-aphid interactions (Strength: 0.99)
+  - On the myrmecophiles plants. [In Russian with English summary] (Strength: 0.99)
+  - Facultative myrmecophily (Hymenoptera: Formicidae) in the Hops Blue Butterfly, Celastrina humulus (Lepidoptera: Lycaenidae) (Strength: 0.99)
+  - A field study of the nesting ecology of the thatching ant, Formica obscuripes Forel, at high altitude in Colorado (Strength: 0.99)
+
+Topic 1:
+  - The evolution of the Pygostenini (Coleoptera, Staphylinidae) (Strength: 1.00)
+  - New species and new records of myrmecophiles (Coleoptera: Staphylinidae) found in Panama with army ants (Hymenoptera: Formicidae) together with a redescription of the genus Ecitodonia (Strength: 0.99)
+  - When are ant-attractant devices a worthwhile investment? Vicia faba extrafloral nectaries and Lasius niger ants (Strength: 0.99)
+  - When rare species become endangered: cryptic speciation in myrmecophilous hoverflies (Strength: 0.99)
+  - {Rozto (Strength: 0.99)
+

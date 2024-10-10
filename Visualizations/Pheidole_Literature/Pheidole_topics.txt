@@ -1,0 +1,107 @@
+Pheidole_Topic Modeling Results
+======================
+
+Topic 8 (Strength: 138538.04):
+species, ant, ants, richness, forest, abundance, sites, composition, diversity, communities, community, soil, vegetation, habitat, habitats, ground, different, litter, study, higher
+
+Topic 10 (Strength: 117541.59):
+species, ants, ant, collected, genera, forest, total, study, subfamilies, diversity, traps, area, sp, pheidole, recorded, number, richness, pitfall, misspelled, areas
+
+Topic 2 (Strength: 78359.12):
+seed, ants, seeds, workers, ant, species, colony, size, dispersal, nest, colonies, social, worker, nests, pheidole, foraging, removal, behavior, food, different
+
+Topic 9 (Strength: 66240.05):
+ant, ants, species, native, invasive, control, megacephala, humile, argentine, pheidole, non, populations, natural, invasion, pest, trees, invaded, introduced, population, exotic
+
+Topic 4 (Strength: 55181.23):
+ants, ant, plants, plant, species, prey, host, insects, extrafloral, associated, food, interactions, nectaries, insect, nectar, diet, leaf, herbivores, leaves, pheidole
+
+Topic 3 (Strength: 54517.31):
+species, diversity, ant, functional, biodiversity, habitat, communities, taxonomic, use, ants, patterns, forest, different, environmental, land, data, ecological, results, landscape, groups
+
+Topic 5 (Strength: 46136.04):
+ant, ants, species, pheidole, invicta, solenopsis, larvae, colonies, eggs, geminata, monomorium, paratrechina, workers, sp, observed, time, field, longicornis, public, written
+
+Topic 6 (Strength: 39132.67):
+species, new, misspelled, records, genera, pheidole, list, known, listed, ants, ant, acromyrmex, genus, myrmicinae, subfamilies, solenopsis, recorded, distribution, north, reported
+
+Topic 1 (Strength: 22277.61):
+species, sp, camponotus, formica, lasius, tetramorium, pheidole, aphaenogaster, messor, crematogaster, temnothorax, tapinoma, ant, myrmica, recorded, pallidula, plagiolepis, cf, leptothorax, monomorium
+
+Topic 7 (Strength: 15791.35):
+sp, forel, pheidole, nov, emery, mayr, described, santschi, reported, species, camponotus, smith, new, stat, monomorium, crematogaster, var, lepisiota, pachycondyla, cataglyphis
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 8:
+  - Dispersal of formulations of Fusarium oxysporum f.sp. erythroxyli and F. oxysporum f.sp. melonis by ants (Strength: 1.00)
+  - Origine de la diversitÈ des rÈponses collectives des fourmis lors de la rÈcolte de proies.  [English abstract] (Strength: 1.00)
+  - Pineapple: mealybug wilt (Strength: 0.99)
+  - Ecology of terrestrial arthropods in the Tokelau Atolls (Strength: 0.98)
+  - Myrmecophilly in Keroplatidae (Diptera: Sciaroidea) (Strength: 0.98)
+
+Topic 10:
+  - Notas sobre las hormigas del Cusco (Strength: 0.99)
+  - Prilozi fauni hrvatskih opnokrilaca (Strength: 0.99)
+  - Excluding pests from red ginger flowers with insecticides and pollinating, polyester, or polyethylene bags (Strength: 0.99)
+  - Meddelanden frÂn Gˆteborgs Musei Zoologiska Afdelning. 3. Fourmis du Natal et du Zoulouland rÈcoltÈes par le Dr. I. Tr‰gÂrdh (Strength: 0.99)
+  - Social resilience and behavioral flexibility in major workers of the ant Pheidole dentata.  [abstract] (Strength: 0.99)
+
+Topic 2:
+  - AperÁu sur la faune arthropodologique du Souf (Sahara septentrional-est, AlgÈrie) (Strength: 1.00)
+  - Diversity and guilds of ants in different land-use systems in Rio de Janeiro State, Brazil (Strength: 1.00)
+  - AvaliaÁ„o comparativa de iscas atrativas a partir da riqueza de espÈcies de formigas (Hymenoptera: Formicidae) numa floresta de Eucalyptus grandis, em Santa Maria, Rio Grande do Sul, Brasil (Strength: 0.99)
+  - Litter as an important resource determining the diversity of epigeic ants in the South-central part of Bahia State, Brazil (Strength: 0.99)
+  - Testing the effect of pitfall-trap installation on ant sampling (Strength: 0.99)
+
+Topic 9:
+  - CaracterÌsticas estruturais de plantas determinam riqueza de espÈcies de formigas no Cerrado? (Strength: 1.00)
+  - Diet and conservation implications of an invasive chameleon, Chamaeleo jacksonii (Squamata: Chamaeleonidae) in Hawaii (Strength: 0.99)
+  - The pineapple mealybug (Strength: 0.99)
+  - Notes on distribution of ant-Homoptera interaction on selected crop plants (Strength: 0.99)
+  - Diversidad de hormigas del jardÌn bot·nico de Zapotitl·n, Puebla (Strength: 0.99)
+
+Topic 4:
+  - Competition as possible driver of dietary specialisation in the mushroom harvesting ant Euprenolepis procera (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Ficus stupenda germination and seedling establishment in a Bornean rain forest canopy (Strength: 0.99)
+  - Anthropogenic disturbance and rainfall variation threaten the stability of plant-ant interactions in the Brazilian Caatinga (Strength: 0.99)
+  - Why do ant species occur in the matrix and not in the forests? Invasion from other habitats or expansion from forest gaps (Hymenoptera: Formicidae) (Strength: 0.99)
+  - L'organisation sociale des fourmis (Strength: 0.99)
+
+Topic 3:
+  - On the type localities of ants collected by James Trail in Amazonian Brazil and described by Gustav Mayr (Strength: 1.00)
+  - Heterostyly in Turnera trioniflora, a roadside weed of the Amazon Basin (Strength: 0.99)
+  - Phylogenetic biodiversity assessment based on systematic nomenclature (Strength: 0.98)
+  - The trade-off between thermal tolerance and behavioral dominance in a subtropical South American ant community (Strength: 0.98)
+  - The role of colony organization on pathogen transmission in social insects (Strength: 0.98)
+
+Topic 5:
+  - Solenopsis enigmatica, a new species of inquiline ant from the island of Dominica (Strength: 0.99)
+  - Insect baits and baiting: novel technology for managing urban pests with less insecticide (Strength: 0.99)
+  - The effect of alien predatory ants (Hymenoptera: Formicidae) on Hawaiian endemic spiders (Araneae: Tetragnathidae) (Strength: 0.98)
+  - Seed dynamics of resprouting shrubs in grassy woodlands: Seed rain, predators and seed loss constrain recruitment potential (Strength: 0.98)
+  - Relative distributions of ant species in cocoa plantations in Papua New Guinea (Strength: 0.98)
+
+Topic 6:
+  - …tudes et descriptions de fourmis nÈotropiques (Strength: 1.00)
+  - A list of Kansas Hymenoptera (Strength: 1.00)
+  - Current questions of ant biology seen under a cytogenetic angle (Strength: 1.00)
+  - Functional and phylogenetic approaches reveal the evolution of diversity in a hyper diverse biota (Strength: 1.00)
+  - Ants in the municipality of S„o Jo„o do Oeste, Santa Catarina state, southern Brazil, in an area of deciduous forest.  [abstract] (Strength: 1.00)
+
+Topic 1:
+  - Bait removal by ants (Hymenoptera: Formicidae) in managed and unmanaged Eucalyptus urophylla S.T. Blake fields (Strength: 0.99)
+  - Die Ameisenfauna Argentiniens (Strength: 0.99)
+  - Tending-ants increase survivorship and reproductive success of Calloconophora pugionata Drietch (Hemiptera, Membracidae), a trophobiont herbivore of Myrcia obovata O.Berg (Myrtales, Myrtaceae) (Strength: 0.99)
+  - Effects of the Argentine Ant on the Endemic Biota of Subalpine Shrubland, Haleakala National Park, Hawaii (Strength: 0.99)
+  - Upland rice insect pests: their ecology, importance and control (Strength: 0.99)
+
+Topic 7:
+  - Comparison and origin of forest and grassland ant assemblages in the high plateau of Madagascar (Hymenoptera: Formicidae) (Strength: 0.99)
+  - Cryptic extinction of a common Pacific lizard Emoia impar (Squamata, Scincidae) from the Hawaiian Islands (Strength: 0.99)
+  - Ants (Hymenoptera: Formicidae) of the Little Ohoopee River Dunes, Emanuel County, Georgia (Strength: 0.99)
+  - Communities of ground-dwelling ants in different plantation forest in arid-hot valleys of Jinsha river, Yunnan Province, China.  [in Chinese, English abstract] (Strength: 0.99)
+  - ComparaÁ„o do h·bito necrÛfago de oper·rias de Solenopsis e Pheidole (Hymenoptera, Formicidae) em carcaÁas de Rattus norvegicus Berkenhout, 1769 Ìntegras e mutiladas.  [abstract] (Strength: 0.99)
+

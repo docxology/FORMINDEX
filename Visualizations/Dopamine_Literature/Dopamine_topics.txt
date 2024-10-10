@@ -1,0 +1,107 @@
+Dopamine_Topic Modeling Results
+======================
+
+Topic 2 (Strength: 762.83):
+age, workers, brain, task, performance, behavior, activity, dopamine, nest, changes, worker, ant, serotonin, behavioral, serotonergic, location, outside, days, increased, dentata
+
+Topic 4 (Strength: 760.29):
+levels, queens, biogenic, colony, dopamine, amines, social, behavior, brain, reproductive, queen, workers, octopamine, significantly, changes, serotonin, saltator, ants, species, role
+
+Topic 8 (Strength: 516.83):
+levels, workers, age, significantly, worker, foragers, higher, results, development, serotonin, minor, social, nurses, amine, nursing, brood, did, dopamine, task, brain
+
+Topic 1 (Strength: 496.89):
+ants, brain, dopamine, levels, octopamine, ant, amines, serotonin, secretions, workers, behavior, content, effect, turn, increased, trophallaxis, biogenic, responses, caterpillars, showed
+
+Topic 10 (Strength: 496.43):
+dopamine, levels, increased, effect, worker, biogenic, amines, ants, serotonin, response, 15, head, free, peptides, learning, division, workers, present, results, activity
+
+Topic 5 (Strength: 420.91):
+colonies, ant, foraging, behavioural, forager, brain, nurses, variation, dopamine, brains, colony, biogenic, amine, foragers, maturation, humidity, red, activity, levels, tissue
+
+Topic 6 (Strength: 404.89):
+behavior, ants, octopamine, dopamine, aggressive, ant, learning, effects, aggression, behavioral, patterns, genes, administration, serotonin, receptor, biogenic, directed, species, significant, tyramine
+
+Topic 7 (Strength: 384.12):
+worker, workers, ant, dopamine, queen, interaction, presence, brain, dominance, social, dopaminergic, biogenic, levels, information, eusocial, reproduction, ants, known, interactions, behavior
+
+Topic 3 (Strength: 326.90):
+octopamine, social, behavior, ant, tyramine, effect, ants, isolation, species, test, queenless, trophallaxis, biogenic, bees, individual, nestmate, observed, accompanied, amine, work
+
+Topic 9 (Strength: 221.90):
+cell, brains, changes, insects, behavioral, ants, biogenic, colony, caste, differentiation, saltator, queens, responses, major, amines, induced, higher, virgin, social, worker
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 2:
+  - Age-related changes in biogenic amines in individual brains of the ant Pheidole dentata (Strength: 0.99)
+  - Age, worksite location, neuromodulators, and task performance in the ant Pheidole dentata (Strength: 0.99)
+  - Serotonergic control in initiating defensive responses to unexpected tactile stimuli in the trap-jaw ant Odontomachus kuroiwae (Strength: 0.99)
+  - Polymorphism and division of labour in a socially complex ant: neuromodulation of aggression in the Australian weaver ant, Oecophylla smaragdina (Strength: 0.98)
+  - N6methyladenosine modification of RNA controls dopamine synthesis to influence labour division in ants (Strength: 0.98)
+
+Topic 4:
+  - The role of dopamine in the collective regulation of foraging in harvester ants (Strength: 0.99)
+  - Definicja i cele poznawcze neurosocjobiologii (Strength: 0.99)
+  - Oviposition and oogenesis in virgin fire ant females Solenopsis invicta are associated with a high level of dopamine in the brain (Strength: 0.99)
+  - Gene expression variation in the brains of harvester ant foragers is associated with collective behavior (Strength: 0.98)
+  - Invasive ant learning is not affected by seven potential neuroactive chemicals (Strength: 0.74)
+
+Topic 8:
+  - Inter-individual variability and division of labour in the ant Pheidole dentata (Strength: 0.99)
+  - The role of brain monoamines (serotonin (5-HT), octopamine, and dopamine in pavement ant aggression.  [abstract] (Strength: 0.99)
+  - Biogenic amines and aggressive behaviour of the red wood ant (Formica polyctena).  [abstract] (Strength: 0.97)
+  - Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains among different colonies (Strength: 0.97)
+  - Lifespan behavioural and neural resilience in a social insect (Strength: 0.00)
+
+Topic 1:
+  - Origanum vulgare terpenoids modulate Myrmica scabrinodis brain biogenic amines and ant behaviour (Strength: 0.99)
+  - Learning of a heterocolonial, heterospecific template in adult workers of the wood ant, Formica rufa (Hymenoptera: Formicidae): a neuropharmacological approach.  [abstract] (Strength: 0.99)
+  - How an individual brain can lead to societal change in pavement ants (Tetramorium caespitum).  [abstract] (Strength: 0.99)
+  - Social dominance and reproductive differentiation mediated by dopaminergic signaling in a queenless ant (Strength: 0.99)
+  - Changes in the content of brain biogenic amine associated with early colony establishment in the queen of the ant, Formica japonica (Strength: 0.98)
+
+Topic 10:
+  - Queen contact and among-worker interactions dually suppress worker brain dopamine as a potential regulator of reproduction in an ant (Strength: 0.99)
+  - Biogenic amine levels, reproduction and social dominance in the queenless ant Streblognathus peetersi (Strength: 0.99)
+  - Stimulatory and inhibitory effects of endogenous factors in head extracts of Formica polyctena (Hymenoptera) on the fluid secretion of Malpighian tubules (Strength: 0.98)
+  - Social evolution with decoupling of multiple roles of biogenic amines into different phenotypes in Hymenoptera (Strength: 0.97)
+  - Free amino acids and biogenic amines in the brain of the carpenter ant, Camponotus floridanus (Buckley) (Hymenoptera, Formicidae) (Strength: 0.41)
+
+Topic 5:
+  - Comprehensive analysis of peptides and low molecular weight components of the giant ant Dinoponera quadriceps venom (Strength: 0.99)
+  - Tandemrunning and scouting behaviour are characterized by upregulation of learning and memory formation genes within the ant brain (Strength: 0.99)
+  - Gamergate controls dopamine levels of workers in Diacamma sp.  [abstract] (Strength: 0.98)
+  - Lifespan behavioural and neural resilience in a social insect (Strength: 0.96)
+  - Lycaenid caterpillar secretions manipulate attendant ant behavior (Strength: 0.69)
+
+Topic 6:
+  - Neurohormonal changes associated with ritualized combat and the formation of a reproductive hierarchy in the ant Harpegnathos saltator (Strength: 1.00)
+  - Effects of the biogenic amines, dopamine, tyramine and octopamine on the behavior of carpenter ant workers [Camponotus herculeanus (Hymenoptera: Formicidae)] during nestmate reunion tests carried out after a period of social isolation (Strength: 0.99)
+  - Effect of the biogenic amines octopamine, tyramine, and dopamine on behaviour of ants reunited after a period of social isolation.  [abstract] (Strength: 0.98)
+  - Invasive ant learning is not affected by seven potential neuroactive chemicals (Strength: 0.05)
+  - Lifespan behavioural and neural resilience in a social insect (Strength: 0.00)
+
+Topic 7:
+  - Brain catecholamines, spontaneous bioelectrical activity and aggressive behavior in ants (Formica rufa) (Strength: 0.99)
+  - Brains, neurotransmitters, nursing, and foraging in the ant Pheidole dentata.  [abstract] (Strength: 0.99)
+  - Biogenic amines are associated with worker task but not patriline in the leaf-cutting ant Acromyrmex echinatior (Strength: 0.98)
+  - Neuroanatomical and neurochemical correlates of senescence and social role in the ant Pheidole dentata (Strength: 0.97)
+  - Biogenic amine signaling systems in the red imported fire ant, Solenopsis invicta - Possible contributors to worker division of labor (Strength: 0.97)
+
+Topic 3:
+  - Biogenic amines and collective organization in a superorganism: neuromodulation of social behavior in ants (Strength: 0.99)
+  - The role of biogenic amines in social insects: With a special focus on ants (Strength: 0.99)
+  - Lifespan behavioural and neural resilience in a social insect (Strength: 0.00)
+  - Neuroanatomical and neurochemical correlates of senescence and social role in the ant Pheidole dentata (Strength: 0.00)
+  - Social evolution with decoupling of multiple roles of biogenic amines into different phenotypes in Hymenoptera (Strength: 0.00)
+
+Topic 9:
+  - Neuromodulation of nestmate recognition decisions by pavement ants (Strength: 0.99)
+  - The role of brain monoamines (serotonin (5-HT), octopamine, and dopamine in pavement ant aggression.  [abstract] (Strength: 0.99)
+  - Geographic and life-history variation in ant queen colony founding correlates with brain amine levels (Strength: 0.98)
+  - The geomagnetic field (GMF) is necessary for Black Garden Ant (Lasius niger L.) foraging and modulates orientation potentially through aminergic regulation and magR expression (Strength: 0.98)
+  - Morphine addiction in ants: a new model for self-administration and neurochemical analysis (Strength: 0.98)
+

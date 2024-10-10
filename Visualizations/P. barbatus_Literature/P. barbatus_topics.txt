@@ -1,0 +1,107 @@
+P. barbatus_Topic Modeling Results
+======================
+
+Topic 3 (Strength: 1392.81):
+species, foraging, workers, nest, ants, rugosus, colonies, food, colony, ant, territorial, myrmecocystus, pogonomyrmex, recruitment, interactions, aggressive, nests, neighboring, trunk, territories
+
+Topic 4 (Strength: 1052.92):
+nest, colony, foraging, colonies, ants, species, ant, nests, soils, pogonomyrmex, invicta, cockerelli, workers, soil, treatment, trail, time, compared, aggression, age
+
+Topic 5 (Strength: 951.19):
+lineage, lineages, caste, genetic, determination, queens, gcd, rugosus, pairs, colonies, pogonomyrmex, populations, occurred, pair, interbreeding, task, workers, species, genetically, produce
+
+Topic 8 (Strength: 768.18):
+lineage, species, queens, reproductive, pogonomyrmex, lineages, seed, mating, workers, gene, methylation, caste, genetic, seeds, populations, determination, social, males, eggs, dna
+
+Topic 9 (Strength: 718.76):
+males, ants, species, pogonomyrmex, mating, desertorum, large, females, nestmates, colony, size, ant, rugosus, significantly, maricopa, harvester, mounds, non, brood, body
+
+Topic 1 (Strength: 696.21):
+species, ants, pogonomyrmex, populations, sites, rugosus, colonies, hybrid, hybridogenetic, niche, day, parental, colony, ant, variation, differences, foraging, isolated, az, trophic
+
+Topic 2 (Strength: 477.38):
+task, hydrocarbon, profiles, colonies, cuticular, workers, groups, colony, foraging, foragers, composition, individual, ants, behavior, worker, conditions, nest, environment, ant, types
+
+Topic 10 (Strength: 424.76):
+workers, males, worker, pogonomyrmex, hybridogenesis, symmetric, lineages, production, social, populations, ant, produced, increases, dependent, molefaciens, females, queens, lineage, population, female
+
+Topic 7 (Strength: 178.70):
+nests, quality, data, ants, genome, texas, larvae, common, beetle, present, published, provides, genomes, annotation, mating, ant, genus, pebbles, east, 10
+
+Topic 6 (Strength: 155.10):
+ants, time, host, hosts, reported, evidence, western, long, texas, 10, indicate, known, new, described, insects, color, list, relationship, nearly, given
+
+
+Top Documents for Each Topic:
+=============================
+
+Topic 3:
+  - Ecological and genetic distinctiveness of socially hybridogenetic lineages of Pogonomyrmex harvester ants at regional and local scales (Strength: 0.99)
+  - Draft genome of the red harvester ant Pogonomyrmex barbatus (Strength: 0.99)
+  - Individual specialisation and encounters between harvester ant colonies (Strength: 0.99)
+  - Can larval metabolic rates explain colony growth rate differences among harvester ant species? (Strength: 0.98)
+  - Semillas removidas por la hormiga Pogonomyrmex barbatus (Smith): especies, familias y formas de vida (Strength: 0.97)
+
+Topic 4:
+  - Brood production and lineage discrimination in the red harvester ant (Strength: 0.99)
+  - Experimental tests of the optimal diet in two social insects (Strength: 0.99)
+  - Cladistic analysis of paleo-island populations of the Florida harvester ant (Hymenoptera: Formicidae) based upon divergence of mitochondrial DNA sequences (Strength: 0.98)
+  - The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior (Strength: 0.98)
+  - The role of cuticular hydrocarbons in the behavioral ecology of the red harvester ant, Pogonomyrmex barbatus (Strength: 0.42)
+
+Topic 5:
+  - Recruitment behavior, home range orientation and territoriality in harvester ants, Pogonomyrmex (Strength: 0.99)
+  - Neutral and nichebased factors simultaneously drive seed and invertebrate removal by red harvester ants (Strength: 0.99)
+  - Foundress survival and brood production in the desert seed-harvester ants Pogonomyrmex rugosus and P. barbatus (Hymenoptera, Formicidae) (Strength: 0.99)
+  - Habitat segregation based on soil texture and body size in the seed-harvester ants Pogonomyrmex rugosus and P. barbatus (Strength: 0.99)
+  - Recruitment pheromone in the harvester ant genus Pogonomyrmex (Strength: 0.97)
+
+Topic 8:
+  - Task-related differences in the cuticular hydrocarbon composition of harvester ants, Pogonomyrmex barbatus (Strength: 0.99)
+  - The volatile Dufour's gland components of the harvester ants Pogonomyrmex rugosus and P. barbatus (Strength: 0.99)
+  - Aggression is task dependent in the red harvester ant (Pogonomyrmex barbatus) (Strength: 0.99)
+  - Residues in nontarget ants, species simplification and recovery of populations following aerial applications of mirex (Strength: 0.99)
+  - An ethological study of certain maladjustments in the relations of ants to plants (Strength: 0.99)
+
+Topic 9:
+  - The interactive effects of climate, life history, and interspecific neighbours on mortality in a population of seed harvester ants (Strength: 1.00)
+  - Evolution, maintenance and ecological consequences of genetic caste determination in "Pogonomyrmex" harvester ants (Strength: 0.99)
+  - Reproductive isolation between the harvester ant Pogonomyrmex rugosus and two lineages with genetic caste determination (Strength: 0.99)
+  - Genetic caste determination does not impose growth rate costs in Pogonomyrmex harvester ants (Strength: 0.99)
+  - The emergence of division of labour in forced associations of normally solitary ant queens (Strength: 0.99)
+
+Topic 1:
+  - Thermal tolerance regulates foraging behavior of ants (Strength: 0.98)
+  - Trophobiosis and feeding habits of Liometopum apiculatum (Hymenoptera: Formicidae) in the Chisos Mountains, Texas (Strength: 0.94)
+  - Myrmica (Atta) molefaciens, "Stinging Ant" or "Mound-Making Ant," of Texas (Strength: 0.01)
+  - Hiking trails increase abundance of harvester ant nests at Clear Creek, Arizona (Strength: 0.01)
+  - Observations on the mating behavior of harvester ants (Strength: 0.01)
+
+Topic 2:
+  - A journal of travels into the Arkansas Territory during the year 1819 (Strength: 0.96)
+  - A systematic revision and the evolutionary biology of the Ptomaphagus (Adelops) beetles of North America (Coleoptera; Leiodidae: Catopinae), with emphasis on cave-inhabiting species (Strength: 0.95)
+  - Allergen of the month - harvester ant (Strength: 0.94)
+  - Observations on the mating behavior of harvester ants (Strength: 0.92)
+  - MAKER2: an annotation pipeline and genome-database management tool for second-generation genome projects (Strength: 0.49)
+
+Topic 10:
+  - Characterization and distribution of Pogonomyrmex harvester ant lineages with genetic caste determination (Strength: 0.99)
+  - Characterization of polymorphic microsatellite loci in the red harvester ant, Pogonomyrmex barbatus (Strength: 0.99)
+  - Patterns of DNA methylation in development, division of labor and hybridization in an ant with genetic caste determination (Strength: 0.99)
+  - Complex foraging ecology of the red harvester ant and its effect on the soil seed bank (Strength: 0.99)
+  - Population genomics supports multiple hybrid zone origins of socially hybridogenetic lineages of Pogonomyrmex harvester ants (Strength: 0.98)
+
+Topic 7:
+  - Sexual selection in harvester ants (Hymenoptera: Formicidae: Pogonomyrmex) (Strength: 0.99)
+  - Muscarinic acetylcholine receptors are required for nestmate-odor memory retrieval but not for olfaction in harvester ants (Pogonomyrmex barbatus) (Strength: 0.99)
+  - The behavioral ecology of mating in harvester ants (Hymenoptera: Formicidae: Pogonomyrmex) (Strength: 0.99)
+  - Species-specific patterns in the social activities of harvester ant colonies (Pogonomyrmex) (Strength: 0.98)
+  - Patrones de actividad de forrajeo de Pogonomyrmex barbatus en el valle semi·rido de Zapotitl·n Salinas, Puebla (Strength: 0.98)
+
+Topic 6:
+  - High mating frequency and variation with lineage ratio in dependent-lineage harvester ants (Strength: 0.99)
+  - Pogonomyrmex Mayr harvester ants (Hymenoptera: Formicidae): an additional cost associated with dung beetle, Canthon imitator Brown (Coleoptera: Scarabaeidae) reproduction (Strength: 0.98)
+  - A hemolytic polypeptide from the venom of the red harvester ant, Pogonomyrmex barbatus (Strength: 0.98)
+  - Remarks on Pogonomyrmex occidentalis (Strength: 0.97)
+  - Chemical releasers of necrophoric behavior in ants (Strength: 0.94)
+
