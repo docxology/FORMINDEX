@@ -9,14 +9,15 @@ from collections import Counter
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.colors import LinearSegmentedColormap
-import random
+from matplotlib.patches import Polygon
+from fuzzywuzzy import process
 
 def load_json_data(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
 def get_country_coordinates():
-    # A more comprehensive list of country coordinates
+    # A comprehensive list of country coordinates
     return {
         "Afghanistan": (33.93911, 67.709953), "Albania": (41.153332, 20.168331),
         "Algeria": (28.033886, 1.659626), "Andorra": (42.546245, 1.601554),
@@ -102,51 +103,78 @@ def get_country_coordinates():
         "Zimbabwe": (-19.015438, 29.154857)
     }
 
-def estimate_city_location(city, country, country_coords):
-    if country in country_coords:
-        lat, lon = country_coords[country]
-        # Add some random offset to distinguish cities within the same country
-        lat_offset = random.uniform(-2, 2)
-        lon_offset = random.uniform(-2, 2)
-        return lat + lat_offset, lon + lon_offset
+def normalize_location(location):
+    location = location.strip().lower()
+    # Add more normalizations as needed
+    normalizations = {
+        'usa': 'United States',
+        'uk': 'United Kingdom',
+        'uae': 'United Arab Emirates',
+        # Add more as needed
+    }
+    return normalizations.get(location, location.title())
+
+def find_best_match(location, known_locations):
+    normalized_location = normalize_location(location)
+    if normalized_location in known_locations:
+        return normalized_location
+    
+    # Use fuzzy matching to find the best match
+    best_match, score = process.extractOne(normalized_location, known_locations)
+    if score > 80:  # Adjust this threshold as needed
+        return best_match
     return None
 
+def create_abstract_continents():
+    continents = {
+        'North America': [
+            (-170, 75), (-60, 75), (-50, 15), (-130, 15), (-170, 75)
+        ],
+        'South America': [
+            (-80, 15), (-35, 15), (-50, -60), (-80, -60), (-80, 15)
+        ],
+        'Europe': [
+            (-10, 70), (40, 70), (40, 35), (-10, 35), (-10, 70)
+        ],
+        'Africa': [
+            (-20, 35), (50, 35), (50, -35), (-20, -35), (-20, 35)
+        ],
+        'Asia': [
+            (40, 70), (150, 70), (150, 0), (40, 0), (40, 70)
+        ],
+        'Oceania': [
+            (110, 0), (180, 0), (180, -50), (110, -50), (110, 0)
+        ],
+        'Antarctica': [
+            (-180, -60), (180, -60), (180, -90), (-180, -90), (-180, -60)
+        ]
+    }
+    return continents
+
 def create_world_map_heatmap(bibtex_records, output_dir):
-    # Extract locations from the records
-    locations = [record.get('address', '').split(',') for record in bibtex_records]
-    locations = [loc for loc in locations if len(loc) >= 2]
+    # Extract all possible locations from the records
+    all_locations = []
+    for record in bibtex_records:
+        address = record.get('address', '')
+        if address:
+            parts = [part.strip() for part in address.split(',')]
+            all_locations.extend(parts)
+    
+    location_counts = Counter(all_locations)
 
-    # Separate cities and countries
-    cities = [loc[-2].strip() for loc in locations]
-    countries = [loc[-1].strip() for loc in locations]
-
-    # Count occurrences
-    location_counts = Counter(zip(cities, countries))
-
-    # Get country coordinates
+    # Get coordinates
     country_coords = get_country_coordinates()
+    all_known_locations = list(country_coords.keys())
 
     # Create world map
-    plt.figure(figsize=(20, 10))
+    plt.figure(figsize=(30, 15), dpi=300)
+    ax = plt.gca()
     
-    # Create a simple world map background
-    plt.axhline(y=0, color='k', linestyle='-', linewidth=0.5)  # Equator
-    plt.axvline(x=0, color='k', linestyle='-', linewidth=0.5)  # Prime Meridian
-    
-    # Add continent outlines (very simplified)
-    continents = {
-        'North America': [(-170, 15), (-50, 70)],
-        'South America': [(-80, -60), (-35, 15)],
-        'Europe': [(-10, 35), (40, 70)],
-        'Africa': [(-20, -35), (50, 35)],
-        'Asia': [(60, 0), (150, 70)],
-        'Australia': [(110, -45), (155, -10)]
-    }
-    
-    for continent, (bottom_left, top_right) in continents.items():
-        plt.plot([bottom_left[0], bottom_left[0], top_right[0], top_right[0], bottom_left[0]],
-                 [bottom_left[1], top_right[1], top_right[1], bottom_left[1], bottom_left[1]],
-                 'k-', linewidth=0.5)
+    # Create abstract continent shapes
+    continents = create_abstract_continents()
+    for continent, coords in continents.items():
+        poly = Polygon(coords, closed=True, facecolor='lightgray', edgecolor='gray', alpha=0.5)
+        ax.add_patch(poly)
 
     # Create a custom colormap
     colors = ['#FFA07A', '#FF7F50', '#FF6347', '#FF4500', '#FF0000']
@@ -154,25 +182,40 @@ def create_world_map_heatmap(bibtex_records, output_dir):
     cmap = LinearSegmentedColormap.from_list('custom', colors, N=n_bins)
 
     # Plot locations
-    for (city, country), count in location_counts.items():
-        if country in country_coords:
-            lat, lon = country_coords[country]
-            plt.scatter(lon, lat, s=count*10, c=[count], cmap=cmap, alpha=0.7, vmin=0, vmax=max(location_counts.values()))
-            plt.annotate(f"{country}", (lon, lat), xytext=(3, 3), textcoords="offset points", fontsize=8, alpha=0.8)
-        
-        # Estimate and plot city location
-        city_loc = estimate_city_location(city, country, country_coords)
-        if city_loc:
-            lat, lon = city_loc
-            plt.scatter(lon, lat, s=count*5, c='blue', alpha=0.5)
-            plt.annotate(f"{city}", (lon, lat), xytext=(3, 3), textcoords="offset points", fontsize=6, alpha=0.6)
+    max_count = max(location_counts.values())
+    plotted_locations = set()
+    for location, count in location_counts.items():
+        best_match = find_best_match(location, all_known_locations)
+        if best_match and best_match in country_coords:
+            lat, lon = country_coords[best_match]
+            if (lat, lon) not in plotted_locations:
+                size = (count / max_count) * 1000  # Increased size for better visibility
+                plt.scatter(lon, lat, s=size, c=[count], cmap=cmap, alpha=0.7, edgecolors='black', linewidth=0.5)
+                
+                # Label all locations
+                plt.annotate(f"{best_match} ({count})", (lon, lat), 
+                             xytext=(5, 5), textcoords="offset points", 
+                             fontsize=10, fontweight='bold',
+                             bbox=dict(facecolor='white', edgecolor='none', alpha=0.7, pad=0.5))
+                
+                plotted_locations.add((lat, lon))
 
-    plt.colorbar(label='Number of Publications', orientation='vertical', shrink=0.7)
-    plt.title('World Map of Publications', fontsize=20, fontweight='bold')
+    # Add colorbar
+    sm = plt.cm.ScalarMappable(cmap=cmap, norm=plt.Normalize(vmin=0, vmax=max_count))
+    sm.set_array([])
+    cbar = plt.colorbar(sm, label='Number of Publications', orientation='vertical', shrink=0.7)
+    cbar.ax.tick_params(labelsize=14)
+    cbar.set_label('Number of Publications', fontsize=18, labelpad=15)
+
+    plt.title('World Map of Publications', fontsize=28, fontweight='bold', pad=20)
     plt.xlim(-180, 180)
     plt.ylim(-90, 90)
-    plt.xlabel('Longitude')
-    plt.ylabel('Latitude')
+    plt.xlabel('Longitude', fontsize=18)
+    plt.ylabel('Latitude', fontsize=18)
+    ax.set_xticks(np.arange(-180, 181, 60))
+    ax.set_yticks(np.arange(-90, 91, 30))
+    ax.tick_params(axis='both', which='major', labelsize=14)
+    ax.grid(color='gray', linestyle='--', linewidth=0.5, alpha=0.5)
     plt.tight_layout()
 
     # Save the chart
