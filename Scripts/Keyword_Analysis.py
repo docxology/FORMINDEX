@@ -3,6 +3,9 @@ from collections import Counter
 from typing import List, Dict
 import os
 import re
+import matplotlib.pyplot as plt
+import seaborn as sns
+from wordcloud import WordCloud
 
 def load_formis_data(file_path: str) -> List[Dict]:
     """
@@ -76,6 +79,108 @@ def analyze_keywords(file_path: str) -> tuple:
     
     return Counter(all_keywords), Counter(species_case_keywords), total_papers, papers_with_keywords, min_keywords, max_keywords, avg_keywords
 
+def analyze_locations(formis_data: List[Dict]) -> Counter:
+    """
+    Analyze locations mentioned in the FORMIS database.
+    
+    Args:
+        formis_data (List[Dict]): List of paper entries from the FORMIS database.
+    
+    Returns:
+        Counter: Counter of locations mentioned in the papers.
+    """
+    locations = []
+    for paper in formis_data:
+        if 'address' in paper and paper['address']:
+            # Split the address by comma and take the last part as the country
+            country = paper['address'].split(',')[-1].strip()
+            locations.append(country)
+    return Counter(locations)
+
+def create_location_bar_chart(location_counter: Counter, output_path: str, title: str):
+    """
+    Create a bar chart of the top 20 locations.
+    
+    Args:
+        location_counter (Counter): Counter of locations.
+        output_path (str): Path to save the output image.
+        title (str): Title of the chart.
+    """
+    top_20 = location_counter.most_common(20)
+    locations, counts = zip(*top_20)
+
+    plt.figure(figsize=(12, 8))
+    sns.barplot(x=list(counts), y=list(locations))
+    plt.title(title)
+    plt.xlabel('Number of Papers')
+    plt.ylabel('Location')
+    plt.tight_layout()
+    plt.savefig(output_path)
+    plt.close()
+
+def create_location_wordcloud(location_counter: Counter, output_path: str):
+    """
+    Create a word cloud of locations.
+    
+    Args:
+        location_counter (Counter): Counter of locations.
+        output_path (str): Path to save the output image.
+    """
+    wordcloud = WordCloud(width=800, height=400, background_color='white').generate_from_frequencies(location_counter)
+    
+    plt.figure(figsize=(10, 5))
+    plt.imshow(wordcloud, interpolation='bilinear')
+    plt.axis('off')
+    plt.tight_layout(pad=0)
+    plt.savefig(output_path)
+    plt.close()
+
+def analyze_and_visualize(file_path: str, output_dir: str, prefix: str = ''):
+    """
+    Analyze keywords and locations, and create visualizations.
+    
+    Args:
+        file_path (str): Path to the FORMIS JSON file.
+        output_dir (str): Directory to save output files.
+        prefix (str): Prefix for output files (default: '').
+    """
+    formis_data = load_formis_data(file_path)
+    
+    # Keyword analysis
+    keyword_counter, species_case_counter, total_papers, papers_with_keywords, min_keywords, max_keywords, avg_keywords = analyze_keywords(file_path)
+    
+    # Location analysis
+    location_counter = analyze_locations(formis_data)
+    
+    # Create output directory if it doesn't exist
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Create visualizations
+    create_location_bar_chart(location_counter, os.path.join(output_dir, f'{prefix}top_20_locations.png'), f'Top 20 Locations in {prefix}Literature')
+    create_location_wordcloud(location_counter, os.path.join(output_dir, f'{prefix}location_wordcloud.png'))
+    
+    # Write analysis results to a file
+    with open(os.path.join(output_dir, f'{prefix}keyword_location_analysis.txt'), 'w') as f:
+        f.write(f"Analysis Results for {prefix}Literature\n")
+        f.write("=" * 40 + "\n\n")
+        f.write(f"Total number of papers: {total_papers}\n")
+        f.write(f"Number of papers with keywords: {papers_with_keywords}\n")
+        f.write(f"Percentage of papers with keywords: {papers_with_keywords/total_papers*100:.2f}%\n")
+        f.write(f"Range of keywords per paper: {min_keywords} to {max_keywords}\n")
+        f.write(f"Average number of keywords per paper: {avg_keywords:.2f}\n\n")
+        
+        f.write("Top 20 most common keywords:\n")
+        for keyword, count in keyword_counter.most_common(20):
+            f.write(f"{keyword}: {count}\n")
+        
+        f.write("\nTop 20 most common 'Species case' keywords:\n")
+        for keyword, count in species_case_counter.most_common(20):
+            f.write(f"{keyword}: {count}\n")
+        
+        f.write("\nTop 20 most common locations:\n")
+        for location, count in location_counter.most_common(20):
+            f.write(f"{location}: {count}\n")
+
 if __name__ == "__main__":
     script_dir = os.path.dirname(os.path.abspath(__file__))
     formis_file = os.path.join(script_dir, "..", "Initial_Files", "FORMIS_2024_July_Bibtex.json")
@@ -85,18 +190,20 @@ if __name__ == "__main__":
         print("Please make sure the FORMIS JSON file is in the correct location.")
         exit(1)
     
-    keyword_counter, species_case_counter, total_papers, papers_with_keywords, min_keywords, max_keywords, avg_keywords = analyze_keywords(formis_file)
+    # Analyze and visualize for all literature
+    output_dir = os.path.join(script_dir, "..", "Visualizations", "All_Literature")
+    analyze_and_visualize(formis_file, output_dir)
     
-    print(f"Total number of papers: {total_papers}")
-    print(f"Number of papers with keywords: {papers_with_keywords}")
-    print(f"Percentage of papers with keywords: {papers_with_keywords/total_papers*100:.2f}%")
-    print(f"Range of keywords per paper: {min_keywords} to {max_keywords}")
-    print(f"Average number of keywords per paper: {avg_keywords:.2f}")
+    # Analyze and visualize for targeted bibliographies
+    targeted_bib_dir = os.path.join(script_dir, "..", "Targeted_Bibliographies")
+    for folder in os.listdir(targeted_bib_dir):
+        folder_path = os.path.join(targeted_bib_dir, folder)
+        if os.path.isdir(folder_path):
+            json_files = [f for f in os.listdir(folder_path) if f.endswith('_bibliography.json')]
+            for json_file in json_files:
+                file_path = os.path.join(folder_path, json_file)
+                prefix = json_file.replace('_bibliography.json', '_')
+                output_dir = os.path.join(script_dir, "..", "Visualizations", f"{prefix[:-1]}_Literature")
+                analyze_and_visualize(file_path, output_dir, prefix)
     
-    print("\nTop 20 most common keywords:")
-    for keyword, count in keyword_counter.most_common(20):
-        print(f"{keyword}: {count}")
-    
-    print("\nTop 20 most common 'Species case' keywords:")
-    for keyword, count in species_case_counter.most_common(20):
-        print(f"{keyword}: {count}")
+    print("Keyword and location analysis completed. Results and visualizations have been saved.")
