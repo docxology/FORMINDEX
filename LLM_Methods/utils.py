@@ -97,44 +97,31 @@ def setup_llm(llm_params: Dict[str, Any] = None) -> None:
         llm_params = DEFAULT_CONFIG['llm_params']
     logging.info("LLM setup with provided API key and parameters")
 
-def generate_llm_response(prompt: str, llm_params: Dict[str, Any] = DEFAULT_CONFIG['llm_params']) -> Tuple[str, float]:
+def generate_llm_response(prompt: str, llm_params: dict) -> tuple:
     """
-    Generate a response from the LLM.
+    Generate a response from the language model.
 
     Args:
-        prompt (str): The input prompt for the LLM.
-        llm_params (Dict[str, Any]): LLM parameters from config.
+        prompt (str): The input prompt for the language model.
+        llm_params (dict): Parameters for the language model.
 
     Returns:
-        Tuple[str, float]: The generated response from the LLM and the time taken in seconds.
+        tuple: A tuple containing the generated text and the number of tokens used.
     """
-    global client
-    if client is None:
-        initialize_openai_client()
-
-    start_time = time.time()
     try:
-        response = client.chat.completions.create(model=llm_params.get('model'),
-        messages=[{"role": "user", "content": prompt}],
-        max_tokens=llm_params.get('max_tokens'),
-        temperature=llm_params.get('temperature'),
-        top_p=llm_params.get('top_p'),
-        frequency_penalty=llm_params.get('frequency_penalty'),
-        presence_penalty=llm_params.get('presence_penalty'),
-        n=llm_params.get('n'),
-        stream=llm_params.get('stream'),
-        stop=llm_params.get('stop'))
-        generated_response = response.choices[0].message.content.strip()
-        logging.info("LLM response generated successfully")
+        client = openai.OpenAI(api_key=llm_params['api_key'])
+        response = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": f"You are a professional translator. Translate the following text from English to {llm_params['target_language']}. Maintain the original meaning and style as closely as possible."},
+                {"role": "user", "content": prompt}
+            ],
+            max_tokens=3000,
+            temperature=0.7
+        )
+        return response.choices[0].message.content.strip(), response.usage.total_tokens
     except Exception as e:
-        logging.error(f"Error generating LLM response: {str(e)}")
-        raise
-    finally:
-        end_time = time.time()
-
-    time_taken = end_time - start_time
-    logging.info(f"LLM response generated in {time_taken:.2f} seconds")
-    return generated_response, time_taken
+        raise Exception(f"Error generating LLM response: {str(e)}")
 
 def batch_process_llm(prompts: List[str], llm_params: Dict[str, Any] = DEFAULT_CONFIG['llm_params']) -> List[Tuple[str, float]]:
     """

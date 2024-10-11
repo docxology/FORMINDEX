@@ -40,8 +40,8 @@ USER_CONFIG = {
         'LLM_Written_Summary': os.path.join(SCRIPT_DIR, 'Inputs_and_Outputs', 'LLM_Written_Summary')
     },
     'llm_params': {
-        'model': 'gpt-4-0125-preview',  # Updated to the latest GPT-4 model
-        'max_tokens': 120000,  # Reduced max tokens to leave room for response
+        'model': 'gpt-4o-mini', 
+        'max_tokens': 120000,  
         'temperature': 0.5,
         'top_p': 1.0,
         'frequency_penalty': 0.0,
