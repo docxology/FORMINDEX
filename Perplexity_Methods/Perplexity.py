@@ -4,6 +4,7 @@ import time
 import logging
 from openai import OpenAI
 from datetime import datetime
+import glob
 
 # Set up logging
 logging.basicConfig(filename='perplexity_log.txt', level=logging.INFO,
@@ -30,25 +31,47 @@ system_message = {
         "Your answers should reflect the latest scientific findings in the field of Myrmecology. "
         "Always strive to present a balanced view of current research, highlighting areas of consensus "
         "as well as ongoing debates or uncertainties in the field. Include relevant statistical data, "
-        "methodologies, and experimental results when appropriate. Your goal is to provide the most "
-        "thorough and up-to-date information available on any ant-related query."
+        "methodologies, and experimental results when appropriate. "
+        "\n\n"
+        "Ensure your responses are thoughtful, full-length, and comprehensive, covering all aspects of the query in depth. "
+        "Use proper Markdown formatting throughout your response, including:"
+        "\n- Headers and subheaders (##, ###) for clear structure"
+        "\n- Bullet points and numbered lists for organized information"
+        "\n- **Bold** and *italic* text for emphasis"
+        "\n- `Code blocks` for any scientific names, chemical formulas, or code snippets"
+        "\n- > Blockquotes for important quotes or key points"
+        "\n- Tables for presenting data or comparisons"
+        "\n- [Hyperlinks](URL) for referencing external sources"
+        "\n\n"
+        "Conclude each response with a comprehensive, APA-formatted bibliography of all sources cited. "
+        "Your goal is to provide the most thorough, well-structured, and up-to-date information available on any ant-related query, "
+        "presented in a clear and academically rigorous manner."
     ),
 }
 
-for prompt_id, prompt_content in prompts.items():
+for prompt_id, prompt_data in prompts.items():
+    # Check if a file with the same prompt number and short name already exists
+    existing_files = glob.glob(os.path.join(output_dir, f"Prompt_{prompt_id}_{prompt_data['short_name']}*.md"))
+    
+    if existing_files:
+        skip_message = f"Skipping Prompt {prompt_id} ({prompt_data['short_name']}): Output already exists."
+        print(skip_message)
+        logging.info(skip_message)
+        continue
+
     messages = [
         system_message,
         {
             "role": "user",
-            "content": prompt_content,
+            "content": prompt_data["prompt"],
         },
     ]
 
-    # Generate a unique filename based on the current timestamp and prompt_id
+    # Generate a unique filename based on the prompt number, short name, and current timestamp
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_file = os.path.join(output_dir, f"{timestamp}_Prompt_{prompt_id}.md")
+    output_file = os.path.join(output_dir, f"Prompt_{prompt_id}_{prompt_data['short_name']}_{timestamp}.md")
 
-    logging.info(f"Processing Prompt {prompt_id}: {prompt_content[:50]}...")
+    logging.info(f"Processing Prompt {prompt_id}: {prompt_data['prompt'][:50]}...")
 
     # Measure the time taken for the API request
     start_time = time.time()

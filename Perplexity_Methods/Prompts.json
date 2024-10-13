@@ -1,22 +1,102 @@
 {
-    "1": "Conduct a comprehensive meta-analysis of studies published in the last 5 years on the impact of climate change on ant species diversity. Include at least 10 full citations with DOIs.",
-    "2": "Design a detailed ant colony simulation model that incorporates recent findings on ant decision-making processes and social dynamics. Provide pseudocode and explain how to implement it in Python.",
-    "3": "Summarize the latest breakthroughs in understanding ant navigation, including quantum effects in magnetoreception. Cite studies from 2022-2023 and explain their methodologies.",
-    "4": "Analyze the economic impact of invasive ant species on agriculture globally. Include recent case studies, statistical data, and projections for the next decade.",
-    "5": "Review cutting-edge techniques in myrmecological research, focusing on CRISPR gene editing in ants. Discuss ethical implications and potential applications.",
-    "6": "Compile a list of all ant species discovered in the past year, their unique characteristics, and the significance of each discovery for ant taxonomy.",
-    "7": "Examine the role of ants in global carbon cycling and climate regulation. Provide a detailed breakdown of their impact on different ecosystems with quantitative data.",
-    "8": "Investigate the potential use of ant-inspired algorithms in solving complex logistical problems. Include real-world applications and compare with traditional methods.",
-    "9": "Analyze the latest findings on supercolony formation in invasive ant species, including genetic factors and environmental triggers. Cite studies from the past 3 years.",
-    "10": "Create a comprehensive timeline of major milestones in myrmecology from 1950 to present, highlighting paradigm shifts and their impact on our understanding of ant biology.",
-    "11": "Conduct an in-depth analysis of the evolutionary arms race between ants and their parasites, including parasitoid flies and fungi. Discuss coevolutionary adaptations, molecular mechanisms, and potential applications in biological control. Cite at least 15 recent studies.",
-    "12": "Develop a comprehensive framework for assessing the impact of urbanization on ant communities. Include methodologies for measuring functional diversity, ecosystem services, and genetic diversity. Propose a large-scale, multi-city study design with statistical analyses.",
-    "13": "Evaluate the potential of ant-derived compounds in pharmaceutical research. Provide a detailed review of antimicrobial, antifungal, and anticancer properties of ant venoms and secretions. Include current clinical trials and future research directions.",
-    "14": "Analyze the role of epigenetics in caste determination and behavioral plasticity in eusocial ants. Discuss recent findings on DNA methylation, histone modifications, and non-coding RNAs. Propose a series of experiments to further elucidate these mechanisms.",
-    "15": "Investigate the complex relationships between ants, plants, and other insects in tropical ecosystems. Focus on multi-species interactions, including ant-plant mutualisms, aphid farming, and protection against herbivores. Provide case studies and discuss ecological implications.",
-    "16": "Develop a comprehensive phylogenomic analysis of the major ant subfamilies. Discuss the latest genomic tools and their application in resolving evolutionary relationships. Address current controversies and propose future research to fill knowledge gaps.",
-    "17": "Examine the potential impacts of emerging technologies (e.g., CRISPR, nanomaterials, AI) on ant research and conservation. Discuss ethical considerations, potential benefits, and risks. Propose guidelines for responsible use of these technologies in myrmecology.",
-    "18": "Conduct a global assessment of the conservation status of ant species. Analyze threats, current protection measures, and gaps in conservation efforts. Propose a strategic action plan for ant conservation, including policy recommendations and research priorities.",
-    "19": "Investigate the role of ants as bioindicators of ecosystem health and environmental change. Develop a standardized protocol for using ant communities in long-term ecological monitoring programs. Include case studies from various biomes and discuss data analysis techniques.",
-    "20": "Analyze the potential of ant-inspired robotics and swarm intelligence in addressing real-world challenges. Discuss current applications in fields such as disaster response, space exploration, and smart cities. Propose novel ideas for future development and interdisciplinary collaboration."
+    "1": {
+        "prompt": "Conduct a comprehensive meta-analysis of studies published in the last 5 years on the impact of climate change on ant species diversity. Include at least 10 full citations with DOIs. Present your response in well-formatted Markdown, using appropriate headers, lists, and emphasis. Conclude with a comprehensive bibliography of all sources cited, formatted in APA style.",
+        "short_name": "climate_change_impact"
+    },
+    "2": {
+        "prompt": "Design a detailed ant colony simulation model that incorporates recent findings on ant decision-making processes and social dynamics. Provide pseudocode and explain how to implement it in Python. Use Markdown formatting for clear structure, including code blocks for pseudocode and Python examples. Include a bibliography of all referenced sources in APA format.",
+        "short_name": "colony_simulation_model"
+    },
+    "3": {
+        "prompt": "Summarize the latest breakthroughs in understanding ant navigation, including quantum effects in magnetoreception. Cite studies from 2022-2023 and explain their methodologies. Format your response in Markdown with appropriate headers, bullet points, and emphasis. Conclude with a comprehensive bibliography in APA style.",
+        "short_name": "navigation_breakthroughs"
+    },
+    "4": {
+        "prompt": "Analyze the economic impact of invasive ant species on agriculture globally. Include recent case studies, statistical data, and projections for the next decade. Present your findings in well-structured Markdown, using tables for data presentation where appropriate. Provide a detailed bibliography of all sources in APA format.",
+        "short_name": "invasive_species_economics"
+    },
+    "5": {
+        "prompt": "Review cutting-edge techniques in myrmecological research, focusing on CRISPR gene editing in ants. Discuss ethical implications and potential applications. Use Markdown formatting for clear organization, including subheaders and bullet points. End with a comprehensive bibliography of all cited works in APA style.",
+        "short_name": "crispr_gene_editing"
+    },
+    "6": {
+        "prompt": "Compile a list of all ant species discovered in the past year, their unique characteristics, and the significance of each discovery for ant taxonomy. Present this information in a well-formatted Markdown table. Include explanatory text with appropriate Markdown formatting. Conclude with a bibliography of all sources used, formatted in APA style.",
+        "short_name": "recent_new_species"
+    },
+    "7": {
+        "prompt": "Examine the role of ants in global carbon cycling and climate regulation. Provide a detailed breakdown of their impact on different ecosystems with quantitative data. Use Markdown formatting for clear presentation, including charts or tables if possible. Include a comprehensive bibliography of all sources in APA format.",
+        "short_name": "carbon_cycling_impact"
+    },
+    "8": {
+        "prompt": "Investigate the potential use of ant-inspired algorithms in solving complex logistical problems. Include real-world applications and compare with traditional methods. Present your findings in well-structured Markdown, using code blocks for algorithm examples. Provide a detailed bibliography of all referenced works in APA style.",
+        "short_name": "ant_inspired_algorithms"
+    },
+    "9": {
+        "prompt": "Analyze the latest findings on supercolony formation in invasive ant species, including genetic factors and environmental triggers. Cite studies from the past 3 years. Use Markdown formatting for clear organization, including subheaders and emphasis where appropriate. Conclude with a comprehensive bibliography in APA format.",
+        "short_name": "supercolony_formation"
+    },
+    "10": {
+        "prompt": "Create a comprehensive timeline of major milestones in myrmecology from 1950 to present, highlighting paradigm shifts and their impact on our understanding of ant biology. Present this timeline in a well-formatted Markdown table or list. Include explanatory text with appropriate Markdown formatting. End with a detailed bibliography of all sources cited, in APA style.",
+        "short_name": "myrmecology_timeline"
+    },
+    "11": {
+        "prompt": "Conduct an in-depth analysis of the evolutionary arms race between ants and their parasites, including parasitoid flies and fungi. Discuss coevolutionary adaptations, molecular mechanisms, and potential applications in biological control. Cite at least 15 recent studies. Use Markdown for clear structure and emphasis. Conclude with a comprehensive APA-style bibliography.",
+        "short_name": "parasite_arms_race"
+    },
+    "12": {
+        "prompt": "Develop a comprehensive framework for assessing the impact of urbanization on ant communities. Include methodologies for measuring functional diversity, ecosystem services, and genetic diversity. Propose a large-scale, multi-city study design with statistical analyses. Present in well-formatted Markdown with appropriate headers and lists. Provide a detailed APA-style bibliography of all sources.",
+        "short_name": "urbanization_effects"
+    },
+    "13": {
+        "prompt": "Evaluate the potential of ant-derived compounds in pharmaceutical research. Provide a detailed review of antimicrobial, antifungal, and anticancer properties of ant venoms and secretions. Include current clinical trials and future research directions. Use Markdown for clear organization and emphasis. End with a comprehensive bibliography in APA format.",
+        "short_name": "pharmaceutical_potential"
+    },
+    "14": {
+        "prompt": "Analyze the role of epigenetics in caste determination and behavioral plasticity in eusocial ants. Discuss recent findings on DNA methylation, histone modifications, and non-coding RNAs. Propose a series of experiments to further elucidate these mechanisms. Present in well-structured Markdown with appropriate subheaders. Include a detailed APA-style bibliography.",
+        "short_name": "epigenetics_caste_determination"
+    },
+    "15": {
+        "prompt": "Investigate the complex relationships between ants, plants, and other insects in tropical ecosystems. Focus on multi-species interactions, including ant-plant mutualisms, aphid farming, and protection against herbivores. Provide case studies and discuss ecological implications. Use Markdown for clear presentation, including tables or diagrams if possible. Conclude with a comprehensive APA-formatted bibliography.",
+        "short_name": "tropical_ecosystem_interactions"
+    },
+    "16": {
+        "prompt": "Develop a comprehensive phylogenomic analysis of the major ant subfamilies. Discuss the latest genomic tools and their application in resolving evolutionary relationships. Address current controversies and propose future research to fill knowledge gaps. Present in well-formatted Markdown, using appropriate headers and emphasis. Provide a detailed bibliography of all sources in APA style.",
+        "short_name": "phylogenomic_analysis"
+    },
+    "17": {
+        "prompt": "Examine the potential impacts of emerging technologies (e.g., CRISPR, nanomaterials, AI) on ant research and conservation. Discuss ethical considerations, potential benefits, and risks. Propose guidelines for responsible use of these technologies in myrmecology. Use Markdown for clear structure and emphasis. End with a comprehensive APA-style bibliography of all sources cited.",
+        "short_name": "emerging_tech_impact"
+    },
+    "18": {
+        "prompt": "Conduct a global assessment of the conservation status of ant species. Analyze threats, current protection measures, and gaps in conservation efforts. Propose a strategic action plan for ant conservation, including policy recommendations and research priorities. Present in well-structured Markdown with appropriate headers and lists. Include a detailed APA-formatted bibliography.",
+        "short_name": "conservation_assessment"
+    },
+    "19": {
+        "prompt": "Investigate the role of ants as bioindicators of ecosystem health and environmental change. Develop a standardized protocol for using ant communities in long-term ecological monitoring programs. Include case studies from various biomes and discuss data analysis techniques. Use Markdown for clear organization, including tables or flowcharts if relevant. Conclude with a comprehensive bibliography in APA style.",
+        "short_name": "bioindicator_role"
+    },
+    "20": {
+        "prompt": "Analyze the potential of ant-inspired robotics and swarm intelligence in addressing real-world challenges. Discuss current applications in fields such as disaster response, space exploration, and smart cities. Propose novel ideas for future development and interdisciplinary collaboration. Present in well-formatted Markdown with appropriate subheaders and emphasis. Provide a detailed APA-style bibliography of all sources referenced.",
+        "short_name": "swarm_intelligence_applications"
+    },
+    "21": {
+        "prompt": "Analyze the role of biogenic amines in regulating ant foraging behavior. Discuss the specific effects of dopamine, serotonin, and octopamine on foraging decisions, task allocation, and social interactions. Include recent experimental findings and their implications for understanding collective behavior in ant colonies. Present your analysis in well-structured Markdown format with appropriate headers and emphasis. Conclude with a comprehensive APA-style bibliography of all sources cited.",
+        "short_name": "biogenic_amines_foraging"
+    },
+    "22": {
+        "prompt": "Examine the function of specific brain regions in ant foraging behavior. Focus on the mushroom bodies, antennal lobes, and central complex. Discuss how these regions process sensory information, contribute to decision-making, and integrate with the overall nervous system during foraging tasks. Include recent neuroimaging and neurophysiological studies. Use Markdown formatting for clear presentation, including diagrams if possible. Provide a detailed APA-formatted bibliography of all referenced works.",
+        "short_name": "brain_regions_foraging"
+    },
+    "23": {
+        "prompt": "Investigate the neural basis of individual variability in ant foraging behavior. Discuss how factors such as genetic differences, previous experience, and age affect neural circuits involved in foraging. Include recent studies on neural plasticity and its role in task specialization within colonies. Present your findings in well-structured Markdown, using appropriate headers and emphasis. Conclude with a comprehensive APA-style bibliography.",
+        "short_name": "neural_variability_foraging"
+    },
+    "24": {
+        "prompt": "Conduct a comprehensive career meta-analysis of all papers published by Professor Deborah Gordon. Analyze the evolution of her research focus, methodologies, and key findings throughout her career. Identify major themes, breakthroughs, and their impact on the field of myrmecology. Include a statistical overview of her publication record, citation metrics, and collaborations. Present your analysis in well-formatted Markdown, using tables and charts where appropriate. Provide a complete APA-style bibliography of all of Professor Gordon's works cited, as well as any additional references used in your analysis.",
+        "short_name": "deborah_gordon_meta_analysis"
+    },
+    "25": {
+        "prompt": "Conduct a comprehensive career meta-analysis of all papers published by Professor Tim Linksvayer. Analyze the evolution of his research focus, methodologies, and key findings throughout his career, particularly in the areas of social insect genetics, genomics, and the evolution of social behavior. Identify major themes, breakthroughs, and their impact on the fields of myrmecology and social insect biology. Include a statistical overview of his publication record, citation metrics, and collaborations. Discuss how his work has contributed to our understanding of the genetic basis of social behavior in ants and other social insects. Present your analysis in well-structured Markdown format, using tables and charts where appropriate. Provide a complete APA-style bibliography of all of Professor Linksvayer's works cited, as well as any additional references used in your analysis.",
+        "short_name": "tim_linksvayer_meta_analysis"
+    }
 }
