@@ -337,3 +337,86 @@
 2024-10-13 15:35:52,822 - INFO - Output file: Markdown_Output/Prompt_32_nestmate_trait_relatedness_meta_analysis_20241013_153449.md
 2024-10-13 15:35:52,822 - INFO - Number of lines in output: 147
 2024-10-13 15:35:52,822 - INFO - All prompts processed.
+2024-10-13 15:43:42,398 - INFO - Skipping Prompt 1 (climate_change_impact): Output already exists.
+2024-10-13 15:43:42,398 - INFO - Skipping Prompt 2 (colony_simulation_model): Output already exists.
+2024-10-13 15:43:42,399 - INFO - Skipping Prompt 3 (navigation_breakthroughs): Output already exists.
+2024-10-13 15:43:42,399 - INFO - Skipping Prompt 4 (invasive_species_economics): Output already exists.
+2024-10-13 15:43:42,399 - INFO - Skipping Prompt 5 (crispr_gene_editing): Output already exists.
+2024-10-13 15:43:42,399 - INFO - Skipping Prompt 6 (recent_new_species): Output already exists.
+2024-10-13 15:43:42,399 - INFO - Skipping Prompt 7 (carbon_cycling_impact): Output already exists.
+2024-10-13 15:43:42,400 - INFO - Skipping Prompt 8 (ant_inspired_algorithms): Output already exists.
+2024-10-13 15:43:42,400 - INFO - Skipping Prompt 9 (supercolony_formation): Output already exists.
+2024-10-13 15:43:42,400 - INFO - Skipping Prompt 10 (myrmecology_timeline): Output already exists.
+2024-10-13 15:43:42,400 - INFO - Skipping Prompt 11 (parasite_arms_race): Output already exists.
+2024-10-13 15:43:42,401 - INFO - Skipping Prompt 12 (urbanization_effects): Output already exists.
+2024-10-13 15:43:42,401 - INFO - Skipping Prompt 13 (pharmaceutical_potential): Output already exists.
+2024-10-13 15:43:42,401 - INFO - Skipping Prompt 14 (epigenetics_caste_determination): Output already exists.
+2024-10-13 15:43:42,401 - INFO - Skipping Prompt 15 (tropical_ecosystem_interactions): Output already exists.
+2024-10-13 15:43:42,401 - INFO - Skipping Prompt 16 (phylogenomic_analysis): Output already exists.
+2024-10-13 15:43:42,401 - INFO - Skipping Prompt 17 (emerging_tech_impact): Output already exists.
+2024-10-13 15:43:42,402 - INFO - Skipping Prompt 18 (conservation_assessment): Output already exists.
+2024-10-13 15:43:42,402 - INFO - Skipping Prompt 19 (bioindicator_role): Output already exists.
+2024-10-13 15:43:42,402 - INFO - Skipping Prompt 20 (swarm_intelligence_applications): Output already exists.
+2024-10-13 15:43:42,402 - INFO - Skipping Prompt 21 (biogenic_amines_foraging): Output already exists.
+2024-10-13 15:43:42,402 - INFO - Skipping Prompt 22 (brain_regions_foraging): Output already exists.
+2024-10-13 15:43:42,402 - INFO - Skipping Prompt 23 (neural_variability_foraging): Output already exists.
+2024-10-13 15:43:42,403 - INFO - Skipping Prompt 24 (deborah_gordon_meta_analysis): Output already exists.
+2024-10-13 15:43:42,403 - INFO - Skipping Prompt 25 (tim_linksvayer_meta_analysis): Output already exists.
+2024-10-13 15:43:42,403 - INFO - Skipping Prompt 26 (colony_behavior_relatedness): Output already exists.
+2024-10-13 15:43:42,403 - INFO - Skipping Prompt 27 (nestmate_morphology_relatedness): Output already exists.
+2024-10-13 15:43:42,403 - INFO - Skipping Prompt 28 (colony_behavior_genetic_correlation): Output already exists.
+2024-10-13 15:43:42,404 - INFO - Skipping Prompt 29 (nestmate_behavior_relatedness): Output already exists.
+2024-10-13 15:43:42,404 - INFO - Skipping Prompt 30 (colony_morphology_relatedness): Output already exists.
+2024-10-13 15:43:42,404 - INFO - Skipping Prompt 31 (colony_behavior_morphology_relatedness): Output already exists.
+2024-10-13 15:43:42,404 - INFO - Skipping Prompt 32 (nestmate_trait_relatedness_meta_analysis): Output already exists.
+2024-10-13 15:43:42,405 - INFO - Processing Prompt 33: Conduct a comprehensive meta-analysis of research ...
+2024-10-13 15:44:18,835 - INFO - Prompt 33 processed successfully.
+2024-10-13 15:44:18,835 - INFO - Time taken: 36.43 seconds
+2024-10-13 15:44:18,836 - INFO - Output file: Markdown_Output/Prompt_33_camponotus_recent_research_20241013_154342.md
+2024-10-13 15:44:18,836 - INFO - Number of lines in output: 89
+2024-10-13 15:44:18,837 - INFO - Processing Prompt 34: Perform a citation-based meta-analysis of studies ...
+2024-10-13 15:44:47,136 - INFO - Prompt 34 processed successfully.
+2024-10-13 15:44:47,136 - INFO - Time taken: 28.30 seconds
+2024-10-13 15:44:47,136 - INFO - Output file: Markdown_Output/Prompt_34_formica_recent_studies_20241013_154418.md
+2024-10-13 15:44:47,136 - INFO - Number of lines in output: 97
+2024-10-13 15:44:47,137 - INFO - Processing Prompt 35: Analyze recent research (2021-2023) on the genus P...
+2024-10-13 15:45:18,372 - INFO - Prompt 35 processed successfully.
+2024-10-13 15:45:18,372 - INFO - Time taken: 31.23 seconds
+2024-10-13 15:45:18,372 - INFO - Output file: Markdown_Output/Prompt_35_pheidole_diversity_ecology_20241013_154447.md
+2024-10-13 15:45:18,373 - INFO - Number of lines in output: 100
+2024-10-13 15:45:18,374 - INFO - Processing Prompt 36: Conduct a thorough meta-analysis of studies publis...
+2024-10-13 15:45:58,715 - INFO - Prompt 36 processed successfully.
+2024-10-13 15:45:58,716 - INFO - Time taken: 40.34 seconds
+2024-10-13 15:45:58,716 - INFO - Output file: Markdown_Output/Prompt_36_atta_leafcutter_research_20241013_154518.md
+2024-10-13 15:45:58,716 - INFO - Number of lines in output: 146
+2024-10-13 15:45:58,717 - INFO - Processing Prompt 37: Perform a citation-based meta-analysis of research...
+2024-10-13 15:46:30,664 - INFO - Prompt 37 processed successfully.
+2024-10-13 15:46:30,664 - INFO - Time taken: 31.95 seconds
+2024-10-13 15:46:30,664 - INFO - Output file: Markdown_Output/Prompt_37_solenopsis_fire_ant_studies_20241013_154558.md
+2024-10-13 15:46:30,664 - INFO - Number of lines in output: 72
+2024-10-13 15:46:30,665 - INFO - Processing Prompt 38: Analyze recent research (2021-2023) on the genus M...
+2024-10-13 15:47:00,408 - INFO - Prompt 38 processed successfully.
+2024-10-13 15:47:00,408 - INFO - Time taken: 29.74 seconds
+2024-10-13 15:47:00,408 - INFO - Output file: Markdown_Output/Prompt_38_monomorium_global_research_20241013_154630.md
+2024-10-13 15:47:00,408 - INFO - Number of lines in output: 88
+2024-10-13 15:47:00,409 - INFO - Processing Prompt 39: Conduct a comprehensive meta-analysis of studies p...
+2024-10-13 15:47:33,750 - INFO - Prompt 39 processed successfully.
+2024-10-13 15:47:33,751 - INFO - Time taken: 33.34 seconds
+2024-10-13 15:47:33,751 - INFO - Output file: Markdown_Output/Prompt_39_lasius_ecosystem_interactions_20241013_154700.md
+2024-10-13 15:47:33,751 - INFO - Number of lines in output: 86
+2024-10-13 15:47:33,751 - INFO - Processing Prompt 40: Perform a citation-based meta-analysis of research...
+2024-10-13 15:48:03,142 - INFO - Prompt 40 processed successfully.
+2024-10-13 15:48:03,143 - INFO - Time taken: 29.39 seconds
+2024-10-13 15:48:03,143 - INFO - Output file: Markdown_Output/Prompt_40_oecophylla_weaver_ant_research_20241013_154733.md
+2024-10-13 15:48:03,143 - INFO - Number of lines in output: 83
+2024-10-13 15:48:03,143 - INFO - Processing Prompt 41: Conduct a comprehensive meta-analysis of research ...
+2024-10-13 15:48:35,326 - INFO - Prompt 41 processed successfully.
+2024-10-13 15:48:35,326 - INFO - Time taken: 32.18 seconds
+2024-10-13 15:48:35,326 - INFO - Output file: Markdown_Output/Prompt_41_pogonomyrmex_barbatus_research_20241013_154803.md
+2024-10-13 15:48:35,326 - INFO - Number of lines in output: 88
+2024-10-13 15:48:35,326 - INFO - Processing Prompt 42: Perform a citation-based meta-analysis of studies ...
+2024-10-13 15:49:03,692 - INFO - Prompt 42 processed successfully.
+2024-10-13 15:49:03,692 - INFO - Time taken: 28.37 seconds
+2024-10-13 15:49:03,692 - INFO - Output file: Markdown_Output/Prompt_42_non_barbatus_pogonomyrmex_studies_20241013_154835.md
+2024-10-13 15:49:03,692 - INFO - Number of lines in output: 80
+2024-10-13 15:49:03,692 - INFO - All prompts processed.

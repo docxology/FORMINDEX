@@ -104,7 +104,7 @@
         "short_name": "colony_behavior_relatedness"
     },
     "27": {
-        "prompt": "Analyze recent research on relatedness estimates for morphological traits among ant nestmates. Concentrate on studies examining traits such as body size, mandible shape, or other physical characteristics within single colonies. Discuss the genetic and environmental factors influencing these traits, and how relatedness affects trait similarity among nestmates. Include statistical methods used to estimate relatedness and heritability. Present your findings in well-formatted Markdown, using tables or charts where appropriate. Provide a detailed APA-style bibliography of all referenced works.",
+        "prompt": "Analyze recent research on relatedness estimates for morphological traits among ant nestmates. Concentrate on studies examining traits such as body size, mandible shape, or other physical characteristics within single colonies. Discuss the genetic and environmental factors influencing these traits, and how relatedness affects trait similarity among nestmates. Include statistical methods used to estimate relatedness and heritability. Present your findings in well-structured Markdown, using tables or charts where appropriate. Provide a detailed APA-style bibliography of all referenced works.",
         "short_name": "nestmate_morphology_relatedness"
     },
     "28": {
@@ -126,5 +126,45 @@
     "32": {
         "prompt": "Conduct a meta-analysis of relatedness estimates for both behavioral and morphological traits among ant nestmates across multiple species. Compare and contrast how relatedness influences different types of traits at the individual level. Include studies using various methods to estimate relatedness, from traditional genetic markers to cutting-edge genomic techniques. Discuss the implications of these findings for understanding the evolution of social insects. Present your analysis in well-structured Markdown format, using tables or charts to summarize data where appropriate. Conclude with a comprehensive APA-style bibliography.",
         "short_name": "nestmate_trait_relatedness_meta_analysis"
+    },
+    "33": {
+        "prompt": "Conduct a comprehensive meta-analysis of research published in the last 3 years (2021-2023) on the genus Camponotus. Focus on ecological roles, behavioral studies, and evolutionary adaptations. Include at least 15 recent peer-reviewed studies with DOIs. Analyze methodologies used, key findings, and their implications for our understanding of this genus. Identify emerging trends and gaps in current research. Present your analysis in well-structured Markdown format, using appropriate headers, lists, and emphasis. Conclude with a comprehensive APA-style bibliography of all sources cited.",
+        "short_name": "camponotus_recent_research"
+    },
+    "34": {
+        "prompt": "Perform a citation-based meta-analysis of studies from the past 3 years (2021-2023) focusing on the genus Formica. Examine research on social organization, foraging strategies, and interactions with other species. Include at least 15 recent peer-reviewed papers with DOIs. Evaluate the methodologies employed, significant results, and their impact on our knowledge of Formica ants. Highlight any controversies or debates in the field. Use Markdown formatting for clear presentation, including tables or charts where appropriate. Provide a detailed APA-formatted bibliography of all referenced works.",
+        "short_name": "formica_recent_studies"
+    },
+    "35": {
+        "prompt": "Analyze recent research (2021-2023) on the genus Pheidole, focusing on its diversity, ecological importance, and behavioral plasticity. Include at least 15 peer-reviewed studies with DOIs. Examine the range of research methods used, from field observations to molecular techniques. Discuss key findings and their implications for understanding this hyperdiverse genus. Identify trends in research focus and methodologies. Present your meta-analysis in well-structured Markdown, using appropriate headers and emphasis. Conclude with a comprehensive APA-style bibliography.",
+        "short_name": "pheidole_diversity_ecology"
+    },
+    "36": {
+        "prompt": "Conduct a thorough meta-analysis of studies published in the last 3 years (2021-2023) on the genus Atta, with a focus on leaf-cutter ants. Examine research on their agricultural systems, colony organization, and ecological impact. Include at least 15 recent peer-reviewed papers with DOIs. Analyze the methodologies, key findings, and their significance in advancing our understanding of Atta. Identify any novel research approaches or technologies used in these studies. Use Markdown for clear organization, including subheaders and bullet points. Provide a detailed APA-style bibliography of all sources.",
+        "short_name": "atta_leafcutter_research"
+    },
+    "37": {
+        "prompt": "Perform a citation-based meta-analysis of research from the past 3 years (2021-2023) on the genus Solenopsis, with particular attention to fire ants. Focus on studies examining their invasive potential, chemical ecology, and social behavior. Include at least 15 recent peer-reviewed studies with DOIs. Evaluate the research methodologies, significant findings, and their implications for management and control of invasive species. Highlight any new discoveries or shifts in our understanding of Solenopsis. Present your analysis in well-formatted Markdown, using tables or charts where relevant. Conclude with a comprehensive APA-formatted bibliography.",
+        "short_name": "solenopsis_fire_ant_studies"
+    },
+    "38": {
+        "prompt": "Analyze recent research (2021-2023) on the genus Monomorium, focusing on its global distribution, species diversity, and chemical ecology. Include at least 15 peer-reviewed studies with DOIs. Examine the range of research methods employed, from taxonomic revisions to behavioral experiments. Discuss key findings and their implications for understanding this widespread genus. Identify trends in research focus and any gaps in current knowledge. Present your meta-analysis in well-structured Markdown, using appropriate headers and emphasis. Provide a detailed APA-style bibliography of all cited sources.",
+        "short_name": "monomorium_global_research"
+    },
+    "39": {
+        "prompt": "Conduct a comprehensive meta-analysis of studies published in the last 3 years (2021-2023) on the genus Lasius, with a focus on their roles in ecosystems and interactions with other organisms. Include at least 15 recent peer-reviewed papers with DOIs. Analyze the methodologies used, key findings, and their significance in advancing our understanding of Lasius ants. Identify any novel research approaches or emerging themes in Lasius studies. Use Markdown formatting for clear presentation, including subheaders and lists. Conclude with a thorough APA-formatted bibliography of all referenced works.",
+        "short_name": "lasius_ecosystem_interactions"
+    },
+    "40": {
+        "prompt": "Perform a citation-based meta-analysis of research from the past 3 years (2021-2023) on the genus Oecophylla (weaver ants). Focus on studies examining their social organization, nest-building behavior, and use in biological control. Include at least 15 recent peer-reviewed studies with DOIs. Evaluate the research methodologies, significant findings, and their implications for understanding this unique genus. Highlight any new discoveries or potential applications in agriculture or ecology. Present your analysis in well-structured Markdown, using appropriate headers and emphasis. Provide a comprehensive APA-style bibliography of all sources cited.",
+        "short_name": "oecophylla_weaver_ant_research"
+    },
+    "41": {
+        "prompt": "Conduct a comprehensive meta-analysis of research published in the last 5 years (2019-2023) on Pogonomyrmex barbatus (red harvester ant). Focus on colony organization, foraging behavior, and ecological interactions. Include at least 15 recent peer-reviewed studies with DOIs. Analyze methodologies used, key findings, and their implications for our understanding of this species. Pay special attention to studies related to the work of Deborah Gordon, if applicable. Identify emerging trends and gaps in current research. Discuss how findings on P. barbatus contribute to broader understanding of ant behavior and ecology. Present your analysis in well-structured Markdown format, using appropriate headers, lists, and emphasis. Conclude with a comprehensive APA-style bibliography of all sources cited.",
+        "short_name": "pogonomyrmex_barbatus_research"
+    },
+    "42": {
+        "prompt": "Perform a citation-based meta-analysis of studies from the past 5 years (2019-2023) focusing on non-barbatus Pogonomyrmex species. Examine research on species diversity, habitat preferences, and comparative behavior across the genus. Include at least 15 recent peer-reviewed papers with DOIs. Evaluate the methodologies employed, significant results, and their impact on our knowledge of Pogonomyrmex ants. Compare and contrast findings with those from P. barbatus studies where relevant. Highlight any unique adaptations or behaviors observed in different species. Discuss the ecological roles of various Pogonomyrmex species in their respective environments. Use Markdown formatting for clear presentation, including tables or charts where appropriate. Provide a detailed APA-formatted bibliography of all referenced works.",
+        "short_name": "non_barbatus_pogonomyrmex_studies"
     }
 }
