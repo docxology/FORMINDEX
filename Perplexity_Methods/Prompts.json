@@ -98,5 +98,33 @@
     "25": {
         "prompt": "Conduct a comprehensive career meta-analysis of all papers published by Professor Tim Linksvayer. Analyze the evolution of his research focus, methodologies, and key findings throughout his career, particularly in the areas of social insect genetics, genomics, and the evolution of social behavior. Identify major themes, breakthroughs, and their impact on the fields of myrmecology and social insect biology. Include a statistical overview of his publication record, citation metrics, and collaborations. Discuss how his work has contributed to our understanding of the genetic basis of social behavior in ants and other social insects. Present your analysis in well-structured Markdown format, using tables and charts where appropriate. Provide a complete APA-style bibliography of all of Professor Linksvayer's works cited, as well as any additional references used in your analysis.",
         "short_name": "tim_linksvayer_meta_analysis"
+    },
+    "26": {
+        "prompt": "Conduct a comprehensive review of relatedness estimates for behavioral traits in ant colonies. Focus on studies that have quantified genetic correlations or heritability of behaviors at the colony level, such as foraging strategies, nest defense, or division of labor. Include methodologies used to measure these traits and calculate relatedness. Discuss the implications of these findings for understanding the evolution of social behavior in ants. Present your analysis in well-structured Markdown format, using appropriate headers and emphasis. Conclude with a comprehensive APA-style bibliography of all sources cited.",
+        "short_name": "colony_behavior_relatedness"
+    },
+    "27": {
+        "prompt": "Analyze recent research on relatedness estimates for morphological traits among ant nestmates. Concentrate on studies examining traits such as body size, mandible shape, or other physical characteristics within single colonies. Discuss the genetic and environmental factors influencing these traits, and how relatedness affects trait similarity among nestmates. Include statistical methods used to estimate relatedness and heritability. Present your findings in well-formatted Markdown, using tables or charts where appropriate. Provide a detailed APA-style bibliography of all referenced works.",
+        "short_name": "nestmate_morphology_relatedness"
+    },
+    "28": {
+        "prompt": "Investigate the relationship between colony-level behavioral traits and genetic relatedness in ants. Focus on how colony-wide behaviors, such as collective decision-making or colony-level aggression, correlate with average relatedness within the colony. Include studies that have used both traditional and genomic methods to estimate relatedness. Discuss the evolutionary implications of these findings for the development of colony-level traits. Use Markdown formatting for clear presentation, including subheaders and emphasis where appropriate. Conclude with a comprehensive APA-formatted bibliography.",
+        "short_name": "colony_behavior_genetic_correlation"
+    },
+    "29": {
+        "prompt": "Examine the latest research on relatedness estimates for behavioral traits among ant nestmates. Concentrate on individual-level behaviors such as task preference, aggression, or social interactions. Analyze how genetic relatedness influences behavioral similarity between nestmates and discuss the methods used to quantify these relationships. Include recent studies using advanced genetic techniques or novel behavioral assays. Present your analysis in well-structured Markdown, using appropriate headers and lists. Provide a detailed APA-style bibliography of all sources.",
+        "short_name": "nestmate_behavior_relatedness"
+    },
+    "30": {
+        "prompt": "Review current literature on relatedness estimates for morphological traits at the ant colony level. Focus on studies that have examined how colony-wide morphological characteristics (e.g., size distribution, polymorphism rates) relate to genetic structure and relatedness within colonies. Discuss the evolutionary and ecological implications of these relationships. Include methodologies for measuring colony-level traits and calculating relatedness. Use Markdown for clear organization, including tables or diagrams if relevant. Conclude with a comprehensive APA-style bibliography.",
+        "short_name": "colony_morphology_relatedness"
+    },
+    "31": {
+        "prompt": "Analyze the interplay between behavioral and morphological trait relatedness in ant colonies. Examine studies that have investigated how genetic relatedness simultaneously affects both behavioral and morphological characteristics within colonies. Discuss potential trade-offs or synergies between these trait types in relation to relatedness. Include research on caste determination and its genetic basis. Present your findings in well-formatted Markdown, using appropriate headers and emphasis. Provide a detailed APA-formatted bibliography of all works cited.",
+        "short_name": "colony_behavior_morphology_relatedness"
+    },
+    "32": {
+        "prompt": "Conduct a meta-analysis of relatedness estimates for both behavioral and morphological traits among ant nestmates across multiple species. Compare and contrast how relatedness influences different types of traits at the individual level. Include studies using various methods to estimate relatedness, from traditional genetic markers to cutting-edge genomic techniques. Discuss the implications of these findings for understanding the evolution of social insects. Present your analysis in well-structured Markdown format, using tables or charts to summarize data where appropriate. Conclude with a comprehensive APA-style bibliography.",
+        "short_name": "nestmate_trait_relatedness_meta_analysis"
     }
 }

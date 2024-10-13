@@ -276,3 +276,64 @@
 2024-10-13 15:28:07,307 - INFO - Output file: Markdown_Output/Prompt_25_tim_linksvayer_meta_analysis_20241013_152738.md
 2024-10-13 15:28:07,307 - INFO - Number of lines in output: 100
 2024-10-13 15:28:07,307 - INFO - All prompts processed.
+2024-10-13 15:32:23,244 - INFO - Skipping Prompt 1 (climate_change_impact): Output already exists.
+2024-10-13 15:32:23,245 - INFO - Skipping Prompt 2 (colony_simulation_model): Output already exists.
+2024-10-13 15:32:23,245 - INFO - Skipping Prompt 3 (navigation_breakthroughs): Output already exists.
+2024-10-13 15:32:23,245 - INFO - Skipping Prompt 4 (invasive_species_economics): Output already exists.
+2024-10-13 15:32:23,246 - INFO - Skipping Prompt 5 (crispr_gene_editing): Output already exists.
+2024-10-13 15:32:23,246 - INFO - Skipping Prompt 6 (recent_new_species): Output already exists.
+2024-10-13 15:32:23,246 - INFO - Skipping Prompt 7 (carbon_cycling_impact): Output already exists.
+2024-10-13 15:32:23,247 - INFO - Skipping Prompt 8 (ant_inspired_algorithms): Output already exists.
+2024-10-13 15:32:23,247 - INFO - Skipping Prompt 9 (supercolony_formation): Output already exists.
+2024-10-13 15:32:23,247 - INFO - Skipping Prompt 10 (myrmecology_timeline): Output already exists.
+2024-10-13 15:32:23,247 - INFO - Skipping Prompt 11 (parasite_arms_race): Output already exists.
+2024-10-13 15:32:23,248 - INFO - Skipping Prompt 12 (urbanization_effects): Output already exists.
+2024-10-13 15:32:23,248 - INFO - Skipping Prompt 13 (pharmaceutical_potential): Output already exists.
+2024-10-13 15:32:23,248 - INFO - Skipping Prompt 14 (epigenetics_caste_determination): Output already exists.
+2024-10-13 15:32:23,248 - INFO - Skipping Prompt 15 (tropical_ecosystem_interactions): Output already exists.
+2024-10-13 15:32:23,248 - INFO - Skipping Prompt 16 (phylogenomic_analysis): Output already exists.
+2024-10-13 15:32:23,249 - INFO - Skipping Prompt 17 (emerging_tech_impact): Output already exists.
+2024-10-13 15:32:23,249 - INFO - Skipping Prompt 18 (conservation_assessment): Output already exists.
+2024-10-13 15:32:23,249 - INFO - Skipping Prompt 19 (bioindicator_role): Output already exists.
+2024-10-13 15:32:23,249 - INFO - Skipping Prompt 20 (swarm_intelligence_applications): Output already exists.
+2024-10-13 15:32:23,250 - INFO - Skipping Prompt 21 (biogenic_amines_foraging): Output already exists.
+2024-10-13 15:32:23,250 - INFO - Skipping Prompt 22 (brain_regions_foraging): Output already exists.
+2024-10-13 15:32:23,250 - INFO - Skipping Prompt 23 (neural_variability_foraging): Output already exists.
+2024-10-13 15:32:23,250 - INFO - Skipping Prompt 24 (deborah_gordon_meta_analysis): Output already exists.
+2024-10-13 15:32:23,251 - INFO - Skipping Prompt 25 (tim_linksvayer_meta_analysis): Output already exists.
+2024-10-13 15:32:23,251 - INFO - Processing Prompt 26: Conduct a comprehensive review of relatedness esti...
+2024-10-13 15:32:46,758 - INFO - Prompt 26 processed successfully.
+2024-10-13 15:32:46,759 - INFO - Time taken: 23.51 seconds
+2024-10-13 15:32:46,759 - INFO - Output file: Markdown_Output/Prompt_26_colony_behavior_relatedness_20241013_153223.md
+2024-10-13 15:32:46,759 - INFO - Number of lines in output: 45
+2024-10-13 15:32:46,759 - INFO - Processing Prompt 27: Analyze recent research on relatedness estimates f...
+2024-10-13 15:33:07,109 - INFO - Prompt 27 processed successfully.
+2024-10-13 15:33:07,109 - INFO - Time taken: 20.35 seconds
+2024-10-13 15:33:07,109 - INFO - Output file: Markdown_Output/Prompt_27_nestmate_morphology_relatedness_20241013_153246.md
+2024-10-13 15:33:07,109 - INFO - Number of lines in output: 65
+2024-10-13 15:33:07,109 - INFO - Processing Prompt 28: Investigate the relationship between colony-level ...
+2024-10-13 15:33:25,195 - INFO - Prompt 28 processed successfully.
+2024-10-13 15:33:25,196 - INFO - Time taken: 18.09 seconds
+2024-10-13 15:33:25,196 - INFO - Output file: Markdown_Output/Prompt_28_colony_behavior_genetic_correlation_20241013_153307.md
+2024-10-13 15:33:25,196 - INFO - Number of lines in output: 57
+2024-10-13 15:33:25,197 - INFO - Processing Prompt 29: Examine the latest research on relatedness estimat...
+2024-10-13 15:33:40,703 - INFO - Prompt 29 processed successfully.
+2024-10-13 15:33:40,703 - INFO - Time taken: 15.51 seconds
+2024-10-13 15:33:40,703 - INFO - Output file: Markdown_Output/Prompt_29_nestmate_behavior_relatedness_20241013_153325.md
+2024-10-13 15:33:40,703 - INFO - Number of lines in output: 47
+2024-10-13 15:33:40,703 - INFO - Processing Prompt 30: Review current literature on relatedness estimates...
+2024-10-13 15:34:31,304 - INFO - Prompt 30 processed successfully.
+2024-10-13 15:34:31,304 - INFO - Time taken: 50.60 seconds
+2024-10-13 15:34:31,304 - INFO - Output file: Markdown_Output/Prompt_30_colony_morphology_relatedness_20241013_153340.md
+2024-10-13 15:34:31,304 - INFO - Number of lines in output: 111
+2024-10-13 15:34:31,305 - INFO - Processing Prompt 31: Analyze the interplay between behavioral and morph...
+2024-10-13 15:34:49,109 - INFO - Prompt 31 processed successfully.
+2024-10-13 15:34:49,109 - INFO - Time taken: 17.80 seconds
+2024-10-13 15:34:49,109 - INFO - Output file: Markdown_Output/Prompt_31_colony_behavior_morphology_relatedness_20241013_153431.md
+2024-10-13 15:34:49,109 - INFO - Number of lines in output: 58
+2024-10-13 15:34:49,110 - INFO - Processing Prompt 32: Conduct a meta-analysis of relatedness estimates f...
+2024-10-13 15:35:52,821 - INFO - Prompt 32 processed successfully.
+2024-10-13 15:35:52,821 - INFO - Time taken: 63.71 seconds
+2024-10-13 15:35:52,822 - INFO - Output file: Markdown_Output/Prompt_32_nestmate_trait_relatedness_meta_analysis_20241013_153449.md
+2024-10-13 15:35:52,822 - INFO - Number of lines in output: 147
+2024-10-13 15:35:52,822 - INFO - All prompts processed.
