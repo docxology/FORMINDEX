@@ -5,52 +5,51 @@ import logging
 from openai import OpenAI
 from datetime import datetime
 import glob
-import requests
-
-# Get the directory of the current script
-script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Set up logging
 logging.basicConfig(filename='perplexity_log.txt', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
+
+# Create a console handler
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.INFO)
+console_formatter = logging.Formatter('%(message)s')
+console_handler.setFormatter(console_formatter)
+logging.getLogger('').addHandler(console_handler)
 
 # Create Markdown_Output directory if it doesn't exist
 output_dir = "Markdown_Output"
 os.makedirs(output_dir, exist_ok=True)
 
 # Read API key from LLM_Methods/LLM_keys.key file
-key_file_path = os.path.join(os.path.dirname(script_dir), 'LLM_Methods', 'LLM_keys.key')
+key_file_path = os.path.join('..', 'LLM_Methods', 'LLM_keys.key')
 try:
     with open(key_file_path, 'r') as key_file:
-        YOUR_API_KEY = key_file.read().strip()
+        keys = key_file.read().strip().split('\n')
+        PERPLEXITY_API_KEY = next((key.split('=')[1] for key in keys if key.startswith('PERPLEXITY_API_KEY=')), None)
+    
+    if not PERPLEXITY_API_KEY:
+        raise ValueError("PERPLEXITY_API_KEY not found in the key file")
 except FileNotFoundError:
-    error_message = f"API key file not found at {key_file_path}"
-    logging.error(error_message)
-    raise FileNotFoundError(error_message)
+    logging.error(f"API key file not found at {key_file_path}")
+    raise
+except Exception as e:
+    logging.error(f"Error reading API key: {str(e)}")
+    raise
 
-if not YOUR_API_KEY:
-    error_message = "API key is empty in LLM_keys.key file"
-    logging.error(error_message)
-    raise ValueError(error_message)
-
-# Print the API key (for debugging purposes only, remove in production)
-logging.info(f"API Key: {YOUR_API_KEY}")
-print(f"API Key: {YOUR_API_KEY}")
+# Initialize the client
+client = OpenAI(api_key=PERPLEXITY_API_KEY, base_url="https://api.perplexity.ai")
 
 # Load prompts from Prompts.json
 try:
     with open("Prompts.json", "r") as f:
         prompts = json.load(f)
 except FileNotFoundError:
-    error_message = "Prompts.json file not found"
-    logging.error(error_message)
-    raise FileNotFoundError(error_message)
+    logging.error("Prompts.json file not found")
+    raise
 except json.JSONDecodeError:
-    error_message = "Error decoding Prompts.json file"
-    logging.error(error_message)
-    raise json.JSONDecodeError(error_message)
-
-client = OpenAI(api_key=YOUR_API_KEY, base_url="https://api.perplexity.ai")
+    logging.error("Error decoding Prompts.json file")
+    raise
 
 system_message = {
     "role": "system",
@@ -95,9 +94,7 @@ for prompt_id, prompt_data in prompts.items():
     existing_files = glob.glob(os.path.join(output_dir, f"Prompt_{prompt_id}_{prompt_data['short_name']}*.md"))
     
     if existing_files:
-        skip_message = f"Skipping Prompt {prompt_id} ({prompt_data['short_name']}): Output already exists."
-        print(skip_message)
-        logging.info(skip_message)
+        logging.info(f"Skipping Prompt {prompt_id} ({prompt_data['short_name']}): Output already exists.")
         continue
 
     messages = [
@@ -107,6 +104,10 @@ for prompt_id, prompt_data in prompts.items():
             "content": prompt_data["prompt"],
         },
     ]
+
+    # Log the full prompt to the console
+    logging.info(f"\nProcessing Prompt {prompt_id}:")
+    logging.info(f"Full Prompt: {prompt_data['prompt']}")
 
     # Generate a unique filename based on the prompt number, short name, and current timestamp
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -143,29 +144,17 @@ for prompt_id, prompt_data in prompts.items():
         logging.info(f"Output file: {output_file}")
         logging.info(f"Number of lines in output: {line_count}")
 
-        print(f"Markdown response for Prompt {prompt_id} saved to {output_file}")
+        # Log to console
+        print(f"Processed Prompt {prompt_id}")
         print(f"Time taken: {elapsed_time:.2f} seconds")
         print(f"Number of lines in output: {line_count}")
 
-    except requests.exceptions.RequestException as e:
-        error_message = f"Error processing Prompt {prompt_id}: {str(e)}"
-        if isinstance(e, requests.exceptions.ConnectionError):
-            error_message += " - Connection error. Please check your internet connection."
-        elif isinstance(e, requests.exceptions.Timeout):
-            error_message += " - Request timed out. The server might be overloaded or unreachable."
-        elif isinstance(e, requests.exceptions.HTTPError):
-            error_message += f" - HTTP Error: {e.response.status_code} - {e.response.reason}"
-        
-        logging.error(error_message)
-        print(error_message)
-
     except Exception as e:
-        error_message = f"Unexpected error processing Prompt {prompt_id}: {str(e)}"
-        logging.exception(error_message)
-        print(error_message)
+        logging.error(f"Error processing Prompt {prompt_id}: {str(e)}")
+        print(f"Error processing Prompt {prompt_id}: {str(e)}")
 
-    print("---")  # Separator for readability in console output
-    time.sleep(3)  # Wait for 3 seconds between requests
+    print("---")  # Add a separator between prompts
+    time.sleep(2)  # Wait for 2 seconds between requests
 
 logging.info("All prompts processed.")
 print("All prompts processed.")
