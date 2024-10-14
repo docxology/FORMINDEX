@@ -94,7 +94,7 @@ for prompt_id, prompt_data in prompts.items():
     existing_files = glob.glob(os.path.join(output_dir, f"Prompt_{prompt_id}_{prompt_data['short_name']}*.md"))
     
     if existing_files:
-        logging.info(f"Skipping Prompt {prompt_id} ({prompt_data['short_name']}): Output already exists.")
+        print(f"Skipping Prompt {prompt_id} ({prompt_data['short_name']}): Output already exists.")
         continue
 
     messages = [
@@ -105,15 +105,12 @@ for prompt_id, prompt_data in prompts.items():
         },
     ]
 
-    # Log the full prompt to the console
-    logging.info(f"\nProcessing Prompt {prompt_id}:")
-    logging.info(f"Full Prompt: {prompt_data['prompt']}")
+    print(f"\nProcessing Prompt {prompt_id}:")
+    print(f"Full Prompt: {prompt_data['prompt'][:100]}...")
 
     # Generate a unique filename based on the prompt number, short name, and current timestamp
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     output_file = os.path.join(output_dir, f"Prompt_{prompt_id}_{prompt_data['short_name']}_{timestamp}.md")
-
-    logging.info(f"Processing Prompt {prompt_id}: {prompt_data['prompt'][:50]}...")
 
     # Measure the time taken for the API request
     start_time = time.time()
@@ -139,22 +136,15 @@ for prompt_id, prompt_data in prompts.items():
         with open(output_file, "r", encoding="utf-8") as f:
             line_count = sum(1 for _ in f)
 
-        logging.info(f"Prompt {prompt_id} processed successfully.")
-        logging.info(f"Time taken: {elapsed_time:.2f} seconds")
-        logging.info(f"Output file: {output_file}")
-        logging.info(f"Number of lines in output: {line_count}")
-
-        # Log to console
-        print(f"Processed Prompt {prompt_id}")
+        print(f"Prompt {prompt_id} processed successfully.")
         print(f"Time taken: {elapsed_time:.2f} seconds")
+        print(f"Output file: {output_file}")
         print(f"Number of lines in output: {line_count}")
 
     except Exception as e:
-        logging.error(f"Error processing Prompt {prompt_id}: {str(e)}")
         print(f"Error processing Prompt {prompt_id}: {str(e)}")
 
     print("---")  # Add a separator between prompts
-    time.sleep(2)  # Wait for 2 seconds between requests
+    time.sleep(1)  # Wait for 1 second between requests
 
-logging.info("All prompts processed.")
 print("All prompts processed.")
