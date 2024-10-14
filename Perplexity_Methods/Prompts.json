@@ -166,5 +166,25 @@
     "42": {
         "prompt": "Perform a citation-based meta-analysis of studies from the past 5 years (2019-2023) focusing on non-barbatus Pogonomyrmex species. Examine research on species diversity, habitat preferences, and comparative behavior across the genus. Include at least 15 recent peer-reviewed papers with DOIs. Evaluate the methodologies employed, significant results, and their impact on our knowledge of Pogonomyrmex ants. Compare and contrast findings with those from P. barbatus studies where relevant. Highlight any unique adaptations or behaviors observed in different species. Discuss the ecological roles of various Pogonomyrmex species in their respective environments. Use Markdown formatting for clear presentation, including tables or charts where appropriate. Provide a detailed APA-formatted bibliography of all referenced works.",
         "short_name": "non_barbatus_pogonomyrmex_studies"
+    },
+    "43": {
+        "prompt": "Analyze recent research (2020-2024) on the impact of urbanization on ant communities in the Northeastern United States. Focus on studies examining changes in species composition, behavioral adaptations, and ecosystem services provided by ants in urban environments. Include at least 10 peer-reviewed studies with DOIs. Discuss methodologies used, key findings, and their implications for urban ecology and conservation. Identify any novel approaches or technologies used in urban ant research. Present your analysis in well-structured Markdown format, using appropriate headers, lists, and emphasis. Conclude with a comprehensive APA-style bibliography of all sources cited.",
+        "short_name": "northeastern_usa_urban_ants"
+    },
+    "44": {
+        "prompt": "Review recent studies (2020-2024) on the effects of climate change on ant species in the Southwestern United States, with a focus on desert and semi-arid ecosystems. Examine research on shifts in ant distribution, phenology, and community composition in response to changing temperature and precipitation patterns. Include at least 10 peer-reviewed papers with DOIs. Evaluate the methodologies employed, significant results, and their implications for predicting and managing ecosystem changes. Highlight any long-term studies or novel monitoring techniques. Use Markdown formatting for clear presentation, including tables or charts where appropriate. Provide a detailed APA-formatted bibliography of all referenced works.",
+        "short_name": "southwestern_usa_climate_change_ants"
+    },
+    "45": {
+        "prompt": "Conduct a meta-analysis of research from 2020-2024 on the role of ants in seed dispersal and plant community dynamics in the Pacific Northwest of the United States. Focus on studies examining ant-plant mutualisms, the impact of invasive ant species on native seed dispersal networks, and the consequences for forest regeneration. Include at least 10 recent peer-reviewed studies with DOIs. Analyze methodologies used, key findings, and their implications for forest management and restoration ecology. Identify emerging trends and gaps in current research. Present your analysis in well-structured Markdown, using appropriate headers and emphasis. Conclude with a comprehensive APA-style bibliography.",
+        "short_name": "pacific_northwest_ant_seed_dispersal"
+    },
+    "46": {
+        "prompt": "Examine recent advancements (2020-2024) in the understanding of ant chemical communication, focusing on research conducted in North American laboratories. Include studies on pheromone identification, the genetic basis of chemical signal production and reception, and the role of chemical cues in ant behavior and ecology. Incorporate at least 10 peer-reviewed papers with DOIs. Discuss cutting-edge techniques used in chemical ecology research, such as advanced analytical chemistry methods or CRISPR-Cas9 gene editing. Evaluate the implications of these findings for our understanding of ant evolution and social behavior. Present your review in well-formatted Markdown, using appropriate subheaders and lists. Provide a detailed APA-style bibliography of all sources.",
+        "short_name": "ant_chemical_communication_advances"
+    },
+    "47": {
+        "prompt": "Analyze recent research (2020-2024) on the impact of agricultural practices on ant diversity and ecosystem services in the Midwestern United States. Focus on studies examining how different farming methods (e.g., conventional, organic, agroforestry) affect ant communities and their functions in agroecosystems. Include at least 10 peer-reviewed studies with DOIs. Discuss methodologies used, key findings, and their implications for sustainable agriculture and biodiversity conservation. Identify any innovative approaches to integrating ant conservation with agricultural production. Present your analysis in well-structured Markdown format, using appropriate headers, lists, and emphasis. Conclude with a comprehensive APA-style bibliography of all sources cited.",
+        "short_name": "midwestern_usa_agricultural_ants"
     }
 }
