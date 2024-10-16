@@ -20,7 +20,9 @@ logger = setup_logging()
 # Specify target System and User prompts by short name
 
 TARGET_SYSTEM_PROMPTS = [
-    "complex_systems_scientist"
+    "innovators_catechism_ideation",
+    "innovators_catechism_pitch",
+    "complex_systems_scientist",
 ]
 
 TARGET_USER_PROMPTS = [
@@ -31,7 +33,8 @@ TARGET_USER_PROMPTS = [
     "active_inference_pomdp_python_guide",
     "bayesian_mechanics_fep_quantum_active_inference",
     "rxinfer_julia_summary",
-    "whos_on_first_current_events"
+    "whos_on_first_current_events",
+    "safe_ose_grant_proposal"
 ]
 
 def load_api_key(key_file_path):
