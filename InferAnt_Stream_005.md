@@ -1,11 +1,13 @@
-# InferAnt Stream 005: FORMINDEX Update Livestream Agenda
+# InferAnt Stream 005.1: FORMINDEX Update Livestream Agenda
 
-## 1. Introduction (5 minutes)
-- Welcome viewers
+## 1. Introduction
+- Welcome
 - Brief overview of FORMINDEX project
-- Mention Zenodo publication: https://zenodo.org/records/13927034
+- Cursor version 0.42.3
+- Zenodo publication: https://zenodo.org/records/13927034
+- Repo: https://github.com/docxology/FORMINDEX/
 
-## 2. FORMIS Analysis (20 minutes)
+## 2. FORMIS Analysis
 - Explain the goals of this phase
 - Discuss ingress and target bibliographies
   - Read_in_FORMIS.py
@@ -14,45 +16,40 @@
   - All-FORMIS visualizations
   - Example of targeted bibliography (Foraging)
 
-## 3. Generative AI Methods (35 minutes)
-### NotebookLM (10 minutes)
+## 3. Generative AI Methods
+### NotebookLM 
 - Explain process
 - Show examples of generated podcasts
 
-### OpenAI API (10 minutes)
+### OpenAI API
 - Summarization and translation process
-- Cost considerations
 - Example: Myrmecophile summary in Hindi
 
-### Perplexity API (15 minutes)
+### Perplexity API
 - Introduce Perplexity.py and its functionality
 - Explain the structure and purpose of:
   - User_Prompts.json
   - System_Prompts.json
 - Demonstrate Simple_Perplexity.py and test_perplexity_api.py
-- Showcase example outputs:
-  - UC Davis ant research news
-  - Ant symbolism and spirituality
-  - Ants in indigenous wisdom and stewardship
+- Showcase example outputs
 - Discuss the potential for comprehensive myrmecology queries
 - Explain how the system handles different types of prompts
 
-## 4. Next Steps (10 minutes)
+## 4. Next Steps
 - Discuss planned improvements and expansions
+- When are we in the infrastructural core (of what?)? When doing scouting, research, play, building on and beyond the edges? 
   - FORMIS stakeholder feedback
   - Improving analysis and visualization
   - Integration with NCBI species ID
   - Perplexity searches for all species groups
   - Integration with fabric and other coordination mechanisms
 
-## 5. Q&A and Comments from YouTube Live Chat (25 minutes)
+## 5. Q&A and Comments from YouTube Live Chat
 - Address questions and comments from viewers
 - Discuss potential collaborations or suggestions
 - Encourage feedback on the Perplexity-based queries and their usefulness for myrmecology research
 
-## 6. Conclusion (5 minutes)
+## 6. Conclusion
 - Recap key points
 - Encourage viewers to check out the GitHub repository
 - Thank viewers and collaborators
-
-Total estimated time: 100 minutes (adjustable based on actual content and audience engagement)

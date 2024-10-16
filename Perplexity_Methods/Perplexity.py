@@ -21,7 +21,13 @@ logger = setup_logging()
 
 TARGET_SYSTEM_PROMPTS = [
    "innovators_catechism_pitch",
-    "complex_systems_scientist",
+   "local_journalist",
+   "complex_systems_scientist",
+   "enthusiastic_undergraduate",
+   "data_science_virtuoso",
+   "systems_architect",
+   "quantum_computing_specialist",
+   "futurist_strategist"
 ]
 
 TARGET_USER_PROMPTS = [
@@ -35,7 +41,8 @@ TARGET_USER_PROMPTS = [
     "whos_on_first_current_events",
     "safe_ose_grant_proposal",
     "northern_california_fire_risk",
-    "new_mexico_fire_risk"
+    "new_mexico_fire_risk",
+    "lake_county_ca_fire_risk"
 ]
 
 def load_api_key(key_file_path):
