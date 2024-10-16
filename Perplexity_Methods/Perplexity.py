@@ -21,21 +21,27 @@ logging.getLogger('').addHandler(console_handler)
 output_dir = "Markdown_Output"
 os.makedirs(output_dir, exist_ok=True)
 
-# Read API key from LLM_Methods/LLM_keys.key file
-key_file_path = os.path.join('..', 'LLM_Methods', 'LLM_keys.key')
+key_file_path = os.path.join('..', 'Perplexity_Methods', 'LLM_keys.key')
 try:
     with open(key_file_path, 'r') as key_file:
         keys = key_file.read().strip().split('\n')
-        PERPLEXITY_API_KEY = next((key.split('=')[1] for key in keys if key.startswith('PERPLEXITY_API_KEY=')), None)
+        logging.info(f"Contents of key file: {keys}")  # Log the contents of the file
+        api_keys = dict(key.split('=') for key in keys)
+        PERPLEXITY_API_KEY = api_keys.get('PERPLEXITY_API_KEY')
     
     if not PERPLEXITY_API_KEY:
         raise ValueError("PERPLEXITY_API_KEY not found in the key file")
+    
+    logging.info(f"Perplexity API Key: {PERPLEXITY_API_KEY[:5]}...{PERPLEXITY_API_KEY[-5:]}")  # Log the first and last 5 characters of the API key
 except FileNotFoundError:
     logging.error(f"API key file not found at {key_file_path}")
     raise
 except Exception as e:
     logging.error(f"Error reading API key: {str(e)}")
     raise
+
+# Remove the print statement for security reasons
+# print(f"Perplexity API Key: {PERPLEXITY_API_KEY}")
 
 # Initialize the client
 client = OpenAI(api_key=PERPLEXITY_API_KEY, base_url="https://api.perplexity.ai")
