@@ -1,20 +1,15 @@
 import os
 import json
 import time
-import logging
 from openai import OpenAI
 from datetime import datetime
 import glob
+import logging
 
-# Set up logging
-logging.basicConfig(filename='perplexity_log.txt', level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
-
-# Create a console handler
+# Set up logging to console only
+logging.basicConfig(level=logging.INFO, format='%(message)s')
 console_handler = logging.StreamHandler()
 console_handler.setLevel(logging.INFO)
-console_formatter = logging.Formatter('%(message)s')
-console_handler.setFormatter(console_formatter)
 logging.getLogger('').addHandler(console_handler)
 
 # Create Markdown_Output directory if it doesn't exist
@@ -39,9 +34,6 @@ except FileNotFoundError:
 except Exception as e:
     logging.error(f"Error reading API key: {str(e)}")
     raise
-
-# Remove the print statement for security reasons
-# print(f"Perplexity API Key: {PERPLEXITY_API_KEY}")
 
 # Initialize the client
 client = OpenAI(api_key=PERPLEXITY_API_KEY, base_url="https://api.perplexity.ai")
@@ -100,7 +92,7 @@ for prompt_id, prompt_data in prompts.items():
     existing_files = glob.glob(os.path.join(output_dir, f"Prompt_{prompt_id}_{prompt_data['short_name']}*.md"))
     
     if existing_files:
-        print(f"Skipping Prompt {prompt_id} ({prompt_data['short_name']}): Output already exists.")
+        logging.info(f"Skipping Prompt {prompt_id} ({prompt_data['short_name']}): Output already exists.")
         continue
 
     messages = [
@@ -111,8 +103,8 @@ for prompt_id, prompt_data in prompts.items():
         },
     ]
 
-    print(f"\nProcessing Prompt {prompt_id}:")
-    print(f"Full Prompt: {prompt_data['prompt'][:100]}...")
+    logging.info(f"\nProcessing Prompt {prompt_id}:")
+    logging.info(f"Full Prompt: {prompt_data['prompt'][:100]}...")
 
     # Generate a unique filename based on the prompt number, short name, and current timestamp
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -142,15 +134,15 @@ for prompt_id, prompt_data in prompts.items():
         with open(output_file, "r", encoding="utf-8") as f:
             line_count = sum(1 for _ in f)
 
-        print(f"Prompt {prompt_id} processed successfully.")
-        print(f"Time taken: {elapsed_time:.2f} seconds")
-        print(f"Output file: {output_file}")
-        print(f"Number of lines in output: {line_count}")
+        logging.info(f"Prompt {prompt_id} processed successfully.")
+        logging.info(f"Time taken: {elapsed_time:.2f} seconds")
+        logging.info(f"Output file: {output_file}")
+        logging.info(f"Number of lines in output: {line_count}")
 
     except Exception as e:
-        print(f"Error processing Prompt {prompt_id}: {str(e)}")
+        logging.error(f"Error processing Prompt {prompt_id}: {str(e)}")
 
-    print("---")  # Add a separator between prompts
+    logging.info("---")  # Add a separator between prompts
     time.sleep(1)  # Wait for 1 second between requests
 
-print("All prompts processed.")
+logging.info("All prompts processed.")
