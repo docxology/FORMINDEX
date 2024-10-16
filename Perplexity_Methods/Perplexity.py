@@ -20,8 +20,7 @@ logger = setup_logging()
 # Specify target System and User prompts by short name
 
 TARGET_SYSTEM_PROMPTS = [
-   # "innovators_catechism_ideation",
-   # "innovators_catechism_pitch",
+   "innovators_catechism_pitch",
     "complex_systems_scientist",
 ]
 
