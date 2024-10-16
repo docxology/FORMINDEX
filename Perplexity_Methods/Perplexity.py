@@ -18,19 +18,20 @@ def setup_logging():
 logger = setup_logging()
 
 # Specify target System and User prompts by short name
-TARGET_SYSTEM_PROMPTS = ["comprehensive_myrmecology"]
+
+TARGET_SYSTEM_PROMPTS = [
+    "complex_systems_scientist"
+]
+
 TARGET_USER_PROMPTS = [
-    "uc_davis_ant_research_news",
-    "ant_symbolism_spirituality",
-    "ant_wisdom_human_applications",
-    "ants_in_contemporary_art",
-    "ants_indigenous_wisdom_stewardship",
-    "active_inference_theoretical_foundations",
-    "active_inference_recent_developments",
     "active_inference_ant_behavior",
     "active_inference_ants_phd_proposal",
     "active_inference_ant_foraging_simulation",
-    "active_inference_events"
+    "active_inference_events",
+    "active_inference_pomdp_python_guide",
+    "bayesian_mechanics_fep_quantum_active_inference",
+    "rxinfer_julia_summary",
+    "whos_on_first_current_events"
 ]
 
 def load_api_key(key_file_path):
@@ -69,7 +70,7 @@ def load_prompts():
     return user_prompts, system_prompts
 
 # Function to get system message based on short_name
-def get_system_message(short_name):
+def get_system_message(system_prompts, short_name):
     system_prompt = next((prompt for prompt in system_prompts.values() if prompt["short_name"] == short_name), None)
     if not system_prompt:
         logger.warning(f"System prompt with short_name '{short_name}' not found. Using default.")
@@ -80,10 +81,10 @@ def get_system_message(short_name):
     }
 
 # Function to get user prompt based on short_name
-def get_user_prompt(short_name):
+def get_user_prompt(user_prompts, short_name):
     return next((prompt for prompt in user_prompts.values() if prompt["short_name"] == short_name), None)
 
-def process_prompt_combination(client, system_short_name, user_short_name, system_prompt, user_prompt, system_folder):
+def process_prompt_combination(client, system_prompts, system_short_name, user_short_name, system_prompt, user_prompt, system_folder):
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     output_file = os.path.join(system_folder, f"Prompt_S{system_prompt['number']}_{system_short_name}_U_{user_short_name}_{timestamp}.md")
 
@@ -94,7 +95,7 @@ def process_prompt_combination(client, system_short_name, user_short_name, syste
         return
 
     messages = [
-        get_system_message(system_short_name),
+        get_system_message(system_prompts, system_short_name),
         {
             "role": "user",
             "content": user_prompt["prompt"],
@@ -152,7 +153,7 @@ def main():
 
     for system_short_name, user_short_name in prompt_combinations:
         system_prompt = next((prompt for prompt in system_prompts.values() if prompt["short_name"] == system_short_name), None)
-        user_prompt = get_user_prompt(user_short_name)
+        user_prompt = get_user_prompt(user_prompts, user_short_name)
 
         if not system_prompt:
             logger.warning(f"System prompt '{system_short_name}' not found. Skipping.")
@@ -165,7 +166,7 @@ def main():
         system_folder = os.path.join(base_output_dir, system_short_name)
         os.makedirs(system_folder, exist_ok=True)
 
-        process_prompt_combination(client, system_short_name, user_short_name, system_prompt, user_prompt, system_folder)
+        process_prompt_combination(client, system_prompts, system_short_name, user_short_name, system_prompt, user_prompt, system_folder)
 
     logger.info("All prompt combinations processed.")
 
