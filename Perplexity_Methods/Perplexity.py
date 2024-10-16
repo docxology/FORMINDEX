@@ -15,7 +15,7 @@ logger = logging.getLogger('')
 logger.handlers = [console_handler]  # Remove default handlers and add only console handler
 
 # Specify target System and User prompts by short name
-TARGET_SYSTEM_PROMPTS = ["comprehensive_myrmecology", "ant_colony_behavior", "ant_taxonomy"]
+TARGET_SYSTEM_PROMPTS = ["comprehensive_myrmecology", "expert_programmer", "local_journalist"]
 TARGET_USER_PROMPTS = [
     "uc_davis_ant_research_news",
     "ant_symbolism_spirituality",
@@ -30,9 +30,9 @@ TARGET_USER_PROMPTS = [
     "active_inference_events"
 ]
 
-# Create Markdown_Output directory if it doesn't exist
-output_dir = "Markdown_Output"
-os.makedirs(output_dir, exist_ok=True)
+# Create base output directory
+base_output_dir = "Markdown_Output"
+os.makedirs(base_output_dir, exist_ok=True)
 
 key_file_path = os.path.join('..', 'Perplexity_Methods', 'LLM_keys.key')
 try:
@@ -107,12 +107,16 @@ for system_short_name, user_short_name in prompt_combinations:
         logging.warning(f"User prompt '{user_short_name}' not found. Skipping.")
         continue
 
+    # Create nested folder for the system prompt
+    system_folder = os.path.join(base_output_dir, system_short_name)
+    os.makedirs(system_folder, exist_ok=True)
+
     # Generate a unique filename
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_file = os.path.join(output_dir, f"Prompt_S{system_prompt['number']}_{system_short_name}_U_{user_short_name}_{timestamp}.md")
+    output_file = os.path.join(system_folder, f"Prompt_S{system_prompt['number']}_{system_short_name}_U_{user_short_name}_{timestamp}.md")
 
-    # Check if a similar file already exists
-    existing_files = glob.glob(os.path.join(output_dir, f"Prompt_S{system_prompt['number']}_{system_short_name}_U_{user_short_name}*.md"))
+    # Check if a similar file already exists in the system folder
+    existing_files = glob.glob(os.path.join(system_folder, f"Prompt_S{system_prompt['number']}_{system_short_name}_U_{user_short_name}*.md"))
     
     if existing_files:
         logging.info(f"Skipping combination (System: {system_short_name}, User: {user_short_name}): Output already exists.")
@@ -140,7 +144,13 @@ for system_short_name, user_short_name in prompt_combinations:
             model="llama-3.1-sonar-large-128k-online",
             messages=messages,
         )
-
+        # Some other Perplexity models, October 16 2024: https://docs.perplexity.ai/guides/model-cards 
+                # llama-3.1-sonar-small-128k-online	                
+                # llama-3.1-sonar-large-128k-online	
+                # llama-3.1-sonar-huge-128k-online	
+                # llama-3.1-sonar-small-128k-chat	
+                # llama-3.1-sonar-large-128k-chat	
+        
         # Extract the content from the response
         content = response.choices[0].message.content
 
