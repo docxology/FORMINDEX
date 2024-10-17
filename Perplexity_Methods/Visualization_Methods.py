@@ -76,18 +76,21 @@ def perform_tfidf_and_dim_reduction(documents: List[str]) -> Tuple[np.ndarray, n
         vectorizer = TfidfVectorizer(max_features=1000)
         tfidf_matrix = vectorizer.fit_transform(documents)
         
-        n_components = min(5, tfidf_matrix.shape[1] - 1)
+        # Increase PCA dimensions to 50
+        n_components_pca = min(50, tfidf_matrix.shape[1] - 1)
         
-        pca = PCA(n_components=n_components)
+        pca = PCA(n_components=n_components_pca)
         pca_result = pca.fit_transform(tfidf_matrix.toarray())
         
-        lsa = TruncatedSVD(n_components=n_components, random_state=42)
+        # Keep LSA and t-SNE as before
+        n_components_lsa = min(5, tfidf_matrix.shape[1] - 1)
+        lsa = TruncatedSVD(n_components=n_components_lsa, random_state=42)
         lsa_result = lsa.fit_transform(tfidf_matrix)
         
-        tsne = TSNE(n_components=3, random_state=42)  # Increase to 3D
+        tsne = TSNE(n_components=3, random_state=42)
         tsne_result = tsne.fit_transform(tfidf_matrix.toarray())
         
-        logger.info("TF-IDF vectorization, PCA, LSA, and t-SNE completed successfully.")
+        logger.info(f"TF-IDF vectorization, PCA ({n_components_pca} components), LSA, and t-SNE completed successfully.")
         return pca_result, lsa_result, tsne_result, vectorizer, pca, lsa, tsne
     except Exception as e:
         logger.error(f"Error during TF-IDF vectorization or dimension reduction: {str(e)}")
@@ -131,13 +134,15 @@ def plot_dimension_reduction(result: np.ndarray, filenames: List[str],
         logger.debug(f"Type of dim_reduction: {type(dim_reduction)}")
 
 def plot_word_importance(vectorizer: TfidfVectorizer, dim_reduction: Union[PCA, TruncatedSVD], 
-                         title: str, output_filename: str, output_folder: str) -> None:
+                         title: str, output_filename: str, output_folder: str, max_components: int = 20) -> None:
     try:
         feature_names = vectorizer.get_feature_names_out()
         loadings = dim_reduction.components_.T
-        n_components = loadings.shape[1]
+        n_components = min(max_components, loadings.shape[1])
         
-        fig = plt.figure(figsize=(30, 6 * n_components))
+        # Adjust figure size dynamically
+        fig_height = min(6 * n_components, 100)  # Limit max height to 100 inches
+        fig = plt.figure(figsize=(30, fig_height))
         gs = gridspec.GridSpec(n_components, 2, width_ratios=[3, 1])
         
         for i in range(n_components):
@@ -171,16 +176,16 @@ def plot_word_importance(vectorizer: TfidfVectorizer, dim_reduction: Union[PCA, 
         logger.error(f"Error creating word importance plot: {str(e)}")
 
 def plot_pca_eigen_terms(vectorizer: TfidfVectorizer, pca: PCA, 
-                         title: str, output_filename: str, output_folder: str) -> None:
+                         title: str, output_filename: str, output_folder: str, n_display: int = 10) -> None:
     try:
         feature_names = vectorizer.get_feature_names_out()
-        n_components = pca.n_components_
+        n_components = min(n_display, pca.n_components_)
         
-        fig = plt.figure(figsize=(30, 20))
-        gs = gridspec.GridSpec(2, 2)
+        fig = plt.figure(figsize=(30, 5 * n_components))
+        gs = gridspec.GridSpec(n_components, 2)
         
         # 2D plots
-        ax_2d = fig.add_subplot(gs[0, 0])
+        ax_2d = fig.add_subplot(gs[:, 0])
         for i in range(n_components):
             eigen_vector = pca.components_[i]
             sorted_idx = eigen_vector.argsort()
@@ -189,44 +194,19 @@ def plot_pca_eigen_terms(vectorizer: TfidfVectorizer, pca: PCA,
             
             ax_2d.barh(top_terms, top_weights, height=0.8, label=f'Component {i+1}', edgecolor='black')
         
-        ax_2d.set_title('Top 10 eigen terms for PCA components', fontsize=24)
+        ax_2d.set_title(f'Top 10 eigen terms for first {n_components} PCA components', fontsize=24)
         ax_2d.set_xlabel('Weight', fontsize=20)
         ax_2d.set_ylabel('Terms', fontsize=20)
         ax_2d.tick_params(axis='both', which='major', labelsize=16)
-        ax_2d.legend(fontsize=16)
-        
-        # 3D plot
-        ax_3d = fig.add_subplot(gs[0, 1], projection='3d')
-        colors = cm.rainbow(np.linspace(0, 1, n_components))
-        
-        for i, color in zip(range(n_components), colors):
-            eigen_vector = pca.components_[i]
-            sorted_idx = eigen_vector.argsort()
-            top_terms = feature_names[sorted_idx[-10:]]
-            top_weights = eigen_vector[sorted_idx[-10:]]
-            
-            ax_3d.bar(top_terms, top_weights, zs=i, zdir='y', color=color, alpha=0.8)
-        
-        ax_3d.set_xlabel('Terms', fontsize=16)
-        ax_3d.set_ylabel('Components', fontsize=16)
-        ax_3d.set_zlabel('Weights', fontsize=16)
-        ax_3d.set_title('3D visualization of PCA components', fontsize=24)
+        ax_2d.legend(fontsize=16, loc='center left', bbox_to_anchor=(1, 0.5))
         
         # Eigenvalue plot
-        ax_eigen = fig.add_subplot(gs[1, 0])
+        ax_eigen = fig.add_subplot(gs[:, 1])
         eigenvalues = pca.explained_variance_ratio_
         ax_eigen.plot(range(1, len(eigenvalues) + 1), eigenvalues, 'bo-')
         ax_eigen.set_xlabel('Principal Component', fontsize=20)
         ax_eigen.set_ylabel('Proportion of Variance Explained', fontsize=20)
         ax_eigen.set_title('Scree Plot', fontsize=24)
-        
-        # Cumulative variance plot
-        ax_cumulative = fig.add_subplot(gs[1, 1])
-        cumulative_variance = np.cumsum(eigenvalues)
-        ax_cumulative.plot(range(1, len(cumulative_variance) + 1), cumulative_variance, 'ro-')
-        ax_cumulative.set_xlabel('Number of Components', fontsize=20)
-        ax_cumulative.set_ylabel('Cumulative Proportion of Variance Explained', fontsize=20)
-        ax_cumulative.set_title('Cumulative Variance Plot', fontsize=24)
         
         plt.suptitle(title, fontsize=32, fontweight='bold')
         plt.tight_layout()
