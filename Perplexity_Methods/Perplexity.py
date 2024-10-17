@@ -27,7 +27,9 @@ TARGET_SYSTEM_PROMPTS = [
    "data_science_virtuoso",
    "systems_architect",
    "quantum_computing_specialist",
-   "futurist_strategist"
+   "futurist_strategist",
+   "culinary_adventurer",
+   "comprehensive_myrmecology"
 ]
 
 TARGET_USER_PROMPTS = [
