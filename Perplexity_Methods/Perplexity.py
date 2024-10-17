@@ -41,8 +41,8 @@ TARGET_USER_PROMPTS = [
     "whos_on_first_current_events",
     "safe_ose_grant_proposal",
     "northern_california_fire_risk",
-    "new_mexico_fire_risk",
-    "lake_county_ca_fire_risk"
+    "deborah_gordon_meta_analysis",
+    "tim_linksvayer_meta_analysis"
 ]
 
 def load_api_key(key_file_path):
