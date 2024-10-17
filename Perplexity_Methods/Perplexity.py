@@ -45,7 +45,8 @@ TARGET_USER_PROMPTS = [
     "northern_california_fire_risk",
     "deborah_gordon_meta_analysis",
     "tim_linksvayer_meta_analysis",
-    "formica_recent_studies"
+    "formica_recent_studies",
+    "active_inference_bioregional_workshop"
 ]
 
 def load_api_key(key_file_path):
