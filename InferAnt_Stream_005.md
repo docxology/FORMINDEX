@@ -2,6 +2,7 @@
 
 ## 1. Introduction
 - Welcome
+- Push Livestream update
 - Brief overview of FORMINDEX project
 - Cursor version 0.42.3
 - Zenodo publication: https://zenodo.org/records/13927034
