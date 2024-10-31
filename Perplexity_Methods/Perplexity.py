@@ -1,150 +1,189 @@
 import os
 import json
 import time
-import logging
 from openai import OpenAI
 from datetime import datetime
 import glob
+import logging
+import itertools
 
-# Set up logging
-logging.basicConfig(filename='perplexity_log.txt', level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+def setup_logging():
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.INFO)
+    logger = logging.getLogger('')
+    logger.handlers = [console_handler]
+    return logger
 
-# Create a console handler
-console_handler = logging.StreamHandler()
-console_handler.setLevel(logging.INFO)
-console_formatter = logging.Formatter('%(message)s')
-console_handler.setFormatter(console_formatter)
-logging.getLogger('').addHandler(console_handler)
+logger = setup_logging()
 
-# Create Markdown_Output directory if it doesn't exist
-output_dir = "Markdown_Output"
-os.makedirs(output_dir, exist_ok=True)
+# Specify target System and User prompts by short name
 
-# Read API key from LLM_Methods/LLM_keys.key file
-key_file_path = os.path.join('..', 'LLM_Methods', 'LLM_keys.key')
-try:
-    with open(key_file_path, 'r') as key_file:
-        keys = key_file.read().strip().split('\n')
-        PERPLEXITY_API_KEY = next((key.split('=')[1] for key in keys if key.startswith('PERPLEXITY_API_KEY=')), None)
-    
-    if not PERPLEXITY_API_KEY:
-        raise ValueError("PERPLEXITY_API_KEY not found in the key file")
-except FileNotFoundError:
-    logging.error(f"API key file not found at {key_file_path}")
-    raise
-except Exception as e:
-    logging.error(f"Error reading API key: {str(e)}")
-    raise
+TARGET_SYSTEM_PROMPTS = [
+   "innovators_catechism_pitch",
+   "local_journalist",
+   "complex_systems_scientist",
+   "enthusiastic_undergraduate",
+   "data_science_virtuoso",
+   "systems_architect",
+   "quantum_computing_specialist",
+   "futurist_strategist",
+   "culinary_adventurer",
+   "comprehensive_myrmecology"
+]
 
-# Initialize the client
-client = OpenAI(api_key=PERPLEXITY_API_KEY, base_url="https://api.perplexity.ai")
+TARGET_USER_PROMPTS = [
+    "active_inference_ant_behavior",
+    "active_inference_ants_phd_proposal",
+    "active_inference_ant_foraging_simulation",
+    "active_inference_events",
+    "active_inference_pomdp_python_guide",
+    "bayesian_mechanics_fep_quantum_active_inference",
+    "rxinfer_julia_summary",
+    "whos_on_first_current_events",
+    "safe_ose_grant_proposal",
+    "northern_california_fire_risk",
+    "deborah_gordon_meta_analysis",
+    "tim_linksvayer_meta_analysis",
+    "formica_recent_studies",
+    "active_inference_bioregional_workshop"
+]
 
-# Load prompts from Prompts.json
-try:
-    with open("Prompts.json", "r") as f:
-        prompts = json.load(f)
-except FileNotFoundError:
-    logging.error("Prompts.json file not found")
-    raise
-except json.JSONDecodeError:
-    logging.error("Error decoding Prompts.json file")
-    raise
+def load_api_key(key_file_path):
+    try:
+        with open(key_file_path, 'r') as key_file:
+            keys = key_file.read().strip().split('\n')
+            api_keys = dict(key.split('=') for key in keys)
+            perplexity_api_key = api_keys.get('PERPLEXITY_API_KEY')
+        
+        if not perplexity_api_key:
+            raise ValueError("PERPLEXITY_API_KEY not found in the key file")
+        
+        logger.info("Perplexity API Key loaded successfully")
+        return perplexity_api_key
+    except FileNotFoundError:
+        logger.error(f"API key file not found at {key_file_path}")
+        raise
+    except Exception as e:
+        logger.error(f"Error reading API key: {str(e)}")
+        raise
 
-system_message = {
-    "role": "system",
-    "content": (
-        "You are a comprehensive Myrmecology researcher, specializing in the study of ants. "
-        "Your responses should always include exhaustive internet research on the topic at hand. "
-        "Provide detailed, academic-level information, citing primary sources using PLOS citation format [1] or [2-5]. "
-        "Your answers should reflect the latest scientific findings in the field of Myrmecology. "
-        "Always strive to present a balanced view of current research, highlighting areas of consensus "
-        "as well as ongoing debates or uncertainties in the field. Include relevant statistical data, "
-        "methodologies, and experimental results when appropriate. "
-        "\n\n"
-        "Ensure your responses are thoughtful, full-length, and comprehensive, covering all aspects of the query in depth. "
-        "Use proper Markdown formatting throughout your response, including:"
-        "\n- Headers and subheaders (##, ###) for clear structure"
-        "\n- Bullet points and numbered lists for organized information"
-        "\n- **Bold** and *italic* text for emphasis"
-        "\n- `Code blocks` for any scientific names, chemical formulas, or code snippets"
-        "\n- > Blockquotes for important quotes or key points"
-        "\n- Tables for presenting data or comparisons"
-        "\n\n"
-        "Conclude each response with a comprehensive, numbered plaintext bibliography of all sources cited. "
-        "Each entry in the bibliography should include:"
-        "\n1. Authors (Last name, First initial.)"
-        "\n2. Year of publication"
-        "\n3. Title of the article or book chapter"
-        "\n4. Journal name (if applicable)"
-        "\n5. Volume and issue number (if applicable)"
-        "\n6. Page numbers or article number"
-        "\n7. DOI (if available)"
-        "\n8. URL (if available)"
-        "\n\nExample bibliography entry:"
-        "\n1. Smith J, Doe A. 2023. Recent advances in ant colony behavior. Journal of Myrmecology. 45(2): 123-145. DOI: 10.1234/jmyrm.2023.45.2.123. https://example.com/article"
-        "\n\n"
-        "Your goal is to provide the most thorough, well-structured, and up-to-date information available on any ant-related query, "
-        "presented in a clear and academically rigorous manner with proper citations and a complete bibliography."
-    ),
-}
+def load_json_file(file_path):
+    try:
+        with open(file_path, "r") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        logger.error(f"{file_path} file not found")
+        raise
+    except json.JSONDecodeError:
+        logger.error(f"Error decoding {file_path} file")
+        raise
 
-for prompt_id, prompt_data in prompts.items():
-    # Check if a file with the same prompt number and short name already exists
-    existing_files = glob.glob(os.path.join(output_dir, f"Prompt_{prompt_id}_{prompt_data['short_name']}*.md"))
+def load_prompts():
+    user_prompts = load_json_file("User_Prompts.json")
+    system_prompts = load_json_file("System_Prompts.json")
+    return user_prompts, system_prompts
+
+# Function to get system message based on short_name
+def get_system_message(system_prompts, short_name):
+    system_prompt = next((prompt for prompt in system_prompts.values() if prompt["short_name"] == short_name), None)
+    if not system_prompt:
+        logger.warning(f"System prompt with short_name '{short_name}' not found. Using default.")
+        system_prompt = system_prompts["default"]
+    return {
+        "role": "system",
+        "content": system_prompt["description"]
+    }
+
+# Function to get user prompt based on short_name
+def get_user_prompt(user_prompts, short_name):
+    return next((prompt for prompt in user_prompts.values() if prompt["short_name"] == short_name), None)
+
+def process_prompt_combination(client, system_prompts, system_short_name, user_short_name, system_prompt, user_prompt, system_folder):
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_file = os.path.join(system_folder, f"Prompt_S{system_prompt['number']}_{system_short_name}_U_{user_short_name}_{timestamp}.md")
+
+    existing_files = glob.glob(os.path.join(system_folder, f"Prompt_S{system_prompt['number']}_{system_short_name}_U_{user_short_name}*.md"))
     
     if existing_files:
-        print(f"Skipping Prompt {prompt_id} ({prompt_data['short_name']}): Output already exists.")
-        continue
+        logger.info(f"Skipping combination (System: {system_short_name}, User: {user_short_name}): Output already exists.")
+        return
 
     messages = [
-        system_message,
+        get_system_message(system_prompts, system_short_name),
         {
             "role": "user",
-            "content": prompt_data["prompt"],
+            "content": user_prompt["prompt"],
         },
     ]
 
-    print(f"\nProcessing Prompt {prompt_id}:")
-    print(f"Full Prompt: {prompt_data['prompt'][:100]}...")
+    logger.info(f"\nProcessing Prompt Combination:")
+    logger.info(f"System Prompt: {system_short_name}")
+    logger.info(f"User Prompt: {user_short_name}")
+    logger.info(f"Full User Prompt: {user_prompt['prompt'][:100]}...")
+    logger.info(f"System Prompt Content: {messages[0]['content'][:100]}...")  # Log the first 100 characters of system prompt
 
-    # Generate a unique filename based on the prompt number, short name, and current timestamp
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_file = os.path.join(output_dir, f"Prompt_{prompt_id}_{prompt_data['short_name']}_{timestamp}.md")
-
-    # Measure the time taken for the API request
     start_time = time.time()
 
-    # Chat completion and save as Markdown
     try:
         response = client.chat.completions.create(
             model="llama-3.1-sonar-large-128k-online",
             messages=messages,
         )
-
-        # Extract the content from the response
+        
         content = response.choices[0].message.content
 
-        # Write the content to a Markdown file
         with open(output_file, "w", encoding="utf-8") as f:
             f.write(content)
 
         end_time = time.time()
         elapsed_time = end_time - start_time
 
-        # Count the number of lines in the output file
         with open(output_file, "r", encoding="utf-8") as f:
             line_count = sum(1 for _ in f)
 
-        print(f"Prompt {prompt_id} processed successfully.")
-        print(f"Time taken: {elapsed_time:.2f} seconds")
-        print(f"Output file: {output_file}")
-        print(f"Number of lines in output: {line_count}")
+        logger.info(f"Prompt combination processed successfully.")
+        logger.info(f"Time taken: {elapsed_time:.2f} seconds")
+        logger.info(f"Output file: {output_file}")
+        logger.info(f"Number of lines in output: {line_count}")
 
     except Exception as e:
-        print(f"Error processing Prompt {prompt_id}: {str(e)}")
+        logger.error(f"Error processing prompt combination: {str(e)}")
 
-    print("---")  # Add a separator between prompts
-    time.sleep(1)  # Wait for 1 second between requests
+    logger.info("---")
+    time.sleep(1)
 
-print("All prompts processed.")
+def main():
+    base_output_dir = "Markdown_Output"
+    os.makedirs(base_output_dir, exist_ok=True)
+
+    key_file_path = os.path.join('..', 'Perplexity_Methods', 'LLM_keys.key')
+    PERPLEXITY_API_KEY = load_api_key(key_file_path)
+
+    client = OpenAI(api_key=PERPLEXITY_API_KEY, base_url="https://api.perplexity.ai")
+
+    user_prompts, system_prompts = load_prompts()
+
+    prompt_combinations = list(itertools.product(TARGET_SYSTEM_PROMPTS, TARGET_USER_PROMPTS))
+
+    for system_short_name, user_short_name in prompt_combinations:
+        system_prompt = next((prompt for prompt in system_prompts.values() if prompt["short_name"] == system_short_name), None)
+        user_prompt = get_user_prompt(user_prompts, user_short_name)
+
+        if not system_prompt:
+            logger.warning(f"System prompt '{system_short_name}' not found. Skipping.")
+            continue
+
+        if not user_prompt:
+            logger.warning(f"User prompt '{user_short_name}' not found. Skipping.")
+            continue
+
+        system_folder = os.path.join(base_output_dir, system_short_name)
+        os.makedirs(system_folder, exist_ok=True)
+
+        process_prompt_combination(client, system_prompts, system_short_name, user_short_name, system_prompt, user_prompt, system_folder)
+
+    logger.info("All prompt combinations processed.")
+
+if __name__ == "__main__":
+    main()
