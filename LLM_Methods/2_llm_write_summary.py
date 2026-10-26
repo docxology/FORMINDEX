@@ -160,8 +160,8 @@ def process_file(file_path: str, client: OpenAI) -> None:
         # Use cl100k_base encoding for GPT-4 models
         encoding_name = "cl100k_base"
         
-        # Adjust max tokens for input (GPT-4-mini has a 8k context window)
-        max_input_tokens = 7000  # Leave some room for the response
+        # Adjust max tokens for input, leaving room for the response
+        max_input_tokens = 7000
         
         # Chunk the content
         chunks = chunk_text(content, USER_CONFIG['chunk_size'], USER_CONFIG['overlap'])
@@ -179,7 +179,7 @@ def process_file(file_path: str, client: OpenAI) -> None:
             
             try:
                 response = client.chat.completions.create(
-                    model="gpt-4-0125-preview",  # Use the correct model name for GPT-4-mini
+                    model=USER_CONFIG['llm_params']['model'],
                     messages=[{"role": "user", "content": prompt}],
                     max_tokens=1000,  # Adjust based on your needs, but keep it within limits
                     **{k: v for k, v in USER_CONFIG['llm_params'].items() if k not in ['model', 'api_key', 'max_tokens']}

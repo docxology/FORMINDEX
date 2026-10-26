@@ -111,7 +111,7 @@ def generate_llm_response(prompt: str, llm_params: dict) -> tuple:
     try:
         client = openai.OpenAI(api_key=llm_params['api_key'])
         response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model=llm_params.get('model', 'gpt-4o-mini'),
             messages=[
                 {"role": "system", "content": f"You are a professional translator. Translate the following text from English to {llm_params['target_language']}. Maintain the original meaning and style as closely as possible."},
                 {"role": "user", "content": prompt}

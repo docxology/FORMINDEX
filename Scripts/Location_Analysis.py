@@ -226,8 +226,10 @@ def create_world_map_heatmap(bibtex_records, output_dir):
     print("World map of publications heatmap created and saved.")
 
 def create_world_map_publications(bibtex_records, output_dir, prefix=''):
-    # Load world map data
-    world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+    # Load world map data. geopandas.datasets was removed in GeoPandas 1.0, so the
+    # equivalent Natural Earth 1:110m country polygons are fetched directly.
+    world_url = "https://naciscdn.org/naturalearth/110m/cultural/ne_110m_admin_0_countries.zip"
+    world = gpd.read_file(world_url).rename(columns={'NAME': 'name'})
     
     # Count publications by country
     country_counts = {}

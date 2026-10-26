@@ -87,7 +87,7 @@ def process_literature_summary(input_file: str, output_dir: str, client: OpenAI,
 
             try:
                 response = client.chat.completions.create(
-                    model="gpt-4-0125-preview",
+                    model=USER_CONFIG['llm_params']['model'],
                     messages=[{"role": "user", "content": prompt}],
                     max_tokens=1000,
                     **{k: v for k, v in USER_CONFIG['llm_params'].items() if k not in ['model', 'api_key', 'max_tokens']}

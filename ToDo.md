@@ -28,11 +28,11 @@ From the ground: vigilant antennae, tireless legs, and many effective neural sys
    - Implement a user interface for selecting specific genera
 
 ## Recent Updates
-- Modified the script (`Scripts/generate_genus_bibliographies.py`) to generate targeted bibliographies for specific genera, subjects, and geographic areas.
-- The script now focuses on the following targets:
-  - Genera: Formica, Camponotus, Myrmica, Pheidole, Monomorium, Messor, Cataglyphis
-  - Subjects: Foraging, Bioenergetics, Myrmecophiles, Ant-plant symbioses
-  - Geographic areas: Hawaii, India, Mexico, Brazil
+- Modified the script (`Scripts/Generate_Target_Bibliographies.py`) to generate targeted bibliographies for specific genera, subjects, and geographic areas.
+- The script now focuses on the following targets (`TARGET_BIBLIOGRAPHIES` in that script):
+  - Genera: Formica, Camponotus, Myrmica, Pheidole, Pogonomyrmex, P. barbatus, Monomorium, Messor, Cataglyphis
+  - Subjects: Foraging, Bioenergetics, Myrmecophiles, Ant-plant, Dopamine, Serotonin, Art, Robotics, Intelligence
+  - Geographic areas: Hawaii, India, Mexico, Brazil, California
 
 ## Contact Information
 For inquiries about contributing to FORMIS or adding bibliographies, please contact @docxology on GitHub.

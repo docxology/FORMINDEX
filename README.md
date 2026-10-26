@@ -51,11 +51,16 @@ FORMINDEX is a comprehensive project aimed at analyzing and visualizing the FORM
 
 ## Project Structure
 
-- `Read_in_FORMIS.py`: Ingests Bibtex and stores records in JSON format
-- `Generate_Target_Bibliographies.py`: Creates subsets of records based on key terms
-- `Visualize_FORMIS.py`: Generates visualizations for full FORMIS and targeted bibliographies
+- `Scripts/Read_in_FORMIS.py`: Ingests Bibtex and stores records in JSON format
+- `Scripts/Generate_Target_Bibliographies.py`: Creates subsets of records based on key terms
+- `Scripts/Keyword_Analysis.py`: Keyword and species-case frequency analysis
+- `Scripts/Location_Analysis.py`: Geographic analysis and world-map visualizations
+- `Scripts/Visualize_FORMIS.py`: Generates visualizations for full FORMIS and targeted bibliographies
+- `Methods/FORMINDEX_Methods.py`: Shared ingestion, parsing, and plotting helpers
 - `LLM_Methods/`: Scripts for AI-driven summarization and translation
 - `Perplexity_Methods/`: Scripts for advanced myrmecological inquiries using Perplexity AI
+- `Initial_Files/`: Source FORMIS export and its converted JSON
+- `Reports/`, `Visualizations/`, `Targeted_Bibliographies/`: Generated outputs
 
 ## Outputs
 
@@ -79,24 +84,34 @@ FORMINDEX is a comprehensive project aimed at analyzing and visualizing the FORM
 
 ## How to Use
 
-1. Clone the repository
-2. Install required dependencies (list to be provided)
-3. Run `Read_in_FORMIS.py` to ingest the FORMIS database
-4. Use `Generate_Target_Bibliographies.py` to create subsets of interest
-5. Execute `Visualize_FORMIS.py` for comprehensive visualizations
-6. Explore `LLM_Methods/` and `Perplexity_Methods/` for AI-driven analyses
+No packaging metadata is committed, so install the dependencies directly (Python 3.11+; current GeoPandas requires it):
+
+```bash
+pip install bibtexparser chardet numpy pandas matplotlib seaborn wordcloud \
+    scikit-learn scipy networkx nltk geopandas fuzzywuzzy openai requests \
+    python-dotenv tiktoken spacy
+python -m nltk.downloader stopwords
+python -m spacy download en_core_web_sm
+```
+
+Then, from the repository root:
+
+1. Run `Scripts/Read_in_FORMIS.py` to ingest `Initial_Files/FORMIS 2024(July)-Bibtex.txt` into `Initial_Files/FORMIS_2024_July_Bibtex.json`
+2. Run `Scripts/Generate_Target_Bibliographies.py` to create subsets in `Targeted_Bibliographies/`
+3. Run `Scripts/Visualize_FORMIS.py` for comprehensive visualizations
+4. Explore `LLM_Methods/` and `Perplexity_Methods/` for AI-driven analyses; both read the API key from `LLM_Methods/LLM_keys.key`, which is git-ignored and must be supplied locally
 
 ## Contributing
 
-We welcome contributions! Please see our contributing guidelines (link to be added) for more information.
+We welcome contributions! See [`ToDo.md`](ToDo.md) for the open task list and how to propose new bibliographies.
 
 ## License
 
-This project is licensed under [LICENSE NAME] - see the LICENSE.md file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
 - FORMIS database maintainers
 - Contributors to open-source libraries used in this project
 
-For more information, visit our [project website](https://github.com/docxology/FORMINDEX) or contact [Your Contact Information].
+For more information, visit the [project repository](https://github.com/docxology/FORMINDEX) or contact [@docxology](https://github.com/docxology) on GitHub.

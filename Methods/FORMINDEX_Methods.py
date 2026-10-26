@@ -2,7 +2,7 @@ import sys
 import site
 import os
 import subprocess
-import pkg_resources
+from importlib.metadata import distributions
 import re
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -51,7 +51,11 @@ def ensure_virtualenv():
 
     # Check for required packages and install if missing
     required = {'bibtexparser', 'matplotlib', 'wordcloud', 'scikit-learn', 'numpy'}
-    installed = {pkg.key for pkg in pkg_resources.working_set}
+    installed = {
+        re.sub(r"[-_.]+", "-", name).lower()
+        for dist in distributions()
+        if (name := dist.metadata.get("Name"))
+    }
     missing = required - installed
 
     if missing:
