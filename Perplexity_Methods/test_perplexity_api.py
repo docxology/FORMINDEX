@@ -8,17 +8,21 @@ from requests.exceptions import RequestException, ConnectionError, Timeout, HTTP
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# Get the API key
+# Get the API key: the environment wins, then a local, git-ignored key file.
 key_file_path = os.path.join('..', 'LLM_Methods', 'LLM_keys.key')
-try:
-    with open(key_file_path, 'r') as key_file:
-        API_KEY = key_file.read().strip()
-except FileNotFoundError:
-    logger.error(f"API key file not found at {key_file_path}")
-    raise
+API_KEY = os.environ.get('OPENAI_API_KEY', '').strip()
+if not API_KEY:
+    try:
+        with open(key_file_path, 'r') as key_file:
+            API_KEY = key_file.read().strip()
+    except FileNotFoundError:
+        logger.warning(
+            "No OPENAI_API_KEY in the environment and no key file at %s", key_file_path
+        )
 
-# Initialize the client
-client = OpenAI(api_key=API_KEY, base_url="https://api.perplexity.ai")
+# Initialize the client only when a key is available, so importing this module
+# (or collecting it as a test) cannot fail for want of a credential.
+client = OpenAI(api_key=API_KEY, base_url="https://api.perplexity.ai") if API_KEY else None
 
 # Test message
 messages = [
@@ -34,6 +38,12 @@ def make_api_request(retries=3, delay=5):
     :param delay: Delay between retries in seconds
     :return: API response or None if all attempts fail
     """
+    if client is None:
+        logger.error(
+            "No API key available: set OPENAI_API_KEY or supply a local LLM_keys.key file"
+        )
+        return None
+
     for attempt in range(retries):
         try:
             response = client.chat.completions.create(

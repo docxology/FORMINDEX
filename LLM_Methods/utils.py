@@ -143,28 +143,39 @@ def batch_process_llm(prompts: List[str], llm_params: Dict[str, Any] = DEFAULT_C
 
 def get_api_key() -> str:
     """
-    Read the OpenAI API key from the LLM_keys.key file.
+    Return the OpenAI API key.
+
+    `OPENAI_API_KEY` from the environment wins. Failing that, the git-ignored
+    `LLM_keys.key` file beside this module is read, for checkouts that keep the key
+    on disk. A key file must never be committed.
 
     Returns:
         str: The OpenAI API key.
 
     Raises:
-        ValueError: If the API key is not found in the file.
+        ValueError: If no key is available from the environment or the local file.
     """
+    env_key = os.environ.get('OPENAI_API_KEY', '').strip()
+    if env_key:
+        logging.info("API key read from the environment")
+        return env_key
+
     key_file_path = os.path.join(os.path.dirname(__file__), 'LLM_keys.key')
     try:
         with open(key_file_path, 'r') as key_file:
             for line in key_file:
                 if line.startswith('OPENAI_API_KEY'):
-                    api_key = line.split('=')[1].strip()
-                    logging.info("API key read successfully")
+                    api_key = line.split('=', 1)[1].strip()
+                    logging.info("API key read from the local key file")
                     return api_key
     except FileNotFoundError:
         logging.error(f"API key file not found: {key_file_path}")
     except Exception as e:
         logging.error(f"Error reading API key: {str(e)}")
 
-    raise ValueError("OPENAI_API_KEY not found in LLM_keys.key file")
+    raise ValueError(
+        "Set OPENAI_API_KEY in the environment, or supply a local, git-ignored LLM_keys.key file"
+    )
 
 def extract_entity_files(base_dir: str) -> List[str]:
     """

@@ -6,6 +6,15 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def read_api_key():
+    """Return OPENAI_API_KEY from the environment, else from a local git-ignored key file.
+
+    The key file is never committed, so a fresh clone is expected to supply the key
+    through `OPENAI_API_KEY`.
+    """
+    env_key = os.environ.get('OPENAI_API_KEY', '').strip()
+    if env_key:
+        return env_key
+
     key_file_path = os.path.join(os.path.dirname(__file__), 'LLM_keys.key')
     try:
         with open(key_file_path, 'r') as key_file:
@@ -13,10 +22,13 @@ def read_api_key():
                 if line.startswith('OPENAI_API_KEY='):
                     return line.split('=', 1)[1].strip()
     except FileNotFoundError:
-        raise ValueError(f"API key file not found at {key_file_path}")
+        raise ValueError(
+            f"No OPENAI_API_KEY in the environment and no key file at {key_file_path}. "
+            "Set the environment variable, or keep a local, git-ignored key file."
+        )
     except IOError:
         raise ValueError(f"Error reading API key file at {key_file_path}")
-    
+
     raise ValueError("OPENAI_API_KEY not found in the key file")
 
 # Get the directory of the current script
@@ -49,7 +61,7 @@ USER_CONFIG = {
         'n': 1,
         'stream': False,
         'stop': None,
-        'api_key': read_api_key()  # Read the API key from environment variables
+        'api_key': read_api_key()  # environment first, then a local git-ignored file
     },
     'chunk_size': 100000,  # Number of tokens per chunk
     'overlap': 1000  # Number of overlapping tokens between chunks

@@ -154,6 +154,11 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+# API credentials are never committed: supply OPENAI_API_KEY through the environment,
+# or keep a local key file that this pattern keeps out of the index.
 LLM_Methods/LLM_keys.key
 *.key
-LLM_Methods/LLM_keys.key
+
+# Console captures from the Perplexity smoke check. One was committed once and carried
+# the live key into the tree; it has since been removed, and this keeps a re-capture out.
+Perplexity_Methods/perplexity_log.txt
