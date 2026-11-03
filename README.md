@@ -99,7 +99,7 @@ Then, from the repository root:
 1. Run `Scripts/Read_in_FORMIS.py` to ingest `Initial_Files/FORMIS 2024(July)-Bibtex.txt` into `Initial_Files/FORMIS_2024_July_Bibtex.json`
 2. Run `Scripts/Generate_Target_Bibliographies.py` to create subsets in `Targeted_Bibliographies/`
 3. Run `Scripts/Visualize_FORMIS.py` for comprehensive visualizations
-4. Explore `LLM_Methods/` and `Perplexity_Methods/` for AI-driven analyses; both read the API key from `LLM_Methods/LLM_keys.key`, which is git-ignored and must be supplied locally
+4. Explore `LLM_Methods/` and `Perplexity_Methods/` for AI-driven analyses; both read the API key from the `OPENAI_API_KEY` environment variable, falling back to a local, git-ignored `LLM_Methods/LLM_keys.key` file. No key file is tracked, so supply the key yourself
 
 ## Contributing
 

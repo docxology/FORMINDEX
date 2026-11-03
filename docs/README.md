@@ -21,7 +21,8 @@ integration, and interactive visualizations.
 Install and run steps are documented in `../README.md` ("How to Use"). The repo
 still has no packaging metadata (`pyproject.toml`, `package.json`, `Makefile`)
 and no automated test suite; `Perplexity_Methods/test_perplexity_api.py` is a
-manual live-API smoke check that requires `LLM_Methods/LLM_keys.key`.
+manual live-API smoke check that requires `OPENAI_API_KEY` in the environment, or a
+local, git-ignored `LLM_Methods/LLM_keys.key`.
 
 ## Status
 
