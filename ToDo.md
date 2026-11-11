@@ -36,3 +36,7 @@ From the ground: vigilant antennae, tireless legs, and many effective neural sys
 
 ## Contact Information
 For inquiries about contributing to FORMIS or adding bibliographies, please contact @docxology on GitHub.
+
+## Workflowz review — 2026-11-10
+
+Coverage note: bounded review found no concrete new task supported by the supplied source excerpts. Existing database-update, contribution, bibliography-generation, and future-development items remain unchanged. Re-review on a concrete failing script, source change, or new dependency/runtime constraint; no speculative work is queued.
