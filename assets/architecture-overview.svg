@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 650" width="1120" height="650" role="img" aria-labelledby="svg-title svg-desc">
+  <title id="svg-title">FORMINDEX Architecture Overview</title>
+  <desc id="svg-desc">FORMINDEX data ingestion, targeted bibliography generation, quantitative bibliometrics, LLM synthesis, and Perplexity persona analysis over ~80,000 FORMIS records.</desc>
+  <defs>
+    <marker id="arrow-slate" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#475569"/></marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#2563eb"/></marker>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#0d9488"/></marker>
+    <marker id="arrow-indigo" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#4f46e5"/></marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#d97706"/></marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#059669"/></marker>
+    <marker id="arrow-rose" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#e11d48"/></marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect x="4" y="4" width="1112" height="642" rx="16" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="4" y="4" width="1112" height="68" rx="16" fill="#0f172a"/>
+  <rect x="4" y="56" width="1112" height="16" fill="#0f172a"/>
+  <line x1="4" y1="72" x2="1116" y2="72" stroke="#f59e0b" stroke-width="2.5"/>
+  <rect x="880" y="21" width="218" height="30" rx="15" fill="#1e293b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="989.0" y="40.0" font-family="ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11.5" font-weight="700" fill="#f59e0b" text-anchor="middle">DOI 10.5281/zenodo.13927024</text>
+  <text x="26.0" y="32.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#f8fafc" text-anchor="start">FORMINDEX — FORMIS Integrated Myrmecological Database Exploration</text>
+  <text x="26.0" y="54.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#cbd5e1" text-anchor="start">End-to-end bibliometric, NLP, and multi-persona synthesis over the ~80,000-record FORMIS ant-literature corpus</text>
+  <rect x="20" y="88" width="1080" height="154" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <rect x="20" y="88" width="1080" height="32" rx="12" fill="#d97706" fill-opacity="0.10"/>
+  <line x1="20" y1="120" x2="1100" y2="120" stroke="#d97706" stroke-opacity="0.35" stroke-width="1"/>
+  <rect x="905" y="94" width="185" height="20" rx="6" fill="#d97706" fill-opacity="0.16" stroke="#d97706" stroke-width="0.8"/>
+  <text x="997.5" y="108.0" font-family="ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="700" fill="#d97706" text-anchor="middle">Initial_Files/ · Scripts/</text>
+  <text x="34.0" y="109.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">Stage 1 — Corpus Ingestion, Encoding Normalization &amp; Taxonomic Slicing</text>
+  <rect x="36" y="132" width="318" height="94" rx="8" fill="#f8fafc" stroke="#d97706" stroke-width="1.3"/>
+  <rect x="36" y="132" width="5" height="94" rx="2.5" fill="#d97706"/>
+  <text x="50.0" y="152.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#0f172a" text-anchor="start">FORMIS Raw Exports (July 2024)</text>
+  <text x="50.0" y="170.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">~80,000 myrmecological records</text>
+  <text x="50.0" y="186.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">BibTeX · EndNote XML · Medline · RIS</text>
+  <text x="50.0" y="203.0" font-family="ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">chardet byte-level encoding detection</text>
+  <rect x="380" y="132" width="332" height="94" rx="8" fill="#f8fafc" stroke="#2563eb" stroke-width="1.3"/>
+  <rect x="380" y="132" width="5" height="94" rx="2.5" fill="#2563eb"/>
+  <text x="394.0" y="152.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#0f172a" text-anchor="start">Read_in_FORMIS.py + Methods</text>
+  <text x="394.0" y="170.0" font-family="ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">Methods/FORMINDEX_Methods.py parser</text>
+  <text x="394.0" y="186.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">Normalizes @article/@book/@incollection</text>
+  <text x="394.0" y="203.0" font-family="ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">→ FORMIS_2024_July_Bibtex.json</text>
+  <rect x="738" y="132" width="346" height="94" rx="8" fill="#f8fafc" stroke="#059669" stroke-width="1.3"/>
+  <rect x="738" y="132" width="5" height="94" rx="2.5" fill="#059669"/>
+  <text x="752.0" y="152.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#0f172a" text-anchor="start">Generate_Target_Bibliographies.py</text>
+  <text x="752.0" y="170.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">20+ topic/taxon JSON cohorts:</text>
+  <text x="752.0" y="186.5" font-family="ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">Camponotus · Cataglyphis · Pogonomyrmex</text>
+  <text x="752.0" y="203.0" font-family="ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">Foraging · Dopamine · Ant-plant · Brazil</text>
+  <path d="M 354.0 179.0 L 380.0 179.0" fill="none" stroke="#2563eb" stroke-width="1.8" marker-end="url(#arrow-blue)"/>
+  <path d="M 712.0 179.0 L 738.0 179.0" fill="none" stroke="#059669" stroke-width="1.8" marker-end="url(#arrow-emerald)"/>
+  <rect x="20" y="264" width="346" height="332" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <rect x="20" y="264" width="346" height="32" rx="12" fill="#2563eb" fill-opacity="0.10"/>
+  <line x1="20" y1="296" x2="366" y2="296" stroke="#2563eb" stroke-opacity="0.35" stroke-width="1"/>
+  <rect x="285" y="270" width="71" height="20" rx="6" fill="#2563eb" fill-opacity="0.16" stroke="#2563eb" stroke-width="0.8"/>
+  <text x="320.5" y="284.0" font-family="ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="700" fill="#2563eb" text-anchor="middle">Scripts/</text>
+  <text x="34.0" y="285.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">2A. Bibliometric Engine</text>
+  <rect x="36" y="308" width="314" height="84" rx="8" fill="#f8fafc" stroke="#2563eb" stroke-width="1.3"/>
+  <rect x="36" y="308" width="5" height="84" rx="2.5" fill="#2563eb"/>
+  <text x="50.0" y="328.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#0f172a" text-anchor="start">Keyword &amp; Binomial Taxon Analysis</text>
+  <text x="50.0" y="346.0" font-family="ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">Keyword_Analysis.py: species casing,</text>
+  <text x="50.0" y="362.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">title/abstract n-grams &amp; WordClouds</text>
+  <rect x="36" y="404" width="314" height="84" rx="8" fill="#f8fafc" stroke="#0284c7" stroke-width="1.3"/>
+  <rect x="36" y="404" width="5" height="84" rx="2.5" fill="#0284c7"/>
+  <text x="50.0" y="424.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#0f172a" text-anchor="start">Geospatial &amp; Temporal Trends</text>
+  <text x="50.0" y="442.0" font-family="ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">Location_Analysis.py: world choropleths</text>
+  <text x="50.0" y="458.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">Stacked top-venue publication timelines</text>
+  <rect x="36" y="500" width="314" height="82" rx="8" fill="#f8fafc" stroke="#4f46e5" stroke-width="1.3"/>
+  <rect x="36" y="500" width="5" height="82" rx="2.5" fill="#4f46e5"/>
+  <text x="50.0" y="520.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#0f172a" text-anchor="start">Network &amp; Topic Modeling</text>
+  <text x="50.0" y="538.0" font-family="ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">Visualize_FORMIS.py: TF-IDF cosine,</text>
+  <text x="50.0" y="554.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">co-authorship heatmaps &amp; sklearn LDA</text>
+  <rect x="387" y="264" width="346" height="332" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <rect x="387" y="264" width="346" height="32" rx="12" fill="#0d9488" fill-opacity="0.10"/>
+  <line x1="387" y1="296" x2="733" y2="296" stroke="#0d9488" stroke-opacity="0.35" stroke-width="1"/>
+  <rect x="622" y="270" width="101" height="20" rx="6" fill="#0d9488" fill-opacity="0.16" stroke="#0d9488" stroke-width="0.8"/>
+  <text x="672.5" y="284.0" font-family="ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="700" fill="#0d9488" text-anchor="middle">LLM_Methods/</text>
+  <text x="401.0" y="285.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">2B. Multi-Modal LLM Synthesis</text>
+  <rect x="403" y="308" width="314" height="84" rx="8" fill="#f8fafc" stroke="#0d9488" stroke-width="1.3"/>
+  <rect x="403" y="308" width="5" height="84" rx="2.5" fill="#0d9488"/>
+  <text x="417.0" y="328.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#0f172a" text-anchor="start">1_generate_pro-summaries.py</text>
+  <text x="417.0" y="346.0" font-family="ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">Literature_ProSummary/*.md digests</text>
+  <text x="417.0" y="362.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">Metadata-centric fair-use synthesis</text>
+  <rect x="403" y="404" width="314" height="84" rx="8" fill="#f8fafc" stroke="#059669" stroke-width="1.3"/>
+  <rect x="403" y="404" width="5" height="84" rx="2.5" fill="#059669"/>
+  <text x="417.0" y="424.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#0f172a" text-anchor="start">2_llm_write_summary.py</text>
+  <text x="417.0" y="442.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">Thematic narrative synthesis across</text>
+  <text x="417.0" y="458.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">taxonomic &amp; regional ant bibliographies</text>
+  <rect x="403" y="500" width="314" height="82" rx="8" fill="#f8fafc" stroke="#10b981" stroke-width="1.3"/>
+  <rect x="403" y="500" width="5" height="82" rx="2.5" fill="#10b981"/>
+  <text x="417.0" y="520.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#0f172a" text-anchor="start">3_translate_summary.py &amp; Audio</text>
+  <text x="417.0" y="538.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">Multilingual translations + NotebookLM</text>
+  <text x="417.0" y="554.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">conversational podcast syntheses</text>
+  <rect x="754" y="264" width="346" height="332" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <rect x="754" y="264" width="346" height="32" rx="12" fill="#7c3aed" fill-opacity="0.10"/>
+  <line x1="754" y1="296" x2="1100" y2="296" stroke="#7c3aed" stroke-opacity="0.35" stroke-width="1"/>
+  <rect x="944" y="270" width="146" height="20" rx="6" fill="#7c3aed" fill-opacity="0.16" stroke="#7c3aed" stroke-width="0.8"/>
+  <text x="1017.0" y="284.0" font-family="ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="700" fill="#7c3aed" text-anchor="middle">Perplexity_Methods/</text>
+  <text x="768.0" y="285.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">2C. Persona Matrix</text>
+  <rect x="770" y="308" width="314" height="84" rx="8" fill="#f8fafc" stroke="#7c3aed" stroke-width="1.3"/>
+  <rect x="770" y="308" width="5" height="84" rx="2.5" fill="#7c3aed"/>
+  <text x="784.0" y="328.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#0f172a" text-anchor="start">System × User Prompt Factorial</text>
+  <text x="784.0" y="346.0" font-family="ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">System_Prompts.json × User_Prompts.json</text>
+  <text x="784.0" y="362.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">Web-grounded myrmecological Q&amp;A runs</text>
+  <rect x="770" y="404" width="314" height="84" rx="8" fill="#f8fafc" stroke="#9333ea" stroke-width="1.3"/>
+  <rect x="770" y="404" width="5" height="84" rx="2.5" fill="#9333ea"/>
+  <text x="784.0" y="424.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#0f172a" text-anchor="start">Multivariate Embedding Geometry</text>
+  <text x="784.0" y="442.0" font-family="ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">Visualization_Methods.py: PCA 2D/3D,</text>
+  <text x="784.0" y="458.5" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.0" font-weight="500" fill="#334155" text-anchor="start">scree, loadings, LSA &amp; LDA topic maps</text>
+  <rect x="770" y="500" width="314" height="82" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="1.3"/>
+  <text x="784.0" y="520.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" text-anchor="start">Published Outputs &amp; Reports</text>
+  <text x="784.0" y="538.0" font-family="ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11.0" font-weight="500" fill="#e2e8f0" text-anchor="start">Visualizations/All_Literature/*.png</text>
+  <text x="784.0" y="554.5" font-family="ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11.0" font-weight="500" fill="#e2e8f0" text-anchor="start">Reports/FORMINDEX_10_13_2024.pdf</text>
+  <path d="M 193.0 242.0 L 193.0 264.0" fill="none" stroke="#2563eb" stroke-width="1.8" marker-end="url(#arrow-blue)"/>
+  <path d="M 560.0 242.0 L 560.0 264.0" fill="none" stroke="#0d9488" stroke-width="1.8" marker-end="url(#arrow-teal)"/>
+  <path d="M 927.0 242.0 L 927.0 264.0" fill="none" stroke="#7c3aed" stroke-width="1.8" marker-end="url(#arrow-purple)"/>
+  <rect x="16" y="612" width="1088" height="28" rx="8" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="28.0" y="630.0" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#1e293b" text-anchor="start">Core Helpers: Methods/FORMINDEX_Methods.py (BibTeX parser · CountVectorizer/TF-IDF · LDA · Seaborn/Matplotlib)</text>
+  <text x="1092.0" y="630.0" font-family="ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11.0" font-weight="500" fill="#334155" text-anchor="end">Fair-Use Metadata Analytics · ~80k Records</text>
+</svg>
