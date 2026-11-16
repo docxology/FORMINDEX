@@ -2,6 +2,8 @@
 
 # FORMINDEX: FORMIS INtegrated Database EXploration
 
+![FORMINDEX Architecture Overview](assets/architecture-overview.svg)
+
 ## Overview
 
 FORMINDEX is a comprehensive project aimed at analyzing and visualizing the FORMIS myrmecological database. It combines advanced bibliometric techniques, artificial intelligence, and interactive visualizations to extract insights from published ant research.
