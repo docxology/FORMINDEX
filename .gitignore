@@ -162,3 +162,6 @@ LLM_Methods/LLM_keys.key
 # Console captures from the Perplexity smoke check. One was committed once and carried
 # the live key into the tree; it has since been removed, and this keeps a re-capture out.
 Perplexity_Methods/perplexity_log.txt
+
+# Standalone manuscript products
+/output/

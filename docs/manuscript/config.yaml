@@ -1,0 +1,25 @@
+manuscript_dir: docs/manuscript
+paper:
+  title: "FORMINDEX: Inspecting the FORMIS Bibliographic Workflow"
+  subtitle: "Offline verification of the retained July 2024 sample"
+authors:
+  - name: "Daniel Ari Friedman"
+    orcid: "0000-0001-6232-9096"
+publication:
+  github_repository: "docxology/FORMINDEX"
+  repository_url: "https://github.com/docxology/FORMINDEX"
+keywords: [bibliometrics, myrmecology, FORMIS, bibliographic metadata]
+metadata:
+  language: en
+render:
+  formats:
+    pdf: true
+    html: true
+    slides: false
+    docx: false
+    epub: false
+llm:
+  reviews:
+    enabled: false
+  translations:
+    enabled: false
