@@ -1,0 +1,12 @@
+# Verified by running Scripts/Verify_FORMIS_Sample.py on the retained sample.
+claims:
+  - {claim_id: sample-records, value: 317, artifact_path: Scripts/Verify_FORMIS_Sample.py}
+  - {claim_id: sample-articles, value: 198, artifact_path: Scripts/Verify_FORMIS_Sample.py}
+  - {claim_id: sample-technical-reports, value: 85, artifact_path: Scripts/Verify_FORMIS_Sample.py}
+  - {claim_id: sample-collection-chapters, value: 28, artifact_path: Scripts/Verify_FORMIS_Sample.py}
+  - {claim_id: sample-doctoral-theses, value: 4, artifact_path: Scripts/Verify_FORMIS_Sample.py}
+  - {claim_id: sample-books, value: 2, artifact_path: Scripts/Verify_FORMIS_Sample.py}
+  - {claim_id: configured-terms, value: 23, artifact_path: Scripts/Generate_Target_Bibliographies.py}
+  - {claim_id: nonempty-terms, value: 15, artifact_path: Scripts/Verify_FORMIS_Sample.py}
+  - {claim_id: topic-memberships, value: 580, artifact_path: Scripts/Verify_FORMIS_Sample.py}
+  - {claim_id: foraging-memberships, value: 47, artifact_path: Scripts/Verify_FORMIS_Sample.py}

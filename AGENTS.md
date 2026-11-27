@@ -12,7 +12,7 @@ summaries, translations, and audio.
 Published archive: doi:10.5281/zenodo.13927024.
 
 It is a **script collection, not a package**. There is no `pyproject.toml` or
-`setup.py`, no importable distribution, no CI, and no build step. Do not add
+`setup.py`, no importable distribution, no CI, and no native build step. Do not add
 packaging metadata to "modernise" it; the value is in the analyses and the
 committed outputs.
 
@@ -29,7 +29,7 @@ committed outputs.
 | `Visualizations/` | Per-topic literature output folders |
 | `Targeted_Bibliographies/` | Generated topic bibliographies (e.g. Ant-plant symbioses, Bioenergetics) |
 | `Reports/` | Dated PDF reports |
-| `docs/` | Documentation hub |
+| `docs/` | Documentation, offline verification and canonical manuscript |
 
 The numbered prefixes in `LLM_Methods/` are execution order. Keep them ordered;
 do not renumber.
@@ -62,6 +62,6 @@ key file, remove it from the index and rotate the key.
 
 ## Verification
 
-There is no automated gate and one test file (`test_env.py`). Verify a change by
-running the affected script against a small slice of `Initial_Files/` and
-reporting the command and the output you inspected.
+Run the local fixture check in [docs/workflow.md](docs/workflow.md). The
+file named `Perplexity_Methods/test_perplexity_api.py` is a manual live API
+check. Use [docs/rendering.md](docs/rendering.md) to verify the manuscript.
